@@ -1,0 +1,35 @@
+header {
+  align-items: center;
+  backdrop-filter: blur(60px);
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
+  color: rgb(234, 234, 234);   
+  display: flex;
+  height: 12vh;
+  width: 40vw;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20vh;
+  transition: all 0.8s ease-in-out;
+  justify-content: space-evenly;
+  z-index: 3;
+}
+
+header button {
+  transition: all 0.8s ease;
+  border: none;
+  font-size: 25px;
+  text-shadow: 1px 0 rgb(233, 232, 232);
+  letter-spacing:2px;
+  border-radius: 20px;
+  background-color: inherit;
+  color: rgb(233, 232, 232);
+  font-weight: 900;
+}
+
+header button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
