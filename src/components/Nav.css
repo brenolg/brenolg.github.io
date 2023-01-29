@@ -1,56 +1,51 @@
 #navContainer {
-    border: 2px solid rgb(255, 255, 255, 0.2);
-    border-radius: 50px;
-    backdrop-filter: blur(70px);
-    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.8);
-    opacity: opacity 0.5;
-    position: fixed;
-    top: 30vh;
-    right: 5vw;
-    height: 30vh;
-    width: 5vw;
-    transition: all 0.8s ease-in-out;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 10;
+	border: 2px solid rgb(255, 255, 255, 0.2);
+	border-radius: 50px;
+	backdrop-filter: blur(70px);
+	box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.8);
+	opacity: opacity 0.5;
+	position: fixed;
+	top: 30vh;
+	right: 5vw;
+	height: 30vh;
+	width: 5vw;
+	transition: all 0.8s ease-in-out;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	z-index: 10;
 }
-  
+
 #navContainer:hover {
-    box-shadow: 0px 0px 25px 3px rgb(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 25px 3px rgb(0, 0, 0, 0.8);
 }
 
 .navIcons {
-    color: rgb(219, 217, 217);
-    height: 40px;
-    width: 40px;
-    transition: all 0.5s ease;
+	color: rgb(219, 217, 217);
+	height: 40px;
+	width: 40px;
+	transition: all 0.5s ease;
 }
 
-.navBtn {  
-    padding: 10px;
-    transition: all 0.5s ease;
-    box-shadow:
-    0px 0px 3px rgb(255, 255, 255, 0.6),
-    inset -10px -10px 10px #aeaec025,
-    inset 7px 7px 10px rgb(255, 255, 255, 0.5);
-    appearance: none;
-    outline: none;
-    border: none;
-    background: none;
-    border-radius: 50%;
+.navBtn {
+	padding: 10px;
+	transition: all 0.5s ease;
+	box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.6),
+		inset -10px -10px 10px #aeaec025, inset 7px 7px 10px rgb(255, 255, 255, 0.5);
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	border-radius: 50%;
 }
 
 .navBtn:hover .navIcons {
-    color:rgba(7, 29, 41, 0.8);
+	color: rgba(7, 29, 41, 0.8);
 }
 
-.navBtn:hover{
-    cursor: pointer;
-    box-shadow:
-    0px 0px 5px rgb(13, 53, 73 , 0.3) ,
-    inset -10px -10px 10px #9797a225,
-    inset 7px 7px 10px rgba(199, 199, 199, 0.5);
+.navBtn:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgb(13, 53, 73, 0.3), inset -10px -10px 10px #9797a225,
+		inset 7px 7px 10px rgba(199, 199, 199, 0.5);
 }
-

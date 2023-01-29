@@ -1,44 +1,43 @@
 dl {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 90%;
-    margin: auto;
-    align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 90%;
+	margin: auto;
+	align-items: center;
 }
 
 dt {
-    transition:all 3s ease-in-out;
-    align-items: center;
-    margin: 28px;
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction: column;
-    text-align: center;
+	transition: all 3s ease-in-out;
+	align-items: center;
+	margin: 28px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	text-align: center;
 }
 dd {
-    
-    margin-top: 10px;
-    font-size: 18px;
-    text-shadow: 1px 0 #888888;
-    letter-spacing:2px;
-    font-weight:bold;
-    text-align: center;
-    color:  rgb(200, 200, 200);
-    font-weight: 700;
-    transition: all 1s;
- 
+	margin-top: 10px;
+	font-size: 18px;
+	text-shadow: 1px 0 #888888;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(200, 200, 200);
+	font-weight: 700;
+	transition: all 1s;
 }
 
 .tecs {
-    color: rgba(7, 29, 41, 0.8);
-    width: 70px;
-    height: 70px;
-    transition: all 1s;
+	color: rgba(7, 29, 41, 0.8);
+	width: 70px;
+	height: 70px;
+	transition: all 1s;
 }
 
-.tilt:hover .tecs , .tilt:hover dd{
-    color:rgb(206, 206, 206);
-    cursor: pointer;
+.tilt:hover .tecs,
+.tilt:hover dd {
+	color: rgb(206, 206, 206);
+	cursor: pointer;
 }

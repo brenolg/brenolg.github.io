@@ -1,17 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background: 
-  radial-gradient(circle at center , rgb(55, 122, 112, 0.6), transparent),
-  linear-gradient(225deg , rgb(7, 69, 93), transparent),
-  radial-gradient(circle at top , rgb(7, 69, 93), transparent),
-  linear-gradient( to top,rgb(7, 69, 93), transparent );
-position: relative;
-height: 260vh;
-width: 100vw;
-overflow-x: hidden;
+	background: radial-gradient(
+			circle at center,
+			rgb(55, 122, 112, 0.6),
+			transparent
+		),
+		linear-gradient(225deg, rgb(7, 69, 93), transparent),
+		radial-gradient(circle at top, rgb(7, 69, 93), transparent),
+		linear-gradient(to top, rgb(7, 69, 93), transparent);
+	position: relative;
+	height: 260vh;
+	width: 100vw;
+	overflow-x: hidden;
 }
