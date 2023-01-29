@@ -17,20 +17,21 @@ dt {
 	flex-direction: column;
 	text-align: center;
 }
+
 dd {
 	margin-top: 10px;
 	font-size: 18px;
-	text-shadow: 1px 0 #888888;
+	text-shadow: 1px 0 var(--white);
 	letter-spacing: 2px;
 	font-weight: bold;
 	text-align: center;
-	color: rgb(200, 200, 200);
+	color: var(--white);
 	font-weight: 700;
 	transition: all 1s;
 }
 
 .tecs {
-	color: rgba(7, 29, 41, 0.8);
+	color: rgba(var(--fontBlue), 0.9);
 	width: 70px;
 	height: 70px;
 	transition: all 1s;
@@ -38,6 +39,6 @@ dd {
 
 .tilt:hover .tecs,
 .tilt:hover dd {
-	color: rgb(206, 206, 206);
 	cursor: pointer;
+	color: var(--white);
 }

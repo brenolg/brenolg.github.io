@@ -35,7 +35,7 @@ export default function Home() {
 					id='ball7'></div>
 
 				<Tilt
-					className='profile'
+					className='profile glass'
 					perspective={2250}
 					tiltMaxAngleX={3}
 					tiltMaxAngleY={3}
@@ -44,9 +44,9 @@ export default function Home() {
 					glareBorderRadius={'50px'}
 					glareMaxOpacity={0.1}
 					glareColor={'rgb(189, 189, 189)'}>
-					<div class='profile-img'>
+					<div class='img_container'>
 						<img
-							class='myImg'
+							class='my_img'
 							src={fotoBreno}
 							alt='Foto Breno Lavalle Garrido'
 						/>
@@ -60,9 +60,9 @@ export default function Home() {
 					</div>
 				</Tilt>
 
-				<section class='projects'>
+				<section class='hard_skils'>
 					<Tilt
-						className='card1'
+						className='glass tecs_container'
 						perspective={2250}
 						tiltMaxAngleX={5}
 						tiltMaxAngleY={5}
@@ -75,7 +75,7 @@ export default function Home() {
 					</Tilt>
 
 					<Tilt
-						className='card2'
+						className='repos_info glass'
 						perspective={2250}
 						tiltMaxAngleX={3}
 						tiltMaxAngleY={3}

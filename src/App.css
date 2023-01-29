@@ -2,19 +2,22 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Aboreto', cursive;
 }
 
-body {
-	background: radial-gradient(
-			circle at center,
-			rgb(55, 122, 112, 0.6),
-			transparent
-		),
-		linear-gradient(225deg, rgb(7, 69, 93), transparent),
-		radial-gradient(circle at top, rgb(7, 69, 93), transparent),
-		linear-gradient(to top, rgb(7, 69, 93), transparent);
-	position: relative;
-	height: 260vh;
-	width: 100vw;
-	overflow-x: hidden;
+:root {
+	--orange: 255, 72, 0;
+	--teal: 1, 120, 120;
+	--blue: 5, 46, 66;
+	--grey: 93, 96, 109;
+	--white: rgb(234, 234, 234);
+	--fontBlue: 7, 29, 41;
+}
+
+.glass {
+	box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
+	backdrop-filter: blur(100px);
+	opacity: opacity 0.8;
+	transition: all 1s ease-in-out;
+	border: 2px solid rgb(255, 255, 255, 0.2);
 }

@@ -18,11 +18,11 @@
 }
 
 #navContainer:hover {
-	box-shadow: 0px 0px 25px 3px rgb(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 20px 3px rgb(0, 0, 0, 0.8);
 }
 
 .navIcons {
-	color: rgb(219, 217, 217);
+	color: var(--white);
 	height: 40px;
 	width: 40px;
 	transition: all 0.5s ease;
@@ -40,12 +40,14 @@
 	border-radius: 50%;
 }
 
-.navBtn:hover .navIcons {
-	color: rgba(7, 29, 41, 0.8);
+.navBtn:hover .navIcons,
+.navBtn:hover {
+	color: rgba(var(--fontBlue), 0.7);
 }
 
 .navBtn:hover {
 	cursor: pointer;
-	box-shadow: 0px 0px 5px rgb(13, 53, 73, 0.3), inset -10px -10px 10px #9797a225,
+	box-shadow: 0px 0px 5px rgb(var(--fontBlue), 0.3),
+		inset -10px -10px 10px #9797a225,
 		inset 7px 7px 10px rgba(199, 199, 199, 0.5);
 }
