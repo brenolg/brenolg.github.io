@@ -1,0 +1,44 @@
+header {
+	align-items: center;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border: 2px solid rgb(255, 255, 255, 0.2);
+	display: flex;
+	height: 10vh;
+	justify-content: space-evenly;
+	margin: auto;
+	margin-bottom: 25vh;
+	position: relative;
+	transition: all 0.8s ease-in-out;
+	width: 35vw;
+	z-index: 3;
+}
+
+.glass {
+	box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
+	backdrop-filter: blur(100px);
+	opacity: opacity 0.8;
+	transition: all 1s ease-in-out;
+	border: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.glass:hover {
+	box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
+}
+
+header button {
+	background-color: inherit;
+	border-radius: 20px;
+	border: none;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-shadow: 1px 0 var(--white);
+	transition: all 0.8s ease;
+}
+
+header button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}

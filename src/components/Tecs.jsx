@@ -1,4 +1,4 @@
-import './Tecs.css';
+import styles from './Tecs.module.css';
 import { GrMysql } from 'react-icons/gr';
 import {
 	FaReact,
@@ -23,7 +23,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Tecs() {
 	return (
-		<div className='tecs-container'>
+		<div className={styles.container}>
 			<dl>
 				<Tilt
 					perspective={150}
@@ -31,9 +31,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<DiJavascript className='tecs' />
+						<DiJavascript className={styles.tecs} />
 						<dd>Javascript</dd>
 					</dt>
 				</Tilt>
@@ -44,9 +44,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FaReact className='tecs' />
+						<FaReact className={styles.tecs} />
 						<dd>React</dd>
 					</dt>
 				</Tilt>
@@ -57,9 +57,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<AiFillHtml5 className='tecs' />
+						<AiFillHtml5 className={styles.tecs} />
 						<dd>HTML</dd>
 					</dt>
 				</Tilt>
@@ -70,9 +70,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FaCss3Alt className='tecs' />
+						<FaCss3Alt className={styles.tecs} />
 						<dd>CSS</dd>
 					</dt>
 				</Tilt>
@@ -83,9 +83,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FaGithub className='tecs' />
+						<FaGithub className={styles.tecs} />
 						<dd>Git Hub</dd>
 					</dt>
 				</Tilt>
@@ -96,9 +96,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<SiJest className='tecs' />
+						<SiJest className={styles.tecs} />
 						<dd>Jest</dd>
 					</dt>
 				</Tilt>
@@ -109,10 +109,10 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<SiTestinglibrary className='tecs' />
-						<dd className='dd'>RTL</dd>
+						<SiTestinglibrary className={styles.tecs} />
+						<dd>RTL</dd>
 					</dt>
 				</Tilt>
 
@@ -122,9 +122,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FaDocker className='tecs' />
+						<FaDocker className={styles.tecs} />
 						<dd>Docker</dd>
 					</dt>
 				</Tilt>
@@ -135,9 +135,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<GrMysql className='tecs' />
+						<GrMysql className={styles.tecs} />
 						<dd>SQL</dd>
 					</dt>
 				</Tilt>
@@ -148,9 +148,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<SiRedux className='tecs' />
+						<SiRedux className={styles.tecs} />
 						<dd>Redux</dd>
 					</dt>
 				</Tilt>
@@ -161,9 +161,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<SiEslint className='tecs' />
+						<SiEslint className={styles.tecs} />
 						<dd>Lint</dd>
 					</dt>
 				</Tilt>
@@ -174,9 +174,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FaBootstrap className='tecs' />
+						<FaBootstrap className={styles.tecs} />
 						<dd>Bootstrap</dd>
 					</dt>
 				</Tilt>
@@ -187,9 +187,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FiFigma className='tecs' />
+						<FiFigma className={styles.tecs} />
 						<dd>Figma</dd>
 					</dt>
 				</Tilt>
@@ -200,9 +200,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<SiGimp className='tecs' />
+						<SiGimp className={styles.tecs} />
 						<dd>GIMP</dd>
 					</dt>
 				</Tilt>
@@ -213,9 +213,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<FiSlack className='tecs' />
+						<FiSlack className={styles.tecs} />
 						<dd>Slack</dd>
 					</dt>
 				</Tilt>
@@ -226,9 +226,9 @@ export default function Tecs() {
 					tiltMaxAngleX={40}
 					tiltMaxAngleY={40}
 					transitionSpeed={3000}
-					className='tilt'>
+					className={styles.tilt}>
 					<dt>
-						<SiSteam className='tecs' />
+						<SiSteam className={styles.tecs} />
 						<dd>Steam</dd>
 					</dt>
 				</Tilt>
