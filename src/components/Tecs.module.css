@@ -1,0 +1,44 @@
+dl {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: auto;
+	width: 90%;
+}
+
+dt {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 28px;
+	text-align: center;
+	transition: all 3s ease-in-out;
+}
+
+dd {
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 700;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	text-align: center;
+	text-shadow: 1px 0 var(--white);
+	transition: all 1s;
+}
+
+.tecs {
+	color: rgba(var(--fontBlue), 0.9);
+	height: 70px;
+	transition: all 1s;
+	width: 70px;
+}
+
+.tilt:hover .tecs,
+.tilt:hover dd {
+	color: var(--white);
+	cursor: pointer;
+}

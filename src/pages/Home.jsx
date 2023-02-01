@@ -1,4 +1,4 @@
-import './Home.css';
+import styles from './Home.module.css';
 import fotoBreno from '../images/fotoBreno.png';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
@@ -13,29 +13,29 @@ export default function Home() {
 				<Nav />
 
 				<div
-					class='ball'
-					id='ball1'></div>
+					className={styles.ball}
+					id={styles.ball1}></div>
 				<div
-					class='ball'
-					id='ball2'></div>
+					className={styles.ball}
+					id={styles.ball2}></div>
 				<div
-					class='ball'
-					id='ball3'></div>
+					className={styles.ball}
+					id={styles.ball3}></div>
 				<div
-					class='ball'
-					id='ball4'></div>
+					className={styles.ball}
+					id={styles.ball4}></div>
 				<div
-					class='ball'
-					id='ball5'></div>
+					className={styles.ball}
+					id={styles.ball5}></div>
 				<div
-					class='ball'
-					id='ball6'></div>
+					className={styles.ball}
+					id={styles.ball6}></div>
 				<div
-					class='ball'
-					id='ball7'></div>
+					className={styles.ball}
+					id={styles.ball7}></div>
 
 				<Tilt
-					className='profile'
+					className={`${styles.profile} ${styles.glass}`}
 					perspective={2250}
 					tiltMaxAngleX={3}
 					tiltMaxAngleY={3}
@@ -44,15 +44,15 @@ export default function Home() {
 					glareBorderRadius={'50px'}
 					glareMaxOpacity={0.1}
 					glareColor={'rgb(189, 189, 189)'}>
-					<div class='profile-img'>
+					<div className={styles.img_container}>
 						<img
-							class='myImg'
+							className={styles.my_img}
 							src={fotoBreno}
 							alt='Foto Breno Lavalle Garrido'
 						/>
 					</div>
 
-					<div class='text'>
+					<div className={styles.text}>
 						<h2>Breno Lavalle Garrsido</h2>
 
 						<small>web dev</small>
@@ -60,9 +60,9 @@ export default function Home() {
 					</div>
 				</Tilt>
 
-				<section class='projects'>
+				<section class={styles.hard_skils}>
 					<Tilt
-						className='card1'
+						className={`${styles.glass} ${styles.tecs_container}`}
 						perspective={2250}
 						tiltMaxAngleX={5}
 						tiltMaxAngleY={5}
@@ -75,7 +75,7 @@ export default function Home() {
 					</Tilt>
 
 					<Tilt
-						className='card2'
+						className={`${styles.repos_info} ${styles.glass}`}
 						perspective={2250}
 						tiltMaxAngleX={3}
 						tiltMaxAngleY={3}

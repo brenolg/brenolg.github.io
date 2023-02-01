@@ -1,4 +1,4 @@
-#navContainer {
+#nav {
 	border: 2px solid rgb(255, 255, 255, 0.2);
 	border-radius: 50px;
 	backdrop-filter: blur(70px);
@@ -17,35 +17,37 @@
 	z-index: 10;
 }
 
-#navContainer:hover {
-	box-shadow: 0px 0px 25px 3px rgb(0, 0, 0, 0.8);
+#nav:hover {
+	box-shadow: 0px 0px 20px 3px rgb(0, 0, 0, 0.8);
 }
 
-.navIcons {
-	color: rgb(219, 217, 217);
+.icons {
+	color: var(--white);
 	height: 40px;
-	width: 40px;
 	transition: all 0.5s ease;
+	width: 40px;
 }
 
-.navBtn {
-	padding: 10px;
-	transition: all 0.5s ease;
-	box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.6),
-		inset -10px -10px 10px #aeaec025, inset 7px 7px 10px rgb(255, 255, 255, 0.5);
+.btn {
 	appearance: none;
-	outline: none;
-	border: none;
 	background: none;
 	border-radius: 50%;
+	border: none;
+	box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.6),
+		inset -10px -10px 10px #aeaec025, inset 7px 7px 10px rgb(255, 255, 255, 0.5);
+	outline: none;
+	padding: 10px;
+	transition: all 0.5s ease;
 }
 
-.navBtn:hover .navIcons {
-	color: rgba(7, 29, 41, 0.8);
+.btn:hover .icons,
+.btn:hover {
+	color: rgba(var(--fontBlue), 0.7);
 }
 
-.navBtn:hover {
-	cursor: pointer;
-	box-shadow: 0px 0px 5px rgb(13, 53, 73, 0.3), inset -10px -10px 10px #9797a225,
+.btn:hover {
+	box-shadow: 0px 0px 5px rgb(var(--fontBlue), 0.3),
+		inset -10px -10px 10px #9797a225,
 		inset 7px 7px 10px rgba(199, 199, 199, 0.5);
+	cursor: pointer;
 }
