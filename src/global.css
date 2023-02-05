@@ -5,6 +5,12 @@
 	font-family: 'Aboreto', cursive;
 }
 
+body {
+	overflow-x: hidden;
+	position: relative;
+	width: 100vw;
+}
+
 :root {
 	--orange: 255, 72, 0;
 	--teal: 1, 120, 120;

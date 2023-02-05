@@ -7,7 +7,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Home() {
 	return (
-		<body>
+		<body className={styles.body}>
 			<Header />
 			<main>
 				<Nav />

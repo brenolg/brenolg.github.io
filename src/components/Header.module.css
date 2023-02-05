@@ -30,12 +30,17 @@ header button {
 	background-color: inherit;
 	border-radius: 20px;
 	border: none;
+
+	transition: all 0.8s ease;
+}
+
+.a {
+	text-decoration: none;
 	color: var(--white);
 	font-size: 20px;
 	font-weight: 900;
 	letter-spacing: 2px;
 	text-shadow: 1px 0 var(--white);
-	transition: all 0.8s ease;
 }
 
 header button:hover {

@@ -1,12 +1,12 @@
 import Header from '../components/Header';
-import styles from './About.module.css';
+import styles from './Projects.module.css';
 
-export default function About() {
+export default function Projects() {
 	return (
 		<body className={styles.body}>
 			<Header />
 			<main>
-				<span className={styles.span}>About</span>
+				<span className={styles.span}>Projects</span>
 			</main>
 		</body>
 	);

@@ -1,4 +1,4 @@
-body {
+.body {
 	background: radial-gradient(
 			circle at center,
 			rgba(55, 122, 112, 0.6),
@@ -8,9 +8,6 @@ body {
 		radial-gradient(circle at top, #07455d, transparent),
 		linear-gradient(0deg, #07455d, transparent);
 	height: 260vh;
-	overflow-x: hidden;
-	position: relative;
-	width: 100vw;
 }
 
 main {
