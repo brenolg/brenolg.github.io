@@ -1,31 +1,34 @@
+import React from 'react';
 import styles from './Header.module.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-export default function Header(props) {
+export default function Header() {
+	let navigate = useNavigate();
+
 	return (
 		<header className={styles.glass}>
-			<button>
-				<Link
-					className={styles.a}
-					to={'/'}>
-					HOME
-				</Link>
+			<button
+				className={styles.a}
+				onClick={() => {
+					navigate('/');
+				}}>
+				HOME
 			</button>
 
-			<button>
-				<Link
-					className={styles.a}
-					to={'/about'}>
-					SOBRE
-				</Link>
+			<button
+				className={styles.a}
+				onClick={() => {
+					navigate('/about');
+				}}>
+				SOBRE
 			</button>
 
-			<button>
-				<Link
-					className={styles.a}
-					to={'/projects'}>
-					PROJETOS
-				</Link>
+			<button
+				className={styles.a}
+				onClick={() => {
+					navigate('/projects');
+				}}>
+				PROJETOS
 			</button>
 		</header>
 	);
