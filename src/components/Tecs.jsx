@@ -34,8 +34,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<DiJavascript className={styles.tecs} />
-						<dd>Javascript</dd>
 					</dt>
+					<dd>Javascript</dd>
 				</Tilt>
 
 				<Tilt
@@ -47,8 +47,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FaReact className={styles.tecs} />
-						<dd>React</dd>
 					</dt>
+					<dd>React</dd>
 				</Tilt>
 
 				<Tilt
@@ -60,8 +60,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<AiFillHtml5 className={styles.tecs} />
-						<dd>HTML</dd>
 					</dt>
+					<dd>HTML</dd>
 				</Tilt>
 
 				<Tilt
@@ -73,8 +73,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FaCss3Alt className={styles.tecs} />
-						<dd>CSS</dd>
 					</dt>
+					<dd>CSS</dd>
 				</Tilt>
 
 				<Tilt
@@ -86,8 +86,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FaGithub className={styles.tecs} />
-						<dd>Git Hub</dd>
 					</dt>
+					<dd>Git Hub</dd>
 				</Tilt>
 
 				<Tilt
@@ -99,8 +99,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<SiJest className={styles.tecs} />
-						<dd>Jest</dd>
 					</dt>
+					<dd>Jest</dd>
 				</Tilt>
 
 				<Tilt
@@ -112,8 +112,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<SiTestinglibrary className={styles.tecs} />
-						<dd>RTL</dd>
 					</dt>
+					<dd>RTL</dd>
 				</Tilt>
 
 				<Tilt
@@ -125,8 +125,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FaDocker className={styles.tecs} />
-						<dd>Docker</dd>
 					</dt>
+					<dd>Docker</dd>
 				</Tilt>
 
 				<Tilt
@@ -138,8 +138,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<GrMysql className={styles.tecs} />
-						<dd>SQL</dd>
 					</dt>
+					<dd>SQL</dd>
 				</Tilt>
 
 				<Tilt
@@ -151,8 +151,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<SiRedux className={styles.tecs} />
-						<dd>Redux</dd>
 					</dt>
+					<dd>Redux</dd>
 				</Tilt>
 
 				<Tilt
@@ -164,8 +164,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<SiEslint className={styles.tecs} />
-						<dd>Lint</dd>
 					</dt>
+					<dd>Lint</dd>
 				</Tilt>
 
 				<Tilt
@@ -177,8 +177,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FaBootstrap className={styles.tecs} />
-						<dd>Bootstrap</dd>
 					</dt>
+					<dd>Bootstrap</dd>
 				</Tilt>
 
 				<Tilt
@@ -190,8 +190,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FiFigma className={styles.tecs} />
-						<dd>Figma</dd>
 					</dt>
+					<dd>Figma</dd>
 				</Tilt>
 
 				<Tilt
@@ -203,8 +203,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<SiGimp className={styles.tecs} />
-						<dd>GIMP</dd>
 					</dt>
+					<dd>GIMP</dd>
 				</Tilt>
 
 				<Tilt
@@ -216,8 +216,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<FiSlack className={styles.tecs} />
-						<dd>Slack</dd>
 					</dt>
+					<dd>Slack</dd>
 				</Tilt>
 
 				<Tilt
@@ -229,8 +229,8 @@ export default function Tecs() {
 					className={styles.tilt}>
 					<dt>
 						<SiSteam className={styles.tecs} />
-						<dd>Steam</dd>
 					</dt>
+					<dd>Steam</dd>
 				</Tilt>
 			</dl>
 		</div>

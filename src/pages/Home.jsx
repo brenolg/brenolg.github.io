@@ -7,7 +7,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Home() {
 	return (
-		<body className={styles.body}>
+		<div className={styles.body}>
 			<Header />
 			<main>
 				<Nav />
@@ -60,7 +60,7 @@ export default function Home() {
 					</div>
 				</Tilt>
 
-				<section class={styles.hard_skils}>
+				<section className={styles.hard_skils}>
 					<Tilt
 						className={`${styles.glass} ${styles.tecs_container}`}
 						perspective={2250}
@@ -86,6 +86,6 @@ export default function Home() {
 						glareColor={'rgb(189, 189, 189)'}></Tilt>
 				</section>
 			</main>
-		</body>
+		</div>
 	);
 }

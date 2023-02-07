@@ -13,7 +13,7 @@ dt {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	margin: 28px;
+	margin: 15px 28px;
 	text-align: center;
 	transition: all 3s ease-in-out;
 }
@@ -24,7 +24,7 @@ dd {
 	font-weight: 700;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin-top: 10px;
+	margin-bottom: 18px;
 	text-align: center;
 	text-shadow: 1px 0 var(--white);
 	transition: all 1s;
