@@ -7,7 +7,8 @@
 		linear-gradient(225deg, #07455d, transparent),
 		radial-gradient(circle at top, #07455d, transparent),
 		linear-gradient(0deg, #07455d, transparent);
-	height: 260vh;
+
+	padding-bottom: 20vh;
 }
 
 main {
@@ -104,7 +105,7 @@ main {
 	background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
 		linear-gradient(45deg, rgb(var(--blue)), transparent),
 		linear-gradient(225deg, rgb(var(--grey)), transparent);
-	bottom: -3vh;
+	bottom: 5vh;
 	right: 750px;
 }
 
@@ -171,11 +172,10 @@ main {
 
 .hard_skils {
 	margin: auto;
-	margin-bottom: 20vh;
+
 	width: 70vw;
 	height: 140vh;
 	position: relative;
-	margin-bottom: 20vh;
 }
 
 .tecs_container {
