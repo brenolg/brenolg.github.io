@@ -1,21 +1,67 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Aboreto', cursive;
-}
-
-body {
-	overflow-x: hidden;
-	position: relative;
-	width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aboreto", cursive;
 }
 
 :root {
-	--orange: 255, 72, 0;
-	--teal: 1, 120, 120;
-	--blue: 5, 46, 66;
-	--grey: 93, 96, 109;
-	--white: rgb(234, 234, 234);
-	--fontBlue: 7, 29, 41;
+  --orange: 255, 72, 0;
+  --teal: 1, 120, 120;
+  --blue: 5, 46, 66;
+  --grey: 93, 96, 109;
+  --white: rgb(234, 234, 234);
+  --fontBlue: 7, 29, 41;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.glass {
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
+  backdrop-filter: blur(100px);
+  opacity: opacity 0.8;
+  transition: all 1s ease-in-out;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.glass:hover {
+  box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
+}
+
+.ball {
+  animation-duration: 12s, 5s;
+  animation-iteration-count: infinite, infinite;
+  animation-name: rotate, shadow;
+  animation-timing-function: linear, linear;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0px 0px 150px 10px rgb(0, 0, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

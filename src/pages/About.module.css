@@ -1,59 +1,47 @@
 .body {
-	background: radial-gradient(
-			circle at center,
-			rgba(55, 122, 112, 0.6),
-			transparent
-		),
-		linear-gradient(225deg, #07455d, transparent),
-		radial-gradient(circle at top, #07455d, transparent),
-		linear-gradient(0deg, #07455d, transparent);
-}
-
-.glass {
-	box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
-	backdrop-filter: blur(100px);
-	opacity: opacity 0.8;
-	transition: all 1s ease-in-out;
-	border: 2px solid rgb(255, 255, 255, 0.2);
-}
-
-.glass:hover {
-	box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
+  background: radial-gradient(
+      circle at center,
+      rgba(55, 122, 112, 0.6),
+      transparent
+    ),
+    linear-gradient(225deg, #07455d, transparent),
+    radial-gradient(circle at top, #07455d, transparent),
+    linear-gradient(0deg, #07455d, transparent);
 }
 
 .section1 {
-	margin: auto;
-	margin-bottom: 20vh;
-	position: relative;
-	height: 90vh;
-	width: 70vw;
+  margin: auto;
+  margin-bottom: 20vh;
+  position: relative;
+  height: 90vh;
+  width: 70vw;
 }
 
 .my_img {
-	width: 30vw;
-	margin: auto;
-	border-radius: 50px;
-	height: 50vh;
-	position: absolute;
+  width: 30vw;
+  margin: auto;
+  border-radius: 50px;
+  height: 50vh;
+  position: absolute;
 
-	top: 0px;
-	right: 0px;
+  top: 0px;
+  right: 0px;
 }
 
 .text1 {
-	width: 50vw;
-	margin: auto;
-	border-radius: 50px;
-	height: 60vh;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
+  width: 50vw;
+  margin: auto;
+  border-radius: 50px;
+  height: 60vh;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .text2 {
-	width: 50vw;
-	margin: auto;
-	margin-bottom: 20vh;
-	border-radius: 50px;
-	height: 60vh;
+  width: 50vw;
+  margin: auto;
+  margin-bottom: 20vh;
+  border-radius: 50px;
+  height: 60vh;
 }

@@ -23,6 +23,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Tecs() {
 	return (
+		
 		<div className={styles.container}>
 			<dl>
 				<Tilt
