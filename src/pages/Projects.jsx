@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import styles from "./Projects.module.css";
 import Nav from "../components/Nav";
 import Tilt from "react-parallax-tilt";
+import FrontImg from "../components/FrontImg";
 
 export default function Projects() {
   return (
@@ -19,7 +20,9 @@ export default function Projects() {
             glareEnable={true}
             glareBorderRadius={"50px"}
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}></Tilt>
+            glareColor={"rgb(189, 189, 189)"}>
+            <FrontImg />
+          </Tilt>
 
           <Tilt
             className={`${styles.textFront} glass`}
