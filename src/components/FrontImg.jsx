@@ -43,6 +43,7 @@ export default function FrontImg() {
   return (
     <div className={styles.container}>
       <button
+        type="button"
         className="btnCircle"
         onClick={() => {
           handleLeftArrow();
@@ -51,14 +52,10 @@ export default function FrontImg() {
         <BiLeftArrow className="iconBtn" />
       </button>
 
-      <img
-        ref={imgRef}
-        className={styles.image}
-        src={frontImgs[frontIndex]}
-        alt='"projectImg"'
-      />
+      <img ref={imgRef} className={styles.image} src={frontImgs[frontIndex]} alt='"projectImg"' />
 
       <button
+        type="button"
         className="btnCircle"
         onClick={() => {
           handleRightArrow();

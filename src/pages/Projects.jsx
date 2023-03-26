@@ -1,8 +1,9 @@
-import Header from "../components/Header";
-import styles from "./Projects.module.css";
-import Nav from "../components/Nav";
-import Tilt from "react-parallax-tilt";
-import FrontImg from "../components/FrontImg";
+import React from 'react';
+import Tilt from 'react-parallax-tilt';
+import FrontImg from '../components/FrontImg';
+import Header from '../components/Header';
+import Nav from '../components/Nav';
+import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
@@ -17,10 +18,11 @@ export default function Projects() {
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
-            glareEnable={true}
-            glareBorderRadius={"50px"}
+            glareEnable
+            glareBorderRadius="50px"
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}>
+            glareColor="rgb(189, 189, 189)"
+          >
             <FrontImg />
           </Tilt>
 
@@ -30,10 +32,11 @@ export default function Projects() {
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
-            glareEnable={true}
-            glareBorderRadius={"50px"}
+            glareEnable
+            glareBorderRadius="50px"
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}></Tilt>
+            glareColor="rgb(189, 189, 189)"
+          />
         </section>
 
         <section className={`${styles.sectionBack}`}>
@@ -43,10 +46,11 @@ export default function Projects() {
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
-            glareEnable={true}
-            glareBorderRadius={"50px"}
+            glareEnable
+            glareBorderRadius="50px"
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}></Tilt>
+            glareColor="rgb(189, 189, 189)"
+          />
 
           <Tilt
             className={`${styles.textBack} glass`}
@@ -54,10 +58,11 @@ export default function Projects() {
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
-            glareEnable={true}
-            glareBorderRadius={"50px"}
+            glareEnable
+            glareBorderRadius="50px"
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}></Tilt>
+            glareColor="rgb(189, 189, 189)"
+          />
         </section>
       </main>
     </body>

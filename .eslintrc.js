@@ -18,5 +18,17 @@ module.exports = {
     'react',
   ],
   rules: {
+
+    'object-curly-newline': ['error', {
+      ObjectExpression: 'always',
+      ObjectPattern: {
+        multiline: false,
+      },
+      ImportDeclaration: 'never',
+      ExportDeclaration: {
+        multiline: true, minProperties: 10,
+      },
+    }],
+
   },
 };

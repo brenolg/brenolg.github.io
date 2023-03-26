@@ -1,18 +1,19 @@
-import styles from "./Nav.module.css";
-import {FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+import React from 'react';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import styles from './Nav.module.css';
 
 export default function Nav() {
   return (
     <nav id={styles.nav}>
-      <button className="btnCircle">
+      <button className="btnCircle" type="button">
         <FaGithub className="iconBtn" />
       </button>
 
-      <button className="btnCircle">
+      <button className="btnCircle" type="button">
         <FaLinkedin className="iconBtn" />
       </button>
 
-      <button className="btnCircle">
+      <button className="btnCircle" type="button">
         <FaEnvelope className="iconBtn" />
       </button>
     </nav>
