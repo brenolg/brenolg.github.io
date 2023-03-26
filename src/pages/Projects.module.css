@@ -1,0 +1,62 @@
+.body {
+  background: radial-gradient(
+      circle at center,
+      rgba(55, 122, 112, 0.6),
+      transparent
+    ),
+    linear-gradient(225deg, #07455d, transparent),
+    radial-gradient(circle at top, #07455d, transparent),
+    linear-gradient(0deg, #07455d, transparent);
+}
+
+.sectionFront {
+  margin: auto;
+  position: relative;
+  height: 90vh;
+  width: 70vw;
+  margin-bottom: 20vh;
+}
+
+.imgFront {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50px;
+}
+
+.textFront {
+  height: 50vh;
+  position: absolute;
+  width: 40vw;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 50px;
+}
+
+.sectionBack {
+  margin: auto;
+  position: relative;
+  height: 90vh;
+  width: 70vw;
+  margin-bottom: 20vh;
+}
+
+.imgBack {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50px;
+}
+
+.textBack {
+  height: 50vh;
+  position: absolute;
+  width: 40vw;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 50px;
+}

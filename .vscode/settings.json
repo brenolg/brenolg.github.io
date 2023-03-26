@@ -1,0 +1,16 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "prettier.enableDebugLogs": true,
+    "prettier.bracketSameLine": true,
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "cSpell.words": [
+        "Tecs"
+    ]
+}

@@ -3,6 +3,8 @@ import './global.css';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Projects from './pages/Projects';
+
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={ About } />
+        <Route path="/about" element={<About/>} />
+        <Route path="/projects" element={ <Projects/> } />
       </Routes>
     </BrowserRouter>
   

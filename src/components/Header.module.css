@@ -28,17 +28,26 @@ header {
 
 header button {
 	background-color: inherit;
-	border-radius: 20px;
 	border: none;
-	color: var(--white);
+	transition: all 0.8s ease;
+}
+
+.a {
+	text-decoration: none;
+	color: var(--font);
 	font-size: 20px;
 	font-weight: 900;
 	letter-spacing: 2px;
 	text-shadow: 1px 0 var(--white);
-	transition: all 0.8s ease;
+	padding-bottom: 4px;
+	opacity: 0.9;
+}
+.a:first-child {
+	border-bottom: 2px solid rgb(255, 255, 255, 0.3);
 }
 
 header button:hover {
 	cursor: pointer;
 	transform: scale(1.1);
+	opacity: 1;
 }

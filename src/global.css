@@ -1,15 +1,110 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Aboreto', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vidaloka', 'Ubuntu Condensed', 'Cardo'sans-serif, serif;
 }
 
+
 :root {
-	--orange: 255, 72, 0;
-	--teal: 1, 120, 120;
-	--blue: 5, 46, 66;
-	--grey: 93, 96, 109;
-	--white: rgb(234, 234, 234);
-	--fontBlue: 7, 29, 41;
+  --orange: 255, 72, 0;
+  --teal: 1, 120, 120;
+  --blue: 5, 46, 66;
+  --grey: 93, 96, 109;
+  --font: rgb(234, 234, 234);
+  --fontBlue: 7, 29, 41;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.glass {
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
+  backdrop-filter: blur(100px);
+  opacity: opacity 0.8;
+  transition: all 1s ease-in-out;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.glass:hover {
+  box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
+}
+
+.ball {
+  animation-duration: 12s, 5s;
+  animation-iteration-count: infinite, infinite;
+  animation-name: rotate, shadow;
+  animation-timing-function: linear, linear;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0px 0px 150px 10px rgb(0, 0, 0, 0.9);
+  }
+
+  100% {
+    box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.iconBtn {
+  color: var(--font);
+  height: 40px;
+  transition: all 0.5s ease;
+  width: 40px;
+}
+
+.btnCircle {
+  appearance: none;
+  background: none;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.6),
+    inset -10px -10px 10px #aeaec025, inset 7px 7px 10px rgb(255, 255, 255, 0.5);
+  outline: none;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.btnCircle:hover .iconBtn,
+.btnCircle:hover {
+  color: rgba(var(--fontBlue), 0.7);
+}
+
+.btnCircle:hover {
+  box-shadow: 0px 0px 5px rgb(var(--fontBlue), 0.3),
+    inset -10px -10px 10px #9797a225,
+    inset 7px 7px 10px rgba(199, 199, 199, 0.5);
+  cursor: pointer;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
