@@ -1,7 +1,8 @@
-import Header from "../components/Header";
-import styles from "./About.module.css";
-import Nav from "../components/Nav";
-import Tilt from "react-parallax-tilt";
+import React from 'react';
+import Tilt from 'react-parallax-tilt';
+import Header from '../components/Header';
+import Nav from '../components/Nav';
+import styles from './About.module.css';
 
 export default function About() {
   return (
@@ -16,11 +17,12 @@ export default function About() {
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
-            glareEnable={true}
-            glareBorderRadius={"50px"}
+            glareEnable
+            glareBorderRadius="50px"
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}>
-            <div className={styles.img_container}></div>
+            glareColor="rgb(189, 189, 189)"
+          >
+            <div className={styles.img_container} />
           </Tilt>
 
           <Tilt
@@ -29,11 +31,12 @@ export default function About() {
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
-            glareEnable={true}
-            glareBorderRadius={"50px"}
+            glareEnable
+            glareBorderRadius="50px"
             glareMaxOpacity={0.1}
-            glareColor={"rgb(189, 189, 189)"}>
-            <div className={styles.img_container}></div>
+            glareColor="rgb(189, 189, 189)"
+          >
+            <div className={styles.img_container} />
           </Tilt>
         </section>
 
@@ -43,11 +46,12 @@ export default function About() {
           tiltMaxAngleX={3}
           tiltMaxAngleY={3}
           transitionSpeed={3000}
-          glareEnable={true}
-          glareBorderRadius={"50px"}
+          glareEnable
+          glareBorderRadius="50px"
           glareMaxOpacity={0.1}
-          glareColor={"rgb(189, 189, 189)"}>
-          <div className={styles.img_container}></div>
+          glareColor="rgb(189, 189, 189)"
+        >
+          <div className={styles.img_container} />
         </Tilt>
       </main>
     </body>

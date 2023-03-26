@@ -1,12 +1,11 @@
-import React from "react";
-import styles from "./FrontImg.module.css";
-import frontImgs from "../arrays/frontImgs ";
-import {useContext, useRef, useEffect} from "react";
-import Context from "../context/Context";
-import {BiRightArrow, BiLeftArrow} from "react-icons/bi";
+import React, { useContext, useRef } from 'react';
+import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
+import frontImgs from '../arrays/frontImgs ';
+import Context from '../context/Context';
+import styles from './FrontImg.module.css';
 
 export default function FrontImg() {
-  const {frontIndex, setFrontIndex} = useContext(Context);
+  const { frontIndex, setFrontIndex } = useContext(Context);
   const imgRef = useRef();
 
   const turnInvisible = () => {
@@ -19,7 +18,7 @@ export default function FrontImg() {
 
   const handleLeftArrow = () => {
     turnInvisible();
-    setTimeout(function () {
+    setTimeout(() => {
       if (frontIndex > 0) {
         setFrontIndex(frontIndex - 1);
       } else {
@@ -31,7 +30,7 @@ export default function FrontImg() {
 
   const handleRightArrow = () => {
     turnInvisible();
-    setTimeout(function () {
+    setTimeout(() => {
       if (frontIndex < 2) {
         setFrontIndex(frontIndex + 1);
       } else {
@@ -44,25 +43,24 @@ export default function FrontImg() {
   return (
     <div className={styles.container}>
       <button
+        type="button"
         className="btnCircle"
         onClick={() => {
           handleLeftArrow();
-        }}>
+        }}
+      >
         <BiLeftArrow className="iconBtn" />
       </button>
 
-      <img
-        ref={imgRef}
-        className={styles.image}
-        src={frontImgs[frontIndex]}
-        alt='"projectImg"'
-      />
+      <img ref={imgRef} className={styles.image} src={frontImgs[frontIndex]} alt='"projectImg"' />
 
       <button
+        type="button"
         className="btnCircle"
         onClick={() => {
           handleRightArrow();
-        }}>
+        }}
+      >
         <BiRightArrow className="iconBtn" />
       </button>
     </div>
