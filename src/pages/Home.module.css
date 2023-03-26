@@ -1,9 +1,7 @@
 .body {
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgba(55, 122, 112, 0.6),
-      transparent
-    ),
+      transparent),
     linear-gradient(225deg, #07455d, transparent),
     radial-gradient(circle at top, #07455d, transparent),
     linear-gradient(0deg, #07455d, transparent);
@@ -120,14 +118,13 @@ main {
   box-shadow: 0px 0px 50px 5px rgb(0, 0, 0);
 }
 
-.profile:hover .myImg {
-  animation-play-state: running;
-}
+
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

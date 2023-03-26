@@ -8,33 +8,33 @@ export default function Header() {
   return (
     <header className={styles.glass}>
       <button
-        className={styles.a}
+        className={styles.btn}
         type="button"
         onClick={() => {
           navigate('/');
         }}
       >
-        HOME
+        <span className={styles.btnText}>home</span>
       </button>
 
       <button
-        className={styles.a}
+        className={styles.btn}
         type="button"
         onClick={() => {
           navigate('/about');
         }}
       >
-        SOBRE
+        <span className={styles.btnText}>sobre</span>
       </button>
 
       <button
-        className={styles.a}
+        className={styles.btn}
         type="button"
         onClick={() => {
           navigate('/projects');
         }}
       >
-        PROJETOS
+        <span className={styles.btnText}>projetos</span>
       </button>
     </header>
   );
