@@ -1,9 +1,9 @@
-import styles from "./Home.module.css";
-import fotoBreno from "../images/fotoBreno.png";
+import Tilt from "react-parallax-tilt";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Tecs from "../components/Tecs";
-import Tilt from "react-parallax-tilt";
+import fotoBreno from "../images/fotoBreno.png";
+import styles from "./Home.module.css";
 
 export default function Home() {
   return (
@@ -39,10 +39,10 @@ export default function Home() {
           </div>
 
           <div className={styles.text}>
-            <h2>Breno Lavalle Garrsido</h2>
-
-            <small>web dev</small>
-            <h3>Sobre mimaaaa</h3>
+          <h2>Breno Lavalle Garrido</h2>
+            <small>Desenvolvedor Web Full-Stack </small>
+            
+            <p>Desenvolvedor com experiência em React, Redux, JavaScript, React Hooks,Context-api, Jest, React testing library, Docker, Node.js, MySQL, TypeScript e consumo de APIs REST. Curioso e fascinado pelos desafios lógicos que a programação promove. Também possui experiência em projetos gerenciados por Metodologias Ágeis. Estudante  do curso Web Full-Stack da Trybe  e cursando no momento backend.</p>
           </div>
         </Tilt>
 

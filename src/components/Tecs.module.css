@@ -19,14 +19,14 @@ dt {
 }
 
 dd {
-	color: var(--white);
+	color: var(--font);
 	font-size: 18px;
 	font-weight: 700;
 	font-weight: bold;
 	letter-spacing: 2px;
 	margin-bottom: 18px;
 	text-align: center;
-	text-shadow: 1px 0 var(--white);
+	text-shadow: 1px 0 var(--font);
 	transition: all 1s;
 }
 
@@ -39,6 +39,6 @@ dd {
 
 .tilt:hover .tecs,
 .tilt:hover dd {
-	color: var(--white);
+	color: var(--font);
 	cursor: pointer;
 }

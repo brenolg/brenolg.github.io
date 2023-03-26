@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Aboreto", cursive;
+  font-family: 'Vidaloka', 'Ubuntu Condensed', 'Cardo'sans-serif, serif;
 }
+
 
 :root {
   --orange: 255, 72, 0;
   --teal: 1, 120, 120;
   --blue: 5, 46, 66;
   --grey: 93, 96, 109;
-  --white: rgb(234, 234, 234);
+  --font: rgb(234, 234, 234);
   --fontBlue: 7, 29, 41;
 }
 
@@ -47,10 +48,12 @@ body {
     opacity: 0.7;
     box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
   }
+
   50% {
     opacity: 1;
     box-shadow: 0px 0px 150px 10px rgb(0, 0, 0, 0.9);
   }
+
   100% {
     box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
     opacity: 0.7;
@@ -61,13 +64,14 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 .iconBtn {
-  color: var(--white);
+  color: var(--font);
   height: 40px;
   transition: all 0.5s ease;
   width: 40px;
