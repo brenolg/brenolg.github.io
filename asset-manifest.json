@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8bd1197.css",
-    "main.js": "/static/js/main.8e524e77.js",
+    "main.css": "/static/css/main.25e3df06.css",
+    "main.js": "/static/js/main.707dc028.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
+    "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
     "static/media/karla.png": "/static/media/karla.1b1f0f2ed3fa8bef02cc.png",
     "static/media/lua.png": "/static/media/lua.f976f4292df2c0ed8718.png",
     "static/media/fotoBreno.png": "/static/media/fotoBreno.d287deaec7a1d59f46e8.png",
     "index.html": "/index.html",
-    "main.a8bd1197.css.map": "/static/css/main.a8bd1197.css.map",
-    "main.8e524e77.js.map": "/static/js/main.8e524e77.js.map",
+    "main.25e3df06.css.map": "/static/css/main.25e3df06.css.map",
+    "main.707dc028.js.map": "/static/js/main.707dc028.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8bd1197.css",
-    "static/js/main.8e524e77.js"
+    "static/css/main.25e3df06.css",
+    "static/js/main.707dc028.js"
   ]
 }
