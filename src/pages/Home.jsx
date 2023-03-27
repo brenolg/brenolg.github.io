@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Tecs from '../components/Tecs';
 import fotoBreno from '../images/fotoBreno.png';
+import StarWars from '../images/star-wars.gif';
 import styles from './Home.module.css';
 
 export default function Home() {
@@ -28,9 +29,9 @@ export default function Home() {
           tiltMaxAngleY={3}
           transitionSpeed={3000}
           glareEnable
-          glareBorderRadius="50px"
+          glareBorderRadius="2.5rem"
           glareMaxOpacity={0.1}
-          glareColor="rgb(189, 189, 189)"
+          glareColor="rgb(189, 189, 189, 0.5)"
         >
           <div className={styles.img_container}>
             <img className={styles.my_img} src={fotoBreno} alt="Foto Breno Lavalle Garrido" />
@@ -38,7 +39,7 @@ export default function Home() {
 
           <div className={styles.text}>
             <h2>Breno Lavalle Garrido</h2>
-            <small>Desenvolvedor Web Full-Stack </small>
+            <span>Desenvolvedor Web Full-Stack </span>
 
             <p>
               Desenvolvedor com experiência em React, Redux, JavaScript, React Hooks,Context-api,
@@ -47,35 +48,49 @@ export default function Home() {
               possui experiência em projetos gerenciados por Metodologias Ágeis. Estudante do curso
               Web Full-Stack da Trybe e cursando no momento backend.
             </p>
+            <div className={styles.profileBtns}>
+              <button className={styles.btn} type="button">
+                Entrar em Contato
+              </button>
+
+              <button className={styles.btn} type="button">
+                Download CV
+              </button>
+            </div>
           </div>
         </Tilt>
 
-        <section className={styles.hard_skils}>
+        <section className={styles.hard_skills}>
           <Tilt
-            className={` glass ${styles.tecs_container}`}
-            perspective={2250}
-            tiltMaxAngleX={5}
-            tiltMaxAngleY={5}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          >
-            <Tecs />
-          </Tilt>
-
-          <Tilt
-            className={`${styles.repos_info}      glass`}
+            className={`${styles.repos_preview} glass`}
             perspective={2250}
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}
             transitionSpeed={3000}
             glareEnable
-            glareBorderRadius="50px"
+            glareBorderRadius="2.5rem"
             glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          />
+            glareColor="rgb(189, 189, 189, 0.5)"
+          >
+            <img src={StarWars} alt="Projects Gifts" />
+            <button className={styles.btn} type="button">
+              Projects Page
+            </button>
+          </Tilt>
+
+          <Tilt
+            className={` glass ${styles.stacks_container}`}
+            perspective={2250}
+            tiltMaxAngleX={5}
+            tiltMaxAngleY={5}
+            transitionSpeed={3000}
+            glareEnable
+            glareBorderRadius="2.5rem"
+            glareMaxOpacity={0.1}
+            glareColor="rgb(189, 189, 189, 0.5)"
+          >
+            <Tecs />
+          </Tilt>
         </section>
       </main>
     </div>

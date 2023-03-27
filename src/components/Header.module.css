@@ -5,10 +5,10 @@ header {
 	border: 2px solid rgb(255, 255, 255, 0.2);
 	display: flex;
 	width: 45em;
-	padding: 2em 0px;
+	padding: 1em 0px;
 	justify-content: space-evenly;
 	margin: auto;
-	margin-bottom: 12em;
+	margin-bottom: 10em;
 	position: relative;
 	transition: all 0.8s ease-in-out;
 	z-index: 3;
@@ -37,8 +37,7 @@ header {
 		inset 3px 3px 4px rgb(255, 255, 255, 0.5);
 	font-weight: 900;
 	padding: 1.2em;
-	transition: all 1.5s ease;
-
+	transition: all 1s ease;
 }
 
 button:hover {
@@ -59,9 +58,9 @@ button:hover {
 }
 
 .btnText {
-	color: rgb(255, 255, 255);
-	font-size: 1.3rem;
+	color: var(--font);
+	font-size: 1rem;
 	font-weight: 900;
-	letter-spacing: 4px;
+	letter-spacing: 5px;
 	text-transform: uppercase;
 }

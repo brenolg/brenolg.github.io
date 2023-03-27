@@ -6,13 +6,13 @@
   font-size: 62, 5%;
 }
 
-
 :root {
   --orange: 255, 72, 0;
   --teal: 1, 120, 120;
+  --darkTeal: 0, 47, 58;
   --blue: 5, 46, 66;
   --grey: 93, 96, 109;
-  --font: rgb(234, 234, 234);
+  --font: rgba(234, 234, 234, 0.861);
   --fontBlue: 7, 29, 41;
 }
 
@@ -20,6 +20,13 @@ body {
   overflow-x: hidden;
   position: relative;
   width: 100vw;
+  background: radial-gradient(circle at center,
+      rgba(8, 30, 29, 0.6),
+      transparent),
+    linear-gradient(225deg, #073e54, transparent),
+    radial-gradient(circle at top, #07455d, transparent),
+    linear-gradient(0deg, #194b58, transparent);
+  height: 100%;
 }
 
 .glass {
