@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
-import frontImgs from '../arrays/frontImgs ';
+import frontImgs from '../utils/arrays/frontImgs ';
 import Context from '../context/Context';
 import styles from './FrontImg.module.css';
 

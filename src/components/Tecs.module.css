@@ -30,14 +30,14 @@ dd {
 	transition: all 1s;
 }
 
-.tecs {
+.techs {
 	color: rgba(var(--fontBlue), 0.9);
 	height: 70px;
 	transition: all 1s;
 	width: 70px;
 }
 
-.tilt:hover .tecs,
+.tilt:hover .techs,
 .tilt:hover dd {
 	color: var(--font);
 	cursor: pointer;
