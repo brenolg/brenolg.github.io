@@ -24,7 +24,7 @@ export default function Home() {
         <div className="ball" id={styles.ball7} />
 
         <Tilt className={`${styles.profile} glass`} {...tiltProps.homeDefaultProps}>
-          <div className={styles.img_container}>
+          <div className={styles.img_border}>
             <img className={styles.my_img} src={fotoBreno} alt="Foto Breno Lavalle Garrido" />
           </div>
 

@@ -1,44 +1,34 @@
 dl {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	margin: auto;
-	width: 90%;
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: auto;
 }
 
 dt {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	margin: 15px 28px;
-	text-align: center;
-	transition: all 3s ease-in-out;
+font-size: 4rem;
+margin-top: 0.5em;
+padding: 0.03em 0.3em;
+transition: all 3s;
 }
 
 dd {
-	color: var(--font);
-	font-size: 18px;
-	font-weight: 700;
-	font-weight: bold;
-	letter-spacing: 2px;
-	margin-bottom: 18px;
-	text-align: center;
-	text-shadow: 1px 0 var(--font);
-	transition: all 1s;
+color: var(--font);
+font-size: 1rem;
+font-weight: bold;
+letter-spacing: 2px;
+text-align: center;
 }
 
 .techs {
-	color: rgba(var(--fontBlue), 0.9);
-	height: 70px;
-	transition: all 1s;
-	width: 70px;
+color: rgba(var(--fontBlue), 0.9);
+transition: all 1s;
 }
 
 .tilt:hover .techs,
 .tilt:hover dd {
-	color: var(--font);
-	cursor: pointer;
+color: var(--font);
+cursor: pointer;
 }
