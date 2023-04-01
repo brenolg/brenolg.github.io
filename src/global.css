@@ -1,40 +1,40 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu Condensed', 'Vidaloka', 'Cardo', sans-serif, serif;
-  font-size: 62, 5%;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  --orange: 255, 72, 0;
-  --teal: 1, 120, 120;
-  --darkTeal: 0, 47, 58;
   --blue: 5, 46, 66;
-  --grey: 93, 96, 109;
+  --darkTeal: 0, 47, 58;
   --font: rgba(234, 234, 234, 0.861);
   --fontBlue: 7, 29, 41;
+  --grey: 93, 96, 109;
+  --orange: 255, 72, 0;
+  --teal: 1, 120, 120;
+  font-size: 62.5%;
 }
 
 body {
+  height: 100%;
   overflow-x: hidden;
-  position: relative;
   width: 100vw;
   background: radial-gradient(circle at center,
-      rgba(8, 30, 29, 0.6),
-      transparent),
-    linear-gradient(225deg, #073e54, transparent),
-    radial-gradient(circle at top, #07455d, transparent),
-    linear-gradient(0deg, #194b58, transparent);
-  height: 100%;
+    rgb(17, 46, 50), transparent),
+    linear-gradient(0deg, transparent, #063145),
+    linear-gradient(90deg, transparent, #042438),
+    linear-gradient(135deg, transparent, rgb(11, 74, 108)),
+    linear-gradient(225deg, transparent, rgb(31, 92, 92)),
+    linear-gradient(270deg, transparent, rgb(24, 37, 152));
 }
 
 .glass {
-  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
   backdrop-filter: blur(100px);
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
   opacity: opacity 0.8;
   transition: all 1s ease-in-out;
-  border: 2px solid rgb(255, 255, 255, 0.2);
 }
 
 .glass:hover {
@@ -48,18 +48,17 @@ body {
   animation-timing-function: linear, linear;
   border-radius: 50%;
   position: absolute;
-  transition: all 0.8s ease-in-out;
 }
 
 @keyframes shadow {
   0% {
-    opacity: 0.7;
     box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
+    opacity: 0.7;
   }
 
   50% {
-    opacity: 1;
     box-shadow: 0px 0px 150px 10px rgb(0, 0, 0, 0.9);
+    opacity: 1;
   }
 
   100% {

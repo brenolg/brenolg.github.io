@@ -3,19 +3,19 @@ main {
 }
 
 #ball1 {
-  height: 1300px;
-  left: -35vw;
-  top: -74vh;
-  width: 1300px;
+  height:120rem;
+  left: -29%;
+  top: -140%;
+  width: 120rem;
   background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
 #ball2 {
-  height: 410px;
-  right: 180px;
-  top: 135px;
-  width: 410px;
+  height: 40.1rem;
+  right: 14%;
+  top: -14%;
+  width: 40.1rem;
   background: linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
@@ -23,57 +23,26 @@ main {
 }
 
 #ball3 {
-  height: 200px;
-  right: 350px;
-  top: 735px;
-  width: 200px;
+  height: 20rem;
+  right: 21%;
+  bottom: -8%;
+  width: 20rem;
   background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
   linear-gradient(315deg, rgb(var(--blue)), transparent);
 }
 
-#ball4 {
-  bottom: 35vh;
-  height: 800px;
-  right: -350px;
-  width: 800px;
-  background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
-    linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
-    linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
+
+
+.profile_container{
+  position: relative;
+  margin-bottom: 20rem;
 }
 
-#ball5 {
-  height: 350px;
-  left: 120px;
-  top: 880px;
-  width: 350px;
-  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
-    linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
-    linear-gradient(315deg, rgb(var(--teal)), transparent);
-}
 
-#ball6 {
-  bottom: 57vh;
-  height: 150px;
-  left: 195px;
-  width: 150px;
-  background: linear-gradient(45deg, rgb(var(--blue)), transparent),
-    linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
-    linear-gradient(180deg, rgb(var(--grey)), transparent);
-}
-
-#ball7 {
-  height: 400px;
-  width: 400px;
-  bottom: 5vh;
-  right: 750px;
-  background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
-    linear-gradient(45deg, rgb(var(--blue)), transparent),
-    linear-gradient(225deg, rgb(var(--grey)), transparent);
-}
 
 .profile {
-  border-radius: 2.5rem;
-  margin: 10rem auto;
+  border-radius: 5.5rem;
+  margin: 0rem auto;
   padding: 0 1.5em;
   width: 50vw;
 }
@@ -86,10 +55,10 @@ main {
   border-radius: 22.5rem;
   box-shadow: 0px 0px 3rem rgb(0, 0, 0);
   display: flex;
-  height: 14.3rem;
+  height: 22rem;
   justify-content: center;
-  margin: -5rem auto ;
-  width: 14.3rem;
+  margin: -11rem auto ;
+  width: 22rem;
 }
 
 .my_img {
@@ -115,27 +84,27 @@ main {
   flex-direction: column;
   font-weight: 900;
   justify-content: space-around;
-  margin: 5rem 0 0 ;
-  padding: 1.5em;
+  margin: 9.5rem 0 0 ;
+  padding: 4rem;
   text-align: justify;
 }
 
 .text h2 {
-  font-size: 2rem;
+  font-size: 3.1rem;
   letter-spacing: 2px;
   padding: 0 0 0.5em;
 }
 
 .text span {
-  font-size: 1rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   padding: 0 0 3em;
 }
 
 .text p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   letter-spacing: 3px;
-  line-height: 2rem;
+  line-height: 3.2rem;
   padding-bottom: 2em;
 }
 
@@ -149,13 +118,13 @@ main {
 }
 
 .profileBtns button {
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 1em;
 }
 
 .btn {
   background-color: inherit;
-  border-radius: 1rem;
+  border-radius:1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: var(--font);
   font-weight: 900;
@@ -190,11 +159,33 @@ main {
   margin-bottom: 5em;
   margin: auto;
   width: 70vw;
+  position: relative;
 }
+
+#ball4 {
+  height: 35rem;
+  left: -15%;
+  top: -10%;
+  width: 35rem;
+  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(315deg, rgb(var(--teal)), transparent);
+}
+
+#ball5 {
+  top: 20%;
+  height: 80rem;
+  right: -50%;
+  width: 80rem;
+  background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
+    linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
+}
+
 
 .repos_preview {
   align-items: center;
-  border-radius: 5rem;
+  border-radius: 5.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -203,31 +194,48 @@ main {
 }
 
 .repos_preview img {
-  border-radius: inherit;
+  border-radius: 7.5rem;
   padding: 3em;
   width: 100%;
 }
 
 .repos_preview button {
-  border-radius: inherit;
-  font-size: 1.5rem;
+  border-radius: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 6rem;
-  padding: 1em;
-  width: 45%;
+  padding: 0.5em 1em;
+}
+
+#ball6 {
+  left: -5%;
+  height: 15rem;
+  bottom: 40%;
+  width: 15rem;
+  background: linear-gradient(45deg, rgb(var(--blue)), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
+    linear-gradient(180deg, rgb(var(--grey)), transparent);
 }
 
 .stacks_container {
-  border-radius: 5rem;
+  border-radius: 5.5rem;
   margin-top: -4em;
   padding: 1em;
   width: 50vw;
   z-index: 4;
   margin-left: 15vw;
-  margin-bottom: 8em;
+  margin-bottom: 12em;
 }
 
 
-
+#ball7 {
+  height: 40rem;
+  width: 40rem;
+  left: 10%;
+  bottom: -5%;
+  background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
+    linear-gradient(45deg, rgb(var(--blue)), transparent),
+    linear-gradient(225deg, rgb(var(--grey)), transparent);
+}
 /* 
   background: 
     linear-gradient(0deg, transparent, transparent ),

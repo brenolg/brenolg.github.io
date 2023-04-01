@@ -1,24 +1,24 @@
 header {
 	align-items: center;
-	border-bottom-left-radius: 5em;
-	border-bottom-right-radius: 5em;
+	border-bottom-left-radius: 20.5rem;
+	border-bottom-right-radius: 20.5rem;
 	border: 2px solid rgb(255, 255, 255, 0.2);
 	display: flex;
-	width: 45em;
-	padding: 1em 0px;
 	justify-content: space-evenly;
 	margin: auto;
-	margin-bottom: 10em;
+	margin-bottom: 17em;
+	padding: 1.5em 0px;
 	position: sticky;
 	top: 0;
 	transition: all 0.8s ease-in-out;
+	width: 42%;
 	z-index: 5;
 }
 
 .glass {
 	backdrop-filter: blur(100px);
 	border: 2px solid rgb(255, 255, 255, 0.2);
-	box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 3rem rgb(0, 0, 0, 0.8);
 	opacity: opacity 0.8;
 	transition: all 1s ease;
 }
@@ -29,19 +29,23 @@ header {
 
 .btn {
 	background-color: inherit;
-	border-radius: 1rem;
+	border-radius: 1.5rem;
 	border: 2px solid rgba(255, 255, 255, 0.2);
+	color: var(--font);
+	font-size: 1.6rem;
+	font-weight: 900;
+	letter-spacing: 5px;
+	padding: 0.7em 0.9em;
+	text-transform: uppercase;
+	transition: all 0.7s ease;
 	box-shadow: -3px -3px 8px rgba(0, 0, 0, 0.1),
 		-2px -2px 8px rgba(0, 0, 0, 0.1),
 		3px 3px 2px 1px rgba(90, 90, 90, 0.075),
 		2px 2px 4px rgba(105, 105, 105, 0.1),
 		inset 3px 3px 4px rgb(255, 255, 255, 0.5);
-	font-weight: 900;
-	padding: 0.8em;
-	transition: all 1s ease;
 }
 
-button:hover {
+.btn:hover {
 	box-shadow: -2px -2px 8px rgba(165, 165, 165, 0.3),
 		-2px -2px 8px rgba(194, 194, 194, 0.4),
 		2px 2px 2px rgba(255, 255, 255, 0.05),
@@ -58,10 +62,3 @@ button:hover {
 		inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
 
-.btnText {
-	color: var(--font);
-	font-size: 1rem;
-	font-weight: 900;
-	letter-spacing: 5px;
-	text-transform: uppercase;
-}

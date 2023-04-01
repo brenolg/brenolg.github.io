@@ -5,10 +5,11 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-evenly;
 margin: auto;
+margin-bottom: 5em;
 }
 
 dt {
-font-size: 4rem;
+font-size: 6.5rem;
 margin-top: 0.5em;
 padding: 0.03em 0.3em;
 transition: all 3s;
@@ -16,14 +17,14 @@ transition: all 3s;
 
 dd {
 color: var(--font);
-font-size: 1rem;
+font-size: 1.6rem;
 font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
 }
 
 .techs {
-color: rgba(var(--fontBlue), 0.9);
+color:rgb(3, 25, 37);
 transition: all 1s;
 }
 
