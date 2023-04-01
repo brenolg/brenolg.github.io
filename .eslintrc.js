@@ -10,6 +10,7 @@ module.exports = {
   ],
   overrides: [
   ],
+
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -18,7 +19,10 @@ module.exports = {
     'react',
   ],
   rules: {
-
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-filename-extension': [1, {
+      extensions: ['.js', '.jsx'],
+    }],
     'object-curly-newline': ['error', {
       ObjectExpression: 'always',
       ObjectPattern: {

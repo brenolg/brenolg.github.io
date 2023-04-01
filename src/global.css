@@ -1,32 +1,40 @@
 * {
+  box-sizing: border-box;
+  font-family: 'Ubuntu Condensed', 'Vidaloka', 'Cardo', sans-serif, serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Vidaloka', 'Ubuntu Condensed', 'Cardo'sans-serif, serif;
 }
 
-
 :root {
+  --blue: 5, 46, 66;
+  --darkTeal: 0, 47, 58;
+  --font: rgba(234, 234, 234, 0.861);
+  --fontBlue: 7, 29, 41;
+  --grey: 93, 96, 109;
   --orange: 255, 72, 0;
   --teal: 1, 120, 120;
-  --blue: 5, 46, 66;
-  --grey: 93, 96, 109;
-  --font: rgb(234, 234, 234);
-  --fontBlue: 7, 29, 41;
+  font-size: 62.5%;
 }
 
 body {
+  height: 100%;
   overflow-x: hidden;
-  position: relative;
   width: 100vw;
+  background: radial-gradient(circle at center,
+    rgb(17, 46, 50), transparent),
+    linear-gradient(0deg, transparent, #063145),
+    linear-gradient(90deg, transparent, #042438),
+    linear-gradient(135deg, transparent, rgb(11, 74, 108)),
+    linear-gradient(225deg, transparent, rgb(31, 92, 92)),
+    linear-gradient(270deg, transparent, rgb(24, 37, 152));
 }
 
 .glass {
-  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
   backdrop-filter: blur(100px);
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
   opacity: opacity 0.8;
   transition: all 1s ease-in-out;
-  border: 2px solid rgb(255, 255, 255, 0.2);
 }
 
 .glass:hover {
@@ -40,18 +48,17 @@ body {
   animation-timing-function: linear, linear;
   border-radius: 50%;
   position: absolute;
-  transition: all 0.8s ease-in-out;
 }
 
 @keyframes shadow {
   0% {
-    opacity: 0.7;
     box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
+    opacity: 0.7;
   }
 
   50% {
-    opacity: 1;
     box-shadow: 0px 0px 150px 10px rgb(0, 0, 0, 0.9);
+    opacity: 1;
   }
 
   100% {
@@ -68,37 +75,6 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.iconBtn {
-  color: var(--font);
-  height: 40px;
-  transition: all 0.5s ease;
-  width: 40px;
-}
-
-.btnCircle {
-  appearance: none;
-  background: none;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.6),
-    inset -10px -10px 10px #aeaec025, inset 7px 7px 10px rgb(255, 255, 255, 0.5);
-  outline: none;
-  padding: 10px;
-  transition: all 0.5s ease;
-}
-
-.btnCircle:hover .iconBtn,
-.btnCircle:hover {
-  color: rgba(var(--fontBlue), 0.7);
-}
-
-.btnCircle:hover {
-  box-shadow: 0px 0px 5px rgb(var(--fontBlue), 0.3),
-    inset -10px -10px 10px #9797a225,
-    inset 7px 7px 10px rgba(199, 199, 199, 0.5);
-  cursor: pointer;
 }
 
 .invisible {
