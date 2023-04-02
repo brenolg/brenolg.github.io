@@ -7,7 +7,7 @@ import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
-    <body className={styles.body}>
+    <>
       <Header />
       <main>
         <Nav />
@@ -65,6 +65,6 @@ export default function Projects() {
           />
         </section>
       </main>
-    </body>
+    </>
   );
 }

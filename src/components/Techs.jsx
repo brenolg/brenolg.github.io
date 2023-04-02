@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { DiJavascript, DiLinux } from 'react-icons/di';
+import { DiJavascript, DiLinux, DiPhotoshop } from 'react-icons/di';
 import { FaBootstrap,
   FaCss3Alt,
   FaDocker,
@@ -161,6 +161,12 @@ export default function Techs() {
             <FiFigma className={styles.techs} />
           </dt>
           <dd>Figma</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <DiPhotoshop className={styles.techs} />
+          </dt>
+          <dd>Photoshop</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>

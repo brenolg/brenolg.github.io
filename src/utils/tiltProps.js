@@ -1,6 +1,6 @@
 const glareEnable = 'glareEnable';
 
-const homeDefaultProps = {
+const defaultProps = {
   perspective: 2250,
   tiltMaxAngleX: 3,
   tiltMaxAngleY: 3,
@@ -11,11 +11,22 @@ const homeDefaultProps = {
   glareColor: 'rgb(189, 189, 189, 0.5)',
 };
 
+const myImgProps = {
+  glareBorderRadius: '2.5rem',
+  glareColor: 'rgb(189, 189, 189, 0.5)',
+  glareEnable,
+  glareMaxOpacity: 0.2,
+  perspective: 2250,
+  tiltMaxAngleX: 7,
+  tiltMaxAngleY: 7,
+  transitionSpeed: 5000,
+};
+
 const techContainerProps = {
   glareBorderRadius: '2.5rem',
   glareColor: 'rgb(189, 189, 189, 0.5)',
   glareEnable,
-  glareMaxOpacity: 0.1,
+  glareMaxOpacity: 0.2,
   perspective: 2250,
   tiltMaxAngleX: 5,
   tiltMaxAngleY: 5,
@@ -31,9 +42,10 @@ const techsProps = {
 };
 
 const tiltProps = {
-  homeDefaultProps,
+  defaultProps,
   techContainerProps,
   techsProps,
+  myImgProps,
 };
 
 export default tiltProps;

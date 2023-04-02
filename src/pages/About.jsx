@@ -3,57 +3,63 @@ import Tilt from 'react-parallax-tilt';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import styles from './About.module.css';
+import tiltProps from '../utils/tiltProps';
+import myImg from '../images/brenoSobre.png';
 
 export default function About() {
   return (
-    <body className={styles.body}>
+    <>
       <Header />
+
+      <div className="ball" id={styles.ballMove} />
+
       <main>
         <Nav />
-        <section className={`${styles.section1}`}>
-          <Tilt
-            className={`${styles.my_img} glass`}
-            perspective={2250}
-            tiltMaxAngleX={3}
-            tiltMaxAngleY={3}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          >
-            <div className={styles.img_container} />
+        <section className={`${styles.img_section}`}>
+          <div className="ball" id={styles.ball1} />
+          <div className="ball" id={styles.ball2} />
+          <div className="ball" id={styles.ball3} />
+
+          <Tilt className={`${styles.img_container} glass`} {...tiltProps.myImgProps}>
+            <img className={`${styles.my_img} glass`} src={myImg} alt="foto breno" />
           </Tilt>
 
-          <Tilt
-            className={`${styles.text1} glass`}
-            perspective={2250}
-            tiltMaxAngleX={3}
-            tiltMaxAngleY={3}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          >
-            <div className={styles.img_container} />
+          <Tilt className={`${styles.main_description} glass`} {...tiltProps.defaultProps}>
+            <h2 className={`${styles.titles}`}>Vida Profissional</h2>
+            <p className={`${styles.p}`}>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis commodi numquam
+              quod ea pariatur libero totam eius, id vero repellat neque ab, dignissimos nobis nam
+              quasi dolore, repudiandae delectus hic! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Facilis, nulla! Nihil, temporibus! Fuga at, voluptatum deserunt,
+              dolores voluptates tempore necessitatibus corrupti, temporibus rerum sapiente
+              laudantium odio itaque! Nobis, quidem neque. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Excepturi quis exercitationem ipsa nam explicabo quaerat, voluptatem
+              alias! Libero dolorum quia molestiae qui ducimus perferendis labore possimus, ad non,
+              voluptatem nesciunt?
+            </p>
           </Tilt>
         </section>
 
-        <Tilt
-          className={`${styles.text2} glass`}
-          perspective={2250}
-          tiltMaxAngleX={3}
-          tiltMaxAngleY={3}
-          transitionSpeed={3000}
-          glareEnable
-          glareBorderRadius="50px"
-          glareMaxOpacity={0.1}
-          glareColor="rgb(189, 189, 189)"
-        >
-          <div className={styles.img_container} />
-        </Tilt>
+        <section className={`${styles.relativSection}`}>
+          <div className="ball" id={styles.ball4} />
+          <div className="ball" id={styles.ball5} />
+
+          <Tilt className={`${styles.professional_description} glass`} {...tiltProps.defaultProps}>
+            <h2 className={`${styles.titles}`}>Curiosidades...</h2>
+            <p className={`${styles.p} `}>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis commodi numquam
+              quod ea pariatur libero totam eius, id vero repellat neque ab, dignissimos nobis nam
+              quasi dolore, repudiandae delectus hic! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Facilis, nulla! Nihil, temporibus! Fuga at, voluptatum deserunt,
+              dolores voluptates tempore necessitatibus corrupti, temporibus rerum sapiente
+              laudantium odio itaque! Nobis, quidem neque. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Excepturi quis exercitationem ipsa nam explicabo quaerat, voluptatem
+              alias! Libero dolorum quia molestiae qui ducimus perferendis labore possimus, ad non,
+              voluptatem nesciunt?
+            </p>
+          </Tilt>
+        </section>
       </main>
-    </body>
+    </>
   );
 }
