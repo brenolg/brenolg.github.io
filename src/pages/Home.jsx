@@ -10,18 +10,18 @@ import tiltProps from '../utils/tiltProps';
 
 export default function Home() {
   return (
-    <div className={styles.body}>
+    <>
       <Header />
+      <div className="ball" id={styles.ballMove} />
 
       <main>
         <Nav />
-
         <div className={`${styles.profile_container}`}>
           <div className="ball" id={styles.ball1} />
           <div className="ball" id={styles.ball2} />
           <div className="ball" id={styles.ball3} />
 
-          <Tilt className={`${styles.profile} glass`} {...tiltProps.homeDefaultProps}>
+          <Tilt className={`${styles.profile} glass`} {...tiltProps.defaultProps}>
             <div className={styles.img_border}>
               <img className={styles.my_img} src={fotoBreno} alt="Foto Breno Lavalle Garrido" />
             </div>
@@ -48,14 +48,13 @@ export default function Home() {
             </div>
           </Tilt>
         </div>
-
         <section className={styles.hard_skills}>
           <div className="ball" id={styles.ball4} />
           <div className="ball" id={styles.ball5} />
           <div className="ball" id={styles.ball6} />
           <div className="ball" id={styles.ball7} />
 
-          <Tilt className={`${styles.repos_preview} glass`} {...tiltProps.homeDefaultProps}>
+          <Tilt className={`${styles.repos_preview} glass`} {...tiltProps.defaultProps}>
             <img src={StarWars} alt="Projects Gifts" />
             <button className={styles.btn} type="button">
               Projects Page
@@ -66,6 +65,6 @@ export default function Home() {
           </Tilt>
         </section>
       </main>
-    </div>
+    </>
   );
 }

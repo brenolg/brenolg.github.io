@@ -3,12 +3,13 @@
   font-family: 'Ubuntu Condensed', 'Vidaloka', 'Cardo', sans-serif, serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
   --blue: 5, 46, 66;
   --darkTeal: 0, 47, 58;
-  --font: rgba(234, 234, 234, 0.861);
+  --font: rgba(213, 213, 213, 0.861);
   --fontBlue: 7, 29, 41;
   --grey: 93, 96, 109;
   --orange: 255, 72, 0;
@@ -27,6 +28,10 @@ body {
     linear-gradient(135deg, transparent, rgb(11, 74, 108)),
     linear-gradient(225deg, transparent, rgb(31, 92, 92)),
     linear-gradient(270deg, transparent, rgb(24, 37, 152));
+}
+
+main {
+  max-width: 100vw;
 }
 
 .glass {
@@ -84,3 +89,25 @@ body {
 .visible {
   opacity: 1;
 }
+
+::-webkit-scrollbar {
+  background: inherit;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--orange),0.5);
+  border-radius: 30rem;
+  border: 3px solid rgb(var(--darkTeal));
+  height: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100%;
+}
+
+
