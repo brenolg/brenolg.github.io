@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.521f2cb0.css",
+    "main.css": "/static/css/main.7ac20b30.css",
     "main.js": "/static/js/main.801c1fc0.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
     "static/media/brenoSobre.png": "/static/media/brenoSobre.91179cff9d16fbf38914.png",
     "static/media/fotoBreno.png": "/static/media/fotoBreno.d287deaec7a1d59f46e8.png",
     "index.html": "/index.html",
-    "main.521f2cb0.css.map": "/static/css/main.521f2cb0.css.map",
+    "main.7ac20b30.css.map": "/static/css/main.7ac20b30.css.map",
     "main.801c1fc0.js.map": "/static/js/main.801c1fc0.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.521f2cb0.css",
+    "static/css/main.7ac20b30.css",
     "static/js/main.801c1fc0.js"
   ]
 }
