@@ -1,15 +1,18 @@
 #ballMove {
   box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.6);
-  height:15rem;
-  width: 15rem;
+  height:12rem;
+  left: 0;
+  position: absolute;
+  top: -7vh;
+  width: 12rem;
   z-index: -20;
   background: 
   radial-gradient(ellipse at top,rgb(var(--grey), 0.6), transparent),
   radial-gradient(ellipse at bottom,rgb(0, 64, 89, 0.8), transparent),
   linear-gradient(to left, transparent, rgb(var(--blue))),
   linear-gradient(to right, transparent, rgba(var(--blue),0.8) );
-  animation: moveBall 40s linear infinite reverse;
-  offset-path: path("M 1917.7607,198.91682 C 1674.6224,9.1781432 1229.3753,199.29504 1300.6682,451.89663 1372.0814,659.70613 1165.0498,818.46901 976.40522,800.73729 729.11129,720.47278 610.32918,440.21236 312.14278,467.55958 102.25623,466.50069 -201.82443,468.72992 -270.80571,244.89165 -298.28779,3.4107662 72.59836,-50.85694 271.29812,81.068262 434.50521,226.02809 706.41032,312.87267 898.78203,199.77417 1119.379,78.257542 1418.3602,-90.975363 1723.5927,-30.588104 c 116.6832,23.6044502 215.6315,129.5635 181.4915,239.605044");
+  animation: moveBall 105s linear infinite;
+  offset-path: path(var(--homePath));
 }
 
 @keyframes moveBall {
@@ -27,7 +30,7 @@
     scale: 1;
   }
   90% {
-    scale: 1;
+    scale: 2;
   }
   100% {
     offset-distance: 100%;
@@ -250,7 +253,7 @@
 
 .stacks_container {
   border-radius: 5.5rem;
-  margin-bottom: 12em;
+  margin-bottom: 18em;
   margin-left: 15vw;
   margin-top: -3.5%;
   padding: 1em;
