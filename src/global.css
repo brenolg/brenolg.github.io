@@ -84,6 +84,11 @@ main {
   }
 }
 
+button{
+	outline: none;
+	cursor: pointer;
+}
+
 .invisible {
   opacity: 0;
 }
