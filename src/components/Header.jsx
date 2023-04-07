@@ -14,7 +14,7 @@ export default function Header() {
           navigate('/');
         }}
       >
-        <span>home</span>
+        home
       </button>
 
       <button
@@ -24,7 +24,7 @@ export default function Header() {
           navigate('/about');
         }}
       >
-        <span>sobre</span>
+        sobre
       </button>
 
       <button
@@ -34,7 +34,7 @@ export default function Header() {
           navigate('/projects');
         }}
       >
-        <span>projetos</span>
+        projetos
       </button>
     </header>
   );
