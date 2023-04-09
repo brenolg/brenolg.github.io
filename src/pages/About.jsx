@@ -20,7 +20,7 @@ export default function About() {
         width: 0,
         opacity: 0,
         transition: {
-          duration: 1,
+          duration: 0.5,
         },
       }}
       animate={{
@@ -34,7 +34,7 @@ export default function About() {
         opacity: 0,
         x: window.innerWidth,
         transition: {
-          duration: 1,
+          duration: 0.5,
         },
       }}
     >

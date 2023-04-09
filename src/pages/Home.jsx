@@ -22,7 +22,7 @@ export default function Home() {
         width: 0,
         opacity: 1,
         transition: {
-          duration: 1,
+          duration: 0.5,
         },
       }}
       animate={{
@@ -36,7 +36,7 @@ export default function Home() {
         opacity: 0,
         x: window.innerWidth,
         transition: {
-          duration: 1,
+          duration: 0.5,
         },
       }}
     >
