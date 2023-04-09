@@ -6,7 +6,7 @@
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.8);
   opacity: opacity 0.5;
   position: fixed;
-  top: 35vh;
+  animation: forwards ease-in-out moveNav 5s;
   right: 5vw;
   height: 7em;
   padding: 0em 0.2em;
@@ -16,6 +16,19 @@
   flex-direction: column;
   justify-content: space-evenly;
   z-index: 10;
+}
+
+
+@keyframes moveNav {
+  0% {
+    top: -35vh;
+  }
+  80% {
+    top: 40vh;
+  }
+  100% {
+    top: 35vh;
+  }
 }
 
 #nav:hover {

@@ -1,20 +1,45 @@
-import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
+import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import styles from './About.module.css';
 import tiltProps from '../utils/tiltProps';
 import myImg from '../images/brenoSobre.png';
 
 export default function About() {
-  return (
-    <>
-      <Header />
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <motion.div
+      initial={{
+        width: 0,
+        opacity: 0,
+        transition: {
+          duration: 1,
+        },
+      }}
+      animate={{
+        width: '100%',
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      exit={{
+        opacity: 0,
+        x: window.innerWidth,
+        transition: {
+          duration: 1,
+        },
+      }}
+    >
       <div className="ball" id={styles.ballMove} />
 
       <main>
-        <Nav />
         <section className={`${styles.img_section}`}>
           <div className="ball" id={styles.ball1} />
           <div className="ball" id={styles.ball2} />
@@ -60,6 +85,6 @@ export default function About() {
           </Tilt>
         </section>
       </main>
-    </>
+    </motion.div>
   );
 }

@@ -1,16 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Tilt from 'react-parallax-tilt';
+import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
 import styles from './Projects.module.css';
 
 export default function Projects() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <>
-      <Header />
+    <motion.div
+      initial={{
+        width: 0,
+        opacity: 0,
+        transition: {
+          duration: 1,
+        },
+      }}
+      animate={{
+        width: '100%',
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      exit={{
+        opacity: 0,
+        x: window.innerWidth,
+        transition: {
+          duration: 0.3,
+        },
+      }}
+    >
       <main>
-        <Nav />
         <section className={`${styles.sectionFront}`}>
           <Tilt
             className={`${styles.imgFront} glass`}
@@ -65,6 +91,6 @@ export default function Projects() {
           />
         </section>
       </main>
-    </>
+    </motion.div>
   );
 }

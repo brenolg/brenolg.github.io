@@ -1,12 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import styles from './Header.module.css';
 
 export default function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className={styles.glass}>
+    <motion.header
+      className={styles.glass}
+      initial={{
+        y: -100,
+      }}
+      animate={{
+        transition: {
+          ease: 'linear',
+          duration: 1,
+        },
+        y: 0,
+      }}
+    >
       <button
         className={styles.btn}
         type="button"
@@ -36,6 +49,6 @@ export default function Header() {
       >
         projetos
       </button>
-    </header>
+    </motion.header>
   );
 }
