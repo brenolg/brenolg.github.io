@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
 import styles from './Projects.module.css';
+import '../global.css';
 
 export default function Projects() {
   const { pathname } = useLocation();

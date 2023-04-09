@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import styles from './About.module.css';
 import tiltProps from '../utils/tiltProps';
 import myImg from '../images/brenoSobre.png';
+import '../global.css';
 
 export default function About() {
   const { pathname } = useLocation();

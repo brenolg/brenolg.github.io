@@ -7,6 +7,7 @@ import fotoBreno from '../images/fotoBreno.png';
 import StarWars from '../images/star-wars.gif';
 import styles from './Home.module.css';
 import tiltProps from '../utils/tiltProps';
+import '../global.css';
 
 export default function Home() {
   const { pathname } = useLocation();

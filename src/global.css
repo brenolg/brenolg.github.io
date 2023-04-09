@@ -49,10 +49,10 @@ main {
 }
 
 .ball {
-  animation-duration: 12s, 5s, 5s;
-  animation-delay: 0s, 0s 5s;
+  animation-duration: 12s, 5s;
+  animation-delay: 0s, 0s;
   animation-iteration-count: infinite, infinite;
-  animation-name: rotate, shadow renderBall;
+  animation-name: rotate, shadow;
   animation-timing-function: linear, linear;
   border-radius: 50%;
   position: absolute;
@@ -72,15 +72,6 @@ main {
   100% {
     box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.8);
     opacity: 0.7;
-  }
-}
-
-@keyframes renderBall {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
