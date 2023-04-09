@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Tilt from 'react-parallax-tilt';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
+import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import Techs from '../components/Techs';
 import fotoBreno from '../images/fotoBreno.png';
 import StarWars from '../images/star-wars.gif';
@@ -9,13 +9,38 @@ import styles from './Home.module.css';
 import tiltProps from '../utils/tiltProps';
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <div className="ball" id={styles.ballMove} />
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <motion.div
+      initial={{
+        width: 0,
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      animate={{
+        width: '100%',
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      }}
+      exit={{
+        opacity: 0,
+        x: window.innerWidth,
+        transition: {
+          duration: 1,
+        },
+      }}
+    >
+      <div className="ball" id={styles.ballMove} />
       <main>
-        <Nav />
         <div className={`${styles.profile_container}`}>
           <div className="ball" id={styles.ball1} />
           <div className="ball" id={styles.ball2} />
@@ -65,6 +90,6 @@ export default function Home() {
           </Tilt>
         </section>
       </main>
-    </>
+    </motion.div>
   );
 }

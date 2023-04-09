@@ -6,13 +6,13 @@ const defaultProps = {
   tiltMaxAngleY: 3,
   transitionSpeed: 3000,
   glareEnable,
-  glareBorderRadius: '2.5rem',
+  glareBorderRadius: '5.5rem',
   glareMaxOpacity: 0.1,
   glareColor: 'rgb(189, 189, 189, 0.5)',
 };
 
 const myImgProps = {
-  glareBorderRadius: '2.5rem',
+  glareBorderRadius: '5.5rem',
   glareColor: 'rgb(189, 189, 189, 0.5)',
   glareEnable,
   glareMaxOpacity: 0.2,
@@ -23,7 +23,7 @@ const myImgProps = {
 };
 
 const techContainerProps = {
-  glareBorderRadius: '2.5rem',
+  glareBorderRadius: '5.5rem',
   glareColor: 'rgb(189, 189, 189, 0.5)',
   glareEnable,
   glareMaxOpacity: 0.2,
