@@ -17,7 +17,7 @@ export default function Projects() {
 
   return (
     <main>
-      <motion.div {...motionProps}>
+      <motion.div {...motionProps.pages}>
         <section className={`${styles.sectionFront}`}>
           <Tilt className={`${styles.imgFront} glass`} {...tiltProps.defaultProps}>
             <FrontImg />
