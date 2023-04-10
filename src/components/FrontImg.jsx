@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
-import frontImgs from '../utils/arrays/frontImgs ';
+import front from '../utils/arrays/frontArray';
 import Context from '../context/Context';
 import styles from './FrontImg.module.css';
 
@@ -22,7 +22,7 @@ export default function FrontImg() {
       if (frontIndex > 0) {
         setFrontIndex(frontIndex - 1);
       } else {
-        setFrontIndex(2);
+        setFrontIndex(1);
       }
       turnVisible();
     }, 500);
@@ -31,7 +31,7 @@ export default function FrontImg() {
   const handleRightArrow = () => {
     turnInvisible();
     setTimeout(() => {
-      if (frontIndex < 2) {
+      if (frontIndex < 1) {
         setFrontIndex(frontIndex + 1);
       } else {
         setFrontIndex(0);
@@ -44,24 +44,34 @@ export default function FrontImg() {
     <div className={styles.container}>
       <button
         type="button"
-        className="btnCircle"
+        className={styles.btn}
         onClick={() => {
           handleLeftArrow();
         }}
       >
-        <BiLeftArrow className="iconBtn" />
+        <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
 
-      <img ref={imgRef} className={styles.image} src={frontImgs[frontIndex]} alt='"projectImg"' />
+      <div>
+        <h2>{front[frontIndex].title}</h2>
+
+        <img ref={imgRef} className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
+
+        <div>
+          {front[frontIndex].techs.map((tech) => (
+            <span>{tech}</span>
+          ))}
+        </div>
+      </div>
 
       <button
         type="button"
-        className="btnCircle"
+        className={styles.btn}
         onClick={() => {
           handleRightArrow();
         }}
       >
-        <BiRightArrow className="iconBtn" />
+        <BiRightArrow className={`${styles.iconBtn} ${styles.iconRight}`} />
       </button>
     </div>
   );

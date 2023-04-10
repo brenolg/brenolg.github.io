@@ -1,14 +1,3 @@
-.body {
-  background: radial-gradient(
-      circle at center,
-      rgba(55, 122, 112, 0.6),
-      transparent
-    ),
-    linear-gradient(225deg, #07455d, transparent),
-    radial-gradient(circle at top, #07455d, transparent),
-    linear-gradient(0deg, #07455d, transparent);
-}
-
 .sectionFront {
   margin: auto;
   position: relative;
@@ -60,3 +49,4 @@
   left: 0px;
   border-radius: 50px;
 }
+

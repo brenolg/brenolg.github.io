@@ -14,8 +14,8 @@ export default function Cursor() {
       animate={{
         transition: {
           type: 'spring',
-          damping: 3,
-          stiffness: 7,
+          damping: 5,
+          stiffness: 25,
           restDelta: 0.0001,
         },
         x,

@@ -5,6 +5,8 @@ import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
 import styles from './Projects.module.css';
 import '../global.css';
+import tiltProps from '../utils/tiltProps';
+import motionProps from '../utils/motionProps';
 
 export default function Projects() {
   const { pathname } = useLocation();
@@ -14,84 +16,22 @@ export default function Projects() {
   }, [pathname]);
 
   return (
-    <motion.div
-      initial={{
-        width: 0,
-        opacity: 0,
-        transition: {
-          duration: 0.5,
-        },
-      }}
-      animate={{
-        width: '100%',
-        opacity: 1,
-        transition: {
-          duration: 1,
-        },
-      }}
-      exit={{
-        opacity: 0,
-        x: window.innerWidth,
-        transition: {
-          duration: 0.5,
-        },
-      }}
-    >
-      <main>
+    <main>
+      <motion.div {...motionProps}>
         <section className={`${styles.sectionFront}`}>
-          <Tilt
-            className={`${styles.imgFront} glass`}
-            perspective={2250}
-            tiltMaxAngleX={3}
-            tiltMaxAngleY={3}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          >
+          <Tilt className={`${styles.imgFront} glass`} {...tiltProps.defaultProps}>
             <FrontImg />
           </Tilt>
 
-          <Tilt
-            className={`${styles.textFront} glass`}
-            perspective={2250}
-            tiltMaxAngleX={3}
-            tiltMaxAngleY={3}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          />
+          <Tilt className={`${styles.textFront} glass`} {...tiltProps.defaultProps} />
         </section>
 
         <section className={`${styles.sectionBack}`}>
-          <Tilt
-            className={`${styles.imgBack} glass`}
-            perspective={2250}
-            tiltMaxAngleX={3}
-            tiltMaxAngleY={3}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          />
+          <Tilt className={`${styles.imgBack} glass`} {...tiltProps.defaultProps} />
 
-          <Tilt
-            className={`${styles.textBack} glass`}
-            perspective={2250}
-            tiltMaxAngleX={3}
-            tiltMaxAngleY={3}
-            transitionSpeed={3000}
-            glareEnable
-            glareBorderRadius="50px"
-            glareMaxOpacity={0.1}
-            glareColor="rgb(189, 189, 189)"
-          />
+          <Tilt className={`${styles.textBack} glass`} {...tiltProps.defaultProps} />
         </section>
-      </main>
-    </motion.div>
+      </motion.div>
+    </main>
   );
 }
