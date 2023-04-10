@@ -15,7 +15,7 @@ export default function Cursor() {
         transition: {
           type: 'spring',
           damping: 5,
-          stiffness: 25,
+          stiffness: 15,
           restDelta: 0.0001,
         },
         x,
