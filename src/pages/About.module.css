@@ -11,6 +11,7 @@
   linear-gradient(to left, transparent, rgb(var(--teal), 0.5)),
   linear-gradient(to right, transparent,  rgb(0, 64, 89));
   animation: moveBall 75s linear infinite;
+  animation-delay: 0.5s;
   offset-path: path(var(--aboutPath));
 }
 

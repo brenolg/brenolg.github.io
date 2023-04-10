@@ -19,7 +19,7 @@ export default function About() {
     <>
       <motion.div {...motionProps.ballMove} className="ball" id={styles.ballMove} />
 
-      <motion.div {...motionProps}>
+      <motion.div {...motionProps.pages}>
         <main>
           <section className={`${styles.img_section}`}>
             <div className="ball" id={styles.ball1} />
