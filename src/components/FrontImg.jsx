@@ -6,14 +6,14 @@ import styles from './FrontImg.module.css';
 
 export default function FrontImg() {
   const { frontIndex, setFrontIndex } = useContext(Context);
-  const imgRef = useRef();
+  const transition = useRef();
 
   const turnInvisible = () => {
-    imgRef.current.className = ` invisible ${styles.image}`;
+    transition.current.className = ` invisible ${styles.transitionContainer}`;
   };
 
   const turnVisible = () => {
-    imgRef.current.className = ` visible ${styles.image}`;
+    transition.current.className = ` visible ${styles.transitionContainer}`;
   };
 
   const handleLeftArrow = () => {
@@ -52,14 +52,14 @@ export default function FrontImg() {
         <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
 
-      <div>
-        <h2>{front[frontIndex].title}</h2>
+      <div ref={transition} className={styles.transitionContainer}>
+        <h2 className={styles.title}>{front[frontIndex].title}</h2>
 
-        <img ref={imgRef} className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
+        <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
 
-        <div>
+        <div className={`${styles.techsContainer}`}>
           {front[frontIndex].techs.map((tech) => (
-            <span>{tech}</span>
+            <span className={`${styles.techs}`}>{tech}</span>
           ))}
         </div>
       </div>

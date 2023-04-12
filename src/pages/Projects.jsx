@@ -9,29 +9,41 @@ import tiltProps from '../utils/tiltProps';
 import motionProps from '../utils/motionProps';
 
 export default function Projects() {
-  const { pathname } = useLocation();
+  const { route } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [route]);
 
   return (
     <main>
-      <motion.div {...motionProps.pages}>
-        <section className={`${styles.sectionFront}`}>
-          <Tilt className={`${styles.imgFront} glass`} {...tiltProps.defaultProps}>
+      <section className={`${styles.sectionFront}`}>
+        <Tilt {...tiltProps.defaultProps}>
+          <motion.div className={`${styles.imgFront} glass`} {...motionProps.mainContent}>
             <FrontImg />
-          </Tilt>
+          </motion.div>
+        </Tilt>
 
-          <Tilt className={`${styles.textFront} glass`} {...tiltProps.defaultProps} />
-        </section>
+        <Tilt {...tiltProps.defaultProps}>
+          <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
+            Text
+          </motion.div>
+        </Tilt>
+      </section>
 
-        <section className={`${styles.sectionBack}`}>
-          <Tilt className={`${styles.imgBack} glass`} {...tiltProps.defaultProps} />
+      <section className={`${styles.sectionBack}`}>
+        <Tilt {...tiltProps.defaultProps}>
+          <motion.div className={`${styles.imgBack} glass`} {...motionProps.mainContent}>
+            IMG
+          </motion.div>
+        </Tilt>
 
-          <Tilt className={`${styles.textBack} glass`} {...tiltProps.defaultProps} />
-        </section>
-      </motion.div>
+        <Tilt {...tiltProps.defaultProps}>
+          <motion.div className={`${styles.textBack} glass`} {...motionProps.mainContent}>
+            Text
+          </motion.div>
+        </Tilt>
+      </section>
     </main>
   );
 }

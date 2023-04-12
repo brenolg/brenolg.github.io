@@ -9,28 +9,30 @@ import '../global.css';
 import motionProps from '../utils/motionProps';
 
 export default function About() {
-  const { pathname } = useLocation();
+  const route = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [route]);
 
   return (
     <>
-      <motion.div {...motionProps.ballMove} className="ball" id={styles.ballMove} />
+      <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
 
-      <motion.div {...motionProps.pages}>
-        <main>
-          <section className={`${styles.img_section}`}>
-            <div className="ball" id={styles.ball1} />
-            <div className="ball" id={styles.ball2} />
-            <div className="ball" id={styles.ball3} />
+      <main>
+        <section className={`${styles.img_section}`}>
+          <motion.div className="ball" id={styles.ball1} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball2} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball3} {...motionProps.ballMove} />
 
-            <Tilt className={`${styles.img_container} glass`} {...tiltProps.myImgProps}>
+          <Tilt {...tiltProps.myImgProps}>
+            <motion.div className={`${styles.img_container} glass`} {...motionProps.mainContent}>
               <img className={`${styles.my_img} glass`} src={myImg} alt="foto breno" />
-            </Tilt>
+            </motion.div>
+          </Tilt>
 
-            <Tilt className={`${styles.main_description} glass`} {...tiltProps.defaultProps}>
+          <Tilt {...tiltProps.defaultProps}>
+            <motion.div className={`${styles.main_description} glass`} {...motionProps.mainContent}>
               <h2 className={`${styles.titles}`}>Vida Profissional</h2>
               <p className={`${styles.p}`}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis commodi
@@ -43,16 +45,18 @@ export default function About() {
                 quaerat, voluptatem alias! Libero dolorum quia molestiae qui ducimus perferendis
                 labore possimus, ad non, voluptatem nesciunt?
               </p>
-            </Tilt>
-          </section>
+            </motion.div>
+          </Tilt>
+        </section>
 
-          <section className={`${styles.relativSection}`}>
-            <div className="ball" id={styles.ball4} />
-            <div className="ball" id={styles.ball5} />
+        <section className={`${styles.relativSection}`}>
+          <motion.div className="ball" id={styles.ball4} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball5} {...motionProps.ballMove} />
 
-            <Tilt
+          <Tilt {...tiltProps.defaultProps}>
+            <motion.div
               className={`${styles.professional_description} glass`}
-              {...tiltProps.defaultProps}
+              {...motionProps.mainContent}
             >
               <h2 className={`${styles.titles}`}>Curiosidades...</h2>
               <p className={`${styles.p} `}>
@@ -66,10 +70,10 @@ export default function About() {
                 quaerat, voluptatem alias! Libero dolorum quia molestiae qui ducimus perferendis
                 labore possimus, ad non, voluptatem nesciunt?
               </p>
-            </Tilt>
-          </section>
-        </main>
-      </motion.div>
+            </motion.div>
+          </Tilt>
+        </section>
+      </main>
     </>
   );
 }

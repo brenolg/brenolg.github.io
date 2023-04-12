@@ -8,7 +8,7 @@
   position: absolute;
   top: -7vh;
   width: 12rem;
-  z-index: -20;
+  z-index: -2;
   background: 
   radial-gradient(ellipse at top,rgb(var(--grey), 0.6), transparent),
   radial-gradient(ellipse at bottom,rgb(0, 64, 89, 0.8), transparent),
@@ -251,7 +251,7 @@
   flex-direction: column;
   justify-content: space-around;
   width: 60vw;
-  z-index: 3;
+  z-index: 2;
 }
 
 .repos_preview img {
@@ -285,7 +285,7 @@
   margin-top: -3.5%;
   padding: 1em;
   width: 50vw;
-  z-index: 4;
+  z-index: 2;
 }
 
 #ball7 {

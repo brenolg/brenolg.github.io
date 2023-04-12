@@ -11,24 +11,24 @@ import '../global.css';
 import motionProps from '../utils/motionProps';
 
 export default function Home() {
-  const { pathname } = useLocation();
+  const route = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [route]);
 
   return (
     <>
-      <motion.div {...motionProps.ballMove} className="ball" id={styles.ballMove} />
+      <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
 
-      <motion.div {...motionProps.pages}>
-        <main>
-          <div className={`${styles.profile_container}`}>
-            <div className="ball" id={styles.ball1} />
-            <div className="ball" id={styles.ball2} />
-            <div className="ball" id={styles.ball3} />
+      <main>
+        <div className={`${styles.profile_container}`}>
+          <motion.div className="ball" id={styles.ball1} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball2} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball3} {...motionProps.ballMove} />
 
-            <Tilt className={`${styles.profile} glass`} {...tiltProps.defaultProps}>
+          <Tilt {...tiltProps.defaultProps}>
+            <motion.div className={`${styles.profile} glass`} {...motionProps.ballMove}>
               <div className={styles.img_border}>
                 <img className={styles.my_img} src={fotoBreno} alt="Foto Breno Lavalle Garrido" />
               </div>
@@ -54,26 +54,32 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-            </Tilt>
-          </div>
-          <section className={styles.hard_skills}>
-            <div className="ball" id={styles.ball4} />
-            <div className="ball" id={styles.ball5} />
-            <div className="ball" id={styles.ball6} />
-            <div className="ball" id={styles.ball7} />
+            </motion.div>
+          </Tilt>
+        </div>
 
-            <Tilt className={`${styles.repos_preview} glass`} {...tiltProps.defaultProps}>
+        <section className={styles.hard_skills}>
+          <motion.div className="ball" id={styles.ball4} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball5} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball6} {...motionProps.ballMove} />
+          <motion.div className="ball" id={styles.ball7} {...motionProps.ballMove} />
+
+          <Tilt {...tiltProps.defaultProps}>
+            <motion.div className={`${styles.repos_preview} glass`} {...motionProps.ballMove}>
               <img src={StarWars} alt="Projects Gifts" />
               <button className={styles.btn} type="button">
                 Projects Page
               </button>
-            </Tilt>
-            <Tilt className={` glass ${styles.stacks_container}`} {...tiltProps.techContainerProps}>
+            </motion.div>
+          </Tilt>
+
+          <Tilt className={` glass ${styles.stacks_container}`} {...tiltProps.techContainerProps}>
+            <motion.div className={` glass ${styles.stacks_container}`} {...motionProps.ballMove}>
               <Techs />
-            </Tilt>
-          </section>
-        </main>
-      </motion.div>
+            </motion.div>
+          </Tilt>
+        </section>
+      </main>
     </>
   );
 }
