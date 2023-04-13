@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Techs from '../components/Techs';
 import fotoBreno from '../images/fotoBreno.png';
@@ -19,16 +18,16 @@ export default function Home() {
 
   return (
     <>
-      <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
+      <div className="ball asideContent" id={styles.ballMove} />
 
       <main>
         <div className={`${styles.profile_container}`}>
-          <motion.div className="ball" id={styles.ball1} {...motionProps.ballMove} />
-          <motion.div className="ball" id={styles.ball2} {...motionProps.ballMove} />
-          <motion.div className="ball" id={styles.ball3} {...motionProps.ballMove} />
+          <div className="ball asideContent" id={styles.ball1} {...motionProps.ballMove} />
+          <div className="ball asideContent" id={styles.ball2} {...motionProps.ballMove} />
+          <div className="ball asideContent" id={styles.ball3} {...motionProps.ballMove} />
 
           <Tilt {...tiltProps.defaultProps}>
-            <motion.div className={`${styles.profile} glass`} {...motionProps.ballMove}>
+            <div className={`${styles.profile} glass mainContent`}>
               <div className={styles.img_border}>
                 <img className={styles.my_img} src={fotoBreno} alt="Foto Breno Lavalle Garrido" />
               </div>
@@ -54,29 +53,29 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </Tilt>
         </div>
 
         <section className={styles.hard_skills}>
-          <motion.div className="ball" id={styles.ball4} {...motionProps.ballMove} />
-          <motion.div className="ball" id={styles.ball5} {...motionProps.ballMove} />
-          <motion.div className="ball" id={styles.ball6} {...motionProps.ballMove} />
-          <motion.div className="ball" id={styles.ball7} {...motionProps.ballMove} />
+          <div className="ball asideContent" id={styles.ball4} />
+          <div className="ball asideContent" id={styles.ball5} />
+          <div className="ball asideContent" id={styles.ball6} />
+          <div className="ball asideContent" id={styles.ball7} />
 
           <Tilt {...tiltProps.defaultProps}>
-            <motion.div className={`${styles.repos_preview} glass`} {...motionProps.ballMove}>
+            <div className={`${styles.repos_preview} glass mainContent`} {...motionProps.ballMove}>
               <img src={StarWars} alt="Projects Gifts" />
               <button className={styles.btn} type="button">
                 Projects Page
               </button>
-            </motion.div>
+            </div>
           </Tilt>
 
-          <Tilt className={` glass ${styles.stacks_container}`} {...tiltProps.techContainerProps}>
-            <motion.div className={` glass ${styles.stacks_container}`} {...motionProps.ballMove}>
+          <Tilt {...tiltProps.techContainerProps}>
+            <div className={` glass mainContent${styles.stacks_container}`}>
               <Techs />
-            </motion.div>
+            </div>
           </Tilt>
         </section>
       </main>

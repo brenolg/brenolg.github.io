@@ -83,7 +83,7 @@
 .img_border {
   align-items: center;
   animation-play-state: running;
-  animation: rotate 2.5s linear 0s infinite;
+  animation: rotate 8s linear 0s infinite;
   background: linear-gradient(45deg, rgb(var(--blue)), rgb(var(--teal), 0.7));
   border-radius: 50%;
   box-shadow: 0px 0px 3rem rgb(0, 0, 0);
@@ -95,7 +95,7 @@
 }
 
 .my_img {
-  animation: rotate 2.5s linear 0s infinite reverse;
+  animation: rotate 8s linear 0s infinite reverse;
   border-radius: inherit;
   height: 80%;
   width: 80%;

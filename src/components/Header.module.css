@@ -11,14 +11,15 @@ header {
 	padding: 1em 0px;
 	width: 42%;
 	z-index: 2;
+	top: -30vh;
 	position: sticky;
-	animation: forwards ease-in-out moveHeader 3s;
+	animation: forwards ease-in-out moveHeader 2s;
 }
 
 @keyframes moveHeader {
   0% {
-		top: -30vh;
 		opacity: 0;
+		top: -30vh;
   }
   100% {
 		opacity: 1;
