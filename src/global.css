@@ -25,11 +25,7 @@ body {
   width: 100vw;
   background: radial-gradient(circle at center,
     rgb(17, 46, 50), transparent),
-    linear-gradient(0deg, transparent, #063145),
-    linear-gradient(90deg, transparent, #042438),
-    linear-gradient(135deg, transparent, rgb(11, 74, 108)),
-    linear-gradient(225deg, transparent, rgb(31, 92, 92)),
-    linear-gradient(270deg, transparent, rgb(24, 37, 152));
+    #042438; 
 }
 
 main {
@@ -37,53 +33,28 @@ main {
   margin-top: 20vh;
 }
 
-.mainContent {
-  animation: render 1s forwards;
-}
-
-.asideContent {
-  animation: render 1s forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes render {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
 .glass {
   backdrop-filter: blur(100px);
   border: 2px solid rgb(255, 255, 255, 0.2);
   box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.8);
-  opacity: opacity 0.8;
-  transition: all 1s ease-in-out;
-}
-
-.glass:hover {
-  box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
+  opacity: 0.8;
 }
 
 .ball {
-  animation-duration: 12s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-name: rotate;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
   border-radius: 50%;
   position: absolute;
   box-shadow: 0px 0px 150px 10px rgb(0, 0, 0, 0.9);
 }
 
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -121,5 +92,3 @@ button{
 ::-webkit-scrollbar-track {
   border-radius: 100%;
 }
-
-

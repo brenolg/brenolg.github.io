@@ -46,7 +46,6 @@ header {
 	color: var(--font);
 	padding: 0.7em 0.9em 0.7em calc(0.9em + 3px);
 	transform: translate(-0%,0%) scale(1);
-  cursor: pointer;
   font-size: 1.6rem;
   transition: all 0.3s linear;
 	font-size: inherit;
@@ -73,7 +72,6 @@ header {
 }
 
 .btn:hover {
-	cursor: pointer;
 	transition: all 0.8s;
 		box-shadow:
 		/* active */

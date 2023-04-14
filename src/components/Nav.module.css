@@ -42,7 +42,6 @@
   background: none;
   padding: .8em;
   border-radius: 50%;
-  cursor: pointer;
   transition: all 0.3s linear;
   box-shadow:
 		/* active */
@@ -63,7 +62,6 @@
 }
 
 .btn:hover {
-	cursor: pointer;
 	transition: all 0.8s;
 		box-shadow:
 		/* active */
