@@ -2,34 +2,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: orange;
+  background: orangered;
   z-index: -1;
   height: 5px;
   width: 5px;
   border-radius: 50%;
   pointer-events: none;
   box-shadow: 
-  0 0 20px 20px rgb(176, 53, 0, 0.5),
-  0 0 40px orangered,
+  0 0 20px 20px  rgb(176, 53, 0, 0.5),
+  0 0 40px  orangered,
   0 0 80px orangered,
   0 0 100px orangered;
-  animation: colors 5s infinite alternate-reverse;
+  animation: colors 6s infinite alternate-reverse;
   position: absolute;
 }
 
 @keyframes  colors {
   0% {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(30deg);
   }
   100% {
-    filter: hue-rotate(180deg) ;
+    filter: hue-rotate(190deg) ;
   }
 }
 
 .border {
   height: 30px;
   width: 30px;
-  background-color: aquamarine;
+  background-color:aquamarine;
   position: absolute;
   border-radius: 50%;
   top: 50%;

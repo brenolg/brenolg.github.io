@@ -41,7 +41,7 @@ main {
 }
 
 .ball {
-  animation-duration: 20s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-name: rotate;
   animation-timing-function: linear;
