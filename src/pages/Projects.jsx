@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
-import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
 import styles from './Projects.module.css';
 import '../global.css';
-import tiltProps from '../utils/tiltProps';
 import motionProps from '../utils/motionProps';
 
 export default function Projects() {
@@ -18,31 +16,23 @@ export default function Projects() {
   return (
     <main>
       <section className={`${styles.sectionFront}`}>
-        <Tilt {...tiltProps.defaultProps}>
-          <motion.div className={`${styles.imgFront} glass`} {...motionProps.mainContent}>
-            <FrontImg />
-          </motion.div>
-        </Tilt>
+        <motion.div className={`${styles.imgFront} glass`} {...motionProps.mainContent}>
+          <FrontImg />
+        </motion.div>
 
-        <Tilt {...tiltProps.defaultProps}>
-          <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
-            Text
-          </motion.div>
-        </Tilt>
+        <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
+          Text
+        </motion.div>
       </section>
 
       <section className={`${styles.sectionBack}`}>
-        <Tilt {...tiltProps.defaultProps}>
-          <motion.div className={`${styles.imgBack} glass`} {...motionProps.mainContent}>
-            IMG
-          </motion.div>
-        </Tilt>
+        <motion.div className={`${styles.imgBack} glass`} {...motionProps.mainContent}>
+          IMG
+        </motion.div>
 
-        <Tilt {...tiltProps.defaultProps}>
-          <motion.div className={`${styles.textBack} glass`} {...motionProps.mainContent}>
-            Text
-          </motion.div>
-        </Tilt>
+        <motion.div className={`${styles.textBack} glass`} {...motionProps.mainContent}>
+          Text
+        </motion.div>
       </section>
     </main>
   );

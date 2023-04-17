@@ -1,20 +1,20 @@
 #nav {
-  font-size: 4rem;
-  border: 2px solid rgb(255, 255, 255, 0.2);
-  border-radius: 50em;
-  backdrop-filter: blur(70px);
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.8);
-  opacity: opacity 0.5;
-  position: fixed;
-  animation: forwards ease-in-out moveNav 5s;
-  right: 5vw;
-  height: 7em;
-  padding: 0em 0.2em;
-  transition: all 0.8s ease-in-out;
   align-items: center;
+  animation: forwards ease-in-out moveNav 5s;
+  backdrop-filter: blur(70px);
+  border-radius: 50em;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
+  font-size: 4rem;
+  height: 7em;
   justify-content: space-evenly;
+  opacity: opacity 0.5;
+  padding: 0em 0.2em;
+  position: fixed;
+  right: 5vw;
+  transition: all 0.8s ease-in-out;
   z-index: 2;
 }
 
@@ -32,16 +32,16 @@
 }
 
 #nav:hover {
-  box-shadow: 0px 0px 20px 3px rgb(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 4rem 0.03rem rgb(0, 0, 0, 0.8);
 }
 
 .btn {
-  position: relative;
-  font-size: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   background: none;
-  padding: .8em;
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: inherit;
+  padding: .8em;
+  position: relative;
   transition: all 0.3s linear;
   box-shadow:
 		/* active */
@@ -95,10 +95,10 @@
 
 .iconBtn {
   color: var(--font);
-  transition: all 0.5s ease;
+  left: 20%;
   position: absolute;
   top: 20%;
-  left: 20%;
+  transition: all 0.5s ease;
 }
 
 .btn:hover .iconBtn {

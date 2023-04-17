@@ -51,16 +51,18 @@ export default function FrontImg() {
       >
         <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
-
       <div ref={transition} className={styles.transitionContainer}>
         <h2 className={styles.title}>{front[frontIndex].title}</h2>
-
         <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
-
         <div className={`${styles.techsContainer}`}>
           {front[frontIndex].techs.map((tech) => (
-            <span className={`${styles.techs}`}>{tech}</span>
+            <span className={`${styles.techsSpan}`}>{tech}</span>
           ))}
+        </div>
+
+        <div className={`${styles.buttonsContainer}`}>
+          <button type="button">Github</button>
+          <button type="button">Page</button>
         </div>
       </div>
 

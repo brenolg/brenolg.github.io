@@ -6,12 +6,10 @@ header {
 	display: flex;
 	font-size: 1.6rem;
 	justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
-	padding: 1em 0px;
+  margin: auto;
+	padding: 1em 0;
 	width: 42%;
 	z-index: 2;
-	top: -30vh;
 	position: sticky;
 	animation: forwards ease-in-out moveHeader 2s;
 }
@@ -28,15 +26,11 @@ header {
 }
 
 .glass {
-	backdrop-filter: blur(200px);
+	backdrop-filter: blur(20rem);
 	border: 2px solid rgb(255, 255, 255, 0.2);
 	box-shadow: 0px 0px 3rem rgb(0, 0, 0, 0.8);
 	opacity: 1;
 	transition: all 1s ease;
-}
-
-.glass:hover {
-	box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
 }
 
 .btn  {
@@ -48,9 +42,8 @@ header {
 	transform: translate(-0%,0%) scale(1);
   font-size: 1.6rem;
   transition: all 0.3s linear;
-	font-size: inherit;
 	font-weight: 900;
-	letter-spacing: 5px;
+	letter-spacing: 0.7ch;
 	text-shadow: 0px 0px 1px rgb(255, 255, 255);
 	text-transform: uppercase;
 		box-shadow:
