@@ -67,21 +67,21 @@
 .img_section {
   margin: auto;
   position: relative;
-  width: 70vw;
+  max-width: 70vw;
 }
 
 .img_container{
   border-radius: 5.5rem;
   margin-bottom: -30%;
-  margin-left: 40vw;
-  width: 30vw;
+  margin-left: auto;
+  max-width: 30vw;
 }
 
 .my_img {
   border-radius: inherit;
   margin: auto;
   opacity: 0.7;
-  width: 100%;
+  max-width: 100%;
 }
 
 .main_description {
@@ -93,24 +93,22 @@
   font-weight: 900;
   justify-content: space-around;
   margin-bottom: 20vh;
-  margin-right: 20vw;
   padding: 6em;
   text-align: justify;
-  width: 50vw;
+  max-width: 50vw;
 }
 
 .titles {
   font-size: 3.1rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.2ch;
   padding: 0 0 1.5em;
   text-shadow: 0px 0px 5px black
 }
 
 .p {
-  pointer-events: none;
   font-size: 2rem;
-  letter-spacing: 3px;
-  line-height: 3.2rem;
+  letter-spacing: 0.3ch;
+  line-height: 5ch;
   padding: 0 2em;
 }
 
@@ -137,9 +135,9 @@
   justify-content: space-around;
   margin-bottom: 20em;
   margin-left: 25vw;
+  max-width: 60vw;
   padding: 6em;
   text-align: justify;
-  width: 60vw;
 }
 
 #ball5 {
