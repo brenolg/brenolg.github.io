@@ -5,7 +5,6 @@ import Techs from '../components/Techs';
 import fotoBreno from '../images/fotoBreno.png';
 import StarWars from '../images/star-wars.gif';
 import styles from './Home.module.css';
-import '../global.css';
 import motionProps from '../utils/motionProps';
 
 export default function Home() {

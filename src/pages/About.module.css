@@ -1,15 +1,15 @@
 #ballMove {
   box-shadow: 0px 0px 5rem 10px rgb(0, 0, 0, 0.6);
-  height:10rem;
+  height: 10rem;
   width: 10rem;
   position: absolute;
   top: -2vh;
   left: 0;
-  background: 
-  radial-gradient(ellipse at top, rgb(var(--teal), 0.6), transparent),
-  radial-gradient(ellipse at bottom,rgb(var(--orange),0.8), transparent),
-  linear-gradient(to left, transparent, rgb(var(--teal), 0.5)),
-  linear-gradient(to right, transparent,  rgb(0, 64, 89));
+  background:
+    radial-gradient(ellipse at top, rgb(var(--teal), 0.6), transparent),
+    radial-gradient(ellipse at bottom, rgb(var(--orange), 0.8), transparent),
+    linear-gradient(to left, transparent, rgb(var(--teal), 0.5)),
+    linear-gradient(to right, transparent, rgb(0, 64, 89));
   animation: moveBall 120s linear infinite;
   animation-delay: 0.5s;
   offset-path: path(var(--aboutPath));
@@ -20,15 +20,19 @@
     offset-distance: 0%;
     scale: 1;
   }
+
   25% {
     scale: 3;
   }
+
   50% {
     scale: 1;
   }
+
   70% {
     scale: 4;
   }
+
   100% {
     offset-distance: 100%;
     scale: 1;
@@ -36,7 +40,7 @@
 }
 
 #ball1 {
-  height:50rem;
+  height: 50rem;
   right: 10%;
   top: -12%;
   width: 50rem;
@@ -61,7 +65,7 @@
   right: 21%;
   width: 20rem;
   background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
-  linear-gradient(315deg, rgb(var(--blue)), transparent);
+    linear-gradient(315deg, rgb(var(--blue)), transparent);
 }
 
 .img_section {
@@ -70,7 +74,7 @@
   max-width: 70vw;
 }
 
-.img_container{
+.img_container {
   border-radius: 5.5rem;
   margin-bottom: -30%;
   margin-left: auto;
@@ -100,15 +104,12 @@
 
 .titles {
   font-size: 3.1rem;
-  letter-spacing: 0.2ch;
   padding: 0 0 1.5em;
   text-shadow: 0px 0px 5px black
 }
 
 .p {
   font-size: 2rem;
-  letter-spacing: 0.3ch;
-  line-height: 5ch;
   padding: 0 2em;
 }
 
@@ -125,7 +126,7 @@
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
-.professional_description{
+.professional_description {
   align-items: center;
   border-radius: 5.5rem;
   color: var(--font);

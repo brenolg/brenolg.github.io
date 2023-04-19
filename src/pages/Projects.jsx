@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
 import styles from './Projects.module.css';
-import '../global.css';
 import motionProps from '../utils/motionProps';
+import FrontText from '../components/FrontText';
 
 export default function Projects() {
   const { route } = useLocation();
@@ -21,7 +21,7 @@ export default function Projects() {
         </motion.div>
 
         <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
-          Text
+          <FrontText />
         </motion.div>
       </section>
 

@@ -41,34 +41,36 @@ export default function FrontImg() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <button
         type="button"
-        className={styles.btn}
+        className={`${styles.btn} ${styles.transitionBtn}`}
         onClick={() => {
           handleLeftArrow();
         }}
       >
         <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
-      <div ref={transition} className={styles.transitionContainer}>
-        <h2 className={styles.title}>{front[frontIndex].title}</h2>
-        <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
-        <div className={`${styles.techsContainer}`}>
-          {front[frontIndex].techs.map((tech) => (
-            <span className={`${styles.techsSpan}`}>{tech}</span>
-          ))}
+      <div className={styles.subContainer}>
+        <div ref={transition} className={styles.transitionContainer}>
+          <h2 className={styles.title}>{front[frontIndex].title}</h2>
+          <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
         </div>
 
         <div className={`${styles.buttonsContainer}`}>
-          <button type="button">Github</button>
-          <button type="button">Page</button>
+          <button className={`${styles.btn} ${styles.btnText}`} type="button">
+            Preview
+          </button>
+
+          <button className={`${styles.btn} ${styles.btnText}`} type="button">
+            Repositório
+          </button>
         </div>
       </div>
 
       <button
         type="button"
-        className={styles.btn}
+        className={`${styles.btn} ${styles.transitionBtn}`}
         onClick={() => {
           handleRightArrow();
         }}

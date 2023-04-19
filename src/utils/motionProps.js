@@ -8,7 +8,7 @@ const mainContent = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
   exit: {
@@ -24,21 +24,21 @@ const ball = {
     opacity: 0,
     transition: {
       duration: 0.5,
-      delay: 0.5,
+      delay: 0.3,
     },
   },
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
-      delay: 0.5,
+      duration: 0.5,
+      delay: 0.3,
     },
   },
   exit: {
     opacity: 0,
     transition: {
       duration: 0.5,
-      delay: 0.5,
+      delay: 0.3,
     },
   },
 };
@@ -47,17 +47,37 @@ const ballMove = {
   initial: {
     opacity: 0,
     transition: {
-      duration: 1,
+      duration: 0.7,
+      delay: 0.3,
     },
   },
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.7,
+      delay: 0.3,
     },
   },
   exit: {
     opacity: 0,
+    transition: {
+      duration: 0.7,
+      delay: 0.3,
+    },
+  },
+};
+
+const header = {
+  initial: {
+    y: '-30vh',
+    opacity: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  animate: {
+    y: '0vh',
+    opacity: 1,
     transition: {
       duration: 1,
     },
@@ -65,7 +85,7 @@ const ballMove = {
 };
 
 const motionProps = {
-  ballMove, mainContent, ball,
+  ballMove, mainContent, ball, header,
 };
 
 export default motionProps;

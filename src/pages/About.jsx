@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './About.module.css';
 import myImg from '../images/brenoSobre.png';
-import '../global.css';
 import motionProps from '../utils/motionProps';
 
 export default function About() {
