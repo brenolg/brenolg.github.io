@@ -9,13 +9,12 @@ const starWars = {
 };
 
 const two = {
-  title: 'test',
-  img: {
-    starWarsImg,
-  },
-  description: '2',
-  techs: [['2'], ['3'], ['tree']],
-  funcionalidades: [['2222'], [21212], ['dsdsd']],
+  title: 'Test',
+  img: 'starWarsImg',
+  description: ['D TEST.'],
+  techs: ['Test', 'Javascript', 'Context', 'Hooks', 'UseEffec', 'RTL', 'Jest', 'HTML', 'CSS'],
+  functionalities: ['F Test'],
+  ps: ['PS:', 'Aplicação em desenvolvimento'],
 };
 
 const front = [starWars, two];

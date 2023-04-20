@@ -12,14 +12,14 @@ export default function Cursor() {
       ref={cursor}
       className={styles.cursor}
       animate={{
-        transition: {
-          type: 'spring',
-          damping: 5,
-          stiffness: 15,
-          restDelta: 0.0001,
-        },
         x,
         y,
+      }}
+      transition={{
+        type: 'spring',
+        damping: 5,
+        stiffness: 15,
+        restDelta: 0.0001,
       }}
     >
       <div className={styles.border} />

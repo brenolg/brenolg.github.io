@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useRef, useState, useEffect } from 'react';
 import front from '../utils/arrays/frontArray';
 import Context from '../context/Context';
 import styles from './FrontText.module.css';
@@ -7,27 +7,42 @@ export default function FrontText() {
   const { frontIndex } = useContext(Context);
   const transition = useRef();
   const [textState, setStateText] = useState('description');
-  const [text, setText] = useState(front[frontIndex].description);
+  const [textIndex, setTextIndex] = useState(frontIndex);
+  const [text, setText] = useState(front[textIndex].description);
 
-  // const turnInvisible = () => {
-  //   transition.current.className = ` invisible ${styles.transitionContainer}`;
-  // };
+  const turnInvisible = async () => {
+    transition.current.className = ` invisible ${styles.transitionContainer}`;
+  };
 
-  // const turnVisible = () => {
-  //   transition.current.className = ` visible ${styles.transitionContainer}`;
-  // };
+  const turnVisible = async () => {
+    transition.current.className = ` visible ${styles.transitionContainer}`;
+  };
+
+  const asyncInvisible = async () => {
+    await turnInvisible();
+
+    setTimeout(async () => {
+      if (textState === 'functionalities') {
+        setTextIndex(frontIndex);
+        setText(front[textIndex].functionalities);
+      }
+      if (textState === 'description') {
+        setTextIndex(frontIndex);
+        setText(front[textIndex].description);
+      }
+      await turnVisible();
+    }, 500);
+  };
+
+  useEffect(() => {
+    asyncInvisible();
+  }, [frontIndex, textState, textIndex]);
 
   const handleTextView = async ({ target }) => {
     const { name } = target;
-    setStateText(name);
 
     if (textState !== name) {
-      if (name === 'functionalities') {
-        setText(front[frontIndex].functionalities);
-      }
-      if (name === 'description') {
-        setText(front[frontIndex].description);
-      }
+      setStateText(name);
     }
   };
 
@@ -37,12 +52,19 @@ export default function FrontText() {
         {text.map((phrase) => (
           <p>{phrase}</p>
         ))}
-      </div>
 
-      <div className={`${styles.techsContainer}`}>
-        {front[frontIndex].techs.map((tech) => (
-          <span className={`${styles.techsSpan}`}>{tech}</span>
-        ))}
+        {front[textIndex].ps && (
+          <p>
+            <span className={styles.psSpan}>{front[textIndex].ps[0]}</span>
+            <span>{front[textIndex].ps[1]}</span>
+          </p>
+        )}
+
+        <div className={`${styles.techsContainer}`}>
+          {front[textIndex].techs.map((tech) => (
+            <span className={`${styles.techsSpan}`}>{tech}</span>
+          ))}
+        </div>
       </div>
 
       <div className={styles.btnsContainer}>
