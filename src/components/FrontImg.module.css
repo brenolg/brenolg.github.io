@@ -1,25 +1,58 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 3rem;
+.mainContainer {
+	color: var(--font);
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.subContainer {
+	color: var(--font);
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.transitionContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	transition: all 0.5s ease-in-out;
+	height: 42rem;
+}
+
+.title {
+	padding: 4rem 0;
+	font-size: 4rem;
+	font-weight: 900;
+	text-shadow: 0px 0px 3px rgb(6, 17, 52), 0px 0px 3px black, 0px 0px 3px black;
 }
 
 .image {
-  transition: all 0.5s ease-in-out;
+	border-radius: 2.5rem;
+	width: 100%;
+}
+
+.buttonsContainer {
+	align-items: center;
+	margin: 4rem 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
 }
 
 .btn {
-  position: relative;
-  font-size: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: none;
-  padding: .8em;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s linear;
-  box-shadow:
+	background: none;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 2.6rem;
+	padding: .8em;
+	position: relative;
+	transition: all 0.3s linear;
+	box-shadow:
 		/* active */
 		inset -2px -2px 6px rgba(255, 255, 255, 0),
 		inset -2px -2px 4px rgba(255, 255, 255, 0),
@@ -29,26 +62,25 @@
 		/* hover */
 		-0px -0px 10px 5px rgba(0, 0, 0, 0),
 		inset 3px 3px 4px rgb(255, 255, 255, 0),
-	  /* default */
+		/* default */
 		-3px -3px 8px rgba(0, 0, 0, 0.1),
 		-2px -2px 8px rgba(0, 0, 0, 0.1),
 		3px 3px 2px 1px rgba(90, 90, 90, 0.075),
 		2px 2px 4px rgba(105, 105, 105, 0.1),
-		inset 3px 3px 8px 1px rgb(255, 255, 255, 0.6);
+		inset 3px 3px 7px 1px rgb(255, 255, 255, 0.5);
 }
 
 .btn:hover {
-	cursor: pointer;
 	transition: all 0.8s;
-		box-shadow:
+	box-shadow:
 		/* active */
 		inset -2px -2px 6px rgba(255, 255, 255, 0),
 		inset -2px -2px 4px rgba(255, 255, 255, 0),
 		inset 2px 2px 2px rgba(255, 255, 255, 0),
 		inset 2px 2px 4px rgba(0, 0, 0, 0),
 		inset 2px 2px 4px rgba(0, 0, 0, 0),
-	  /* hover */
-		-0px -0px 10px 10px rgba(0, 0, 0, 0.5),
+		/* hover */
+		-0px -0px 10px 10px rgba(0, 0, 0, 0.3),
 		inset 3px 3px 4px rgb(255, 255, 255, 0.5),
 		/* default */
 		-3px -3px 8px rgba(0, 0, 0, 0),
@@ -59,10 +91,10 @@
 }
 
 .btn:active {
-	transform: translate(-2%,-2%) scale(.98);
+	transform: translate(-2%, -2%) scale(.98);
 	transition: box-shadow 0.3s, transform 0.1s;
 	box-shadow:
-		inset -2px -2px 6px rgba(255, 255, 255, .7),
+		inset -2px -2px 6px rgba(255, 255, 255, 0.6),
 		inset -2px -2px 4px rgba(255, 255, 255, .5),
 		inset 2px 2px 2px rgba(255, 255, 255, .075),
 		inset 2px 2px 4px rgba(0, 0, 0, .15),
@@ -70,25 +102,35 @@
 		-0px -0px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
+.transitionBtn {
+	margin: 0 5%;
+}
+
 .iconBtn {
-  color: var(--font);
-  transition: all 0.5s ease; 
+	color: var(--font);
+	transition: all 0.5s ease;
 }
 
 .iconLeft {
-  top: 55%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-55%, -55%);
+	left: 50%;
+	position: absolute;
+	top: 55%;
+	transform: translate(-55%, -55%);
 }
 
 .iconRight {
-  top: 55%;
-  left: 59%;
-  position: absolute;
-  transform: translate(-55%, -55%);
+	left: 59%;
+	position: absolute;
+	top: 55%;
+	transform: translate(-55%, -55%);
 }
 
-.btn:hover .iconBtn {
-  color:rgb(0, 24, 34);
+.btnText {
+	padding: 0.4em 0.6em 0.4em calc(0.6em + 6px);
+	letter-spacing: 0.45ch;
+	font-weight: 900;
+	color: var(--font);
+	font-size: 2.2rem;
+	border-radius: 0.7em;
+	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
 }

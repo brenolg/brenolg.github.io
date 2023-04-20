@@ -1,35 +1,36 @@
 dl {
-align-items: center;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-evenly;
-margin: auto;
-margin-bottom: 5em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-bottom: 5rem;
 }
 
 dt {
-font-size: 6.5rem;
-margin-top: 0.5em;
-padding: 0.03em 0.3em;
-transition: all 3s;
+  font-size: 6.5rem;
+  margin-top: 0.5em;
+  padding: 0.03em 0.3em;
+  transition: all 3s;
 }
 
 dd {
-color: var(--font);
-font-size: 1.6rem;
-font-weight: bold;
-letter-spacing: 2px;
-text-align: center;
+  color: var(--font);
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.5ch;
+  text-align: center;
+  text-shadow: 0px 0px 1px rgb(255, 255, 255), 0px 0px 1px rgb(255, 255, 255);
 }
 
 .techs {
-color:rgb(3, 25, 37);
-transition: all 1s;
+  color: rgb(2, 21, 32);
+  transition: all 1s;
 }
 
 .tilt:hover .techs,
 .tilt:hover dd {
-color: var(--font);
-cursor: pointer;
+  color: var(--font);
+  cursor: pointer;
 }

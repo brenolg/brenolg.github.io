@@ -1,50 +1,91 @@
-const pages = {
+const mainContent = {
   initial: {
-    width: 0,
-    opacity: 1,
+    opacity: 0,
     transition: {
       duration: 0.5,
     },
   },
   animate: {
-    width: '100%',
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
   exit: {
     opacity: 0,
-    x: window.innerWidth,
     transition: {
       duration: 0.5,
+    },
+  },
+};
+
+const ball = {
+  initial: {
+    opacity: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
+    },
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
     },
   },
 };
 
 const ballMove = {
   initial: {
-    opacity: 1,
+    opacity: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.7,
+      delay: 0.3,
     },
   },
   animate: {
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.7,
+      delay: 0.3,
     },
   },
   exit: {
     opacity: 0,
     transition: {
+      duration: 0.7,
+      delay: 0.3,
+    },
+  },
+};
+
+const header = {
+  initial: {
+    y: '-30vh',
+    opacity: 0,
+    transition: {
       duration: 0.5,
+    },
+  },
+  animate: {
+    y: '0vh',
+    opacity: 1,
+    transition: {
+      duration: 1,
     },
   },
 };
 
 const motionProps = {
-  ballMove, pages,
+  ballMove, mainContent, ball, header,
 };
 
 export default motionProps;

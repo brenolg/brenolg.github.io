@@ -6,43 +6,46 @@ header {
 	display: flex;
 	font-size: 1.6rem;
 	justify-content: space-evenly;
-	margin: 0em auto 12em;
-	padding: 1em 0px;
-	position: sticky;
-	top: 0;
-	transition: all 0.8s ease-in-out;
-	width: 42%;
+	margin: auto;
+	margin-bottom: 20vh;
+	padding: 1em 3em;
+	max-width: fit-content;
 	z-index: 5;
+	top: 0;
+	position: sticky;
+	transform: translateY(-300%);
+	animation: forwards ease-in-out moveHeader 2s;
+}
+
+@keyframes moveHeader {
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .glass {
-	backdrop-filter: blur(100px);
+	background: rgba(0, 36, 58, 0.3);
+	backdrop-filter: blur(550px);
+	-webkit-backdrop-filter: blur(550px);
 	border: 2px solid rgb(255, 255, 255, 0.2);
-	box-shadow: 0px 0px 3rem rgb(0, 0, 0, 0.8);
-	opacity: opacity 0.8;
-	transition: all 1s ease;
+	box-shadow: 0px 0px 5rem 15px rgb(0, 0, 0, 0.6);
 }
 
-.glass:hover {
-	box-shadow: 0px 0px 40px 3px rgb(0, 0, 0, 0.8);
-}
-
-.btn  {
+.btn {
 	background-color: inherit;
 	border-radius: 1.5rem;
 	border: 2px solid rgba(255, 255, 255, 0.3);
 	color: var(--font);
-	padding: 0.7em 0.9em 0.7em calc(0.9em + 3px);
-	transform: translate(-0%,0%) scale(1);
-  cursor: pointer;
-  font-size: 1.6rem;
-  transition: all 0.3s linear;
-	font-size: inherit;
+	padding: 0.7em 0.9em 0.7em calc(0.9em + 5px);
+	transform: translate(-0%, 0%) scale(1);
+	font-size: 1.6rem;
+	transition: all 0.3s linear;
 	font-weight: 900;
-	letter-spacing: 5px;
+	margin: 0em 2.9em;
+	letter-spacing: 0.7ch;
 	text-shadow: 0px 0px 1px rgb(255, 255, 255);
 	text-transform: uppercase;
-		box-shadow:
+	box-shadow:
 		/* active */
 		inset -2px -2px 6px rgba(255, 255, 255, 0),
 		inset -2px -2px 4px rgba(255, 255, 255, 0),
@@ -52,7 +55,7 @@ header {
 		/* hover */
 		-0px -0px 10px 5px rgba(0, 0, 0, 0),
 		inset 3px 3px 4px rgb(255, 255, 255, 0),
-	  /* default */
+		/* default */
 		-3px -3px 8px rgba(0, 0, 0, 0.1),
 		-2px -2px 8px rgba(0, 0, 0, 0.1),
 		3px 3px 2px 1px rgba(90, 90, 90, 0.075),
@@ -61,16 +64,15 @@ header {
 }
 
 .btn:hover {
-	cursor: pointer;
 	transition: all 0.8s;
-		box-shadow:
+	box-shadow:
 		/* active */
 		inset -2px -2px 6px rgba(255, 255, 255, 0),
 		inset -2px -2px 4px rgba(255, 255, 255, 0),
 		inset 2px 2px 2px rgba(255, 255, 255, 0),
 		inset 2px 2px 4px rgba(0, 0, 0, 0),
 		inset 2px 2px 4px rgba(0, 0, 0, 0),
-	  /* hover */
+		/* hover */
 		-0px -0px 12px 5px rgba(0, 0, 0, 0.5),
 		inset 3px 3px 4px rgb(255, 255, 255, 0.5),
 		/* default */
@@ -82,7 +84,7 @@ header {
 }
 
 .btn:active {
-	transform: translate(-2%,-2%) scale(.98);
+	transform: translate(-2%, -2%) scale(.98);
 	transition: box-shadow 0.3s, transform 0.1s;
 	box-shadow:
 		inset -2px -2px 6px rgba(255, 255, 255, .7),
@@ -92,5 +94,3 @@ header {
 		inset 2px 2px 4px rgba(0, 0, 0, .15),
 		-0px -0px 10px 5px rgba(0, 0, 0, 0.4);
 }
-
-

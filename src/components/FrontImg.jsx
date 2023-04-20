@@ -6,14 +6,14 @@ import styles from './FrontImg.module.css';
 
 export default function FrontImg() {
   const { frontIndex, setFrontIndex } = useContext(Context);
-  const imgRef = useRef();
+  const transition = useRef();
 
   const turnInvisible = () => {
-    imgRef.current.className = ` invisible ${styles.image}`;
+    transition.current.className = ` invisible ${styles.transitionContainer}`;
   };
 
   const turnVisible = () => {
-    imgRef.current.className = ` visible ${styles.image}`;
+    transition.current.className = ` visible ${styles.transitionContainer}`;
   };
 
   const handleLeftArrow = () => {
@@ -41,32 +41,36 @@ export default function FrontImg() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <button
         type="button"
-        className={styles.btn}
+        className={`${styles.btn} ${styles.transitionBtn}`}
         onClick={() => {
           handleLeftArrow();
         }}
       >
         <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
+      <div className={styles.subContainer}>
+        <div ref={transition} className={styles.transitionContainer}>
+          <h2 className={styles.title}>{front[frontIndex].title}</h2>
+          <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
+        </div>
 
-      <div>
-        <h2>{front[frontIndex].title}</h2>
+        <div className={`${styles.buttonsContainer}`}>
+          <button className={`${styles.btn} ${styles.btnText}`} type="button">
+            Preview
+          </button>
 
-        <img ref={imgRef} className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
-
-        <div>
-          {front[frontIndex].techs.map((tech) => (
-            <span>{tech}</span>
-          ))}
+          <button className={`${styles.btn} ${styles.btnText}`} type="button">
+            Repositório
+          </button>
         </div>
       </div>
 
       <button
         type="button"
-        className={styles.btn}
+        className={`${styles.btn} ${styles.transitionBtn}`}
         onClick={() => {
           handleRightArrow();
         }}
