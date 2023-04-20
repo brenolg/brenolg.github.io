@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState, useEffect } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import front from '../utils/arrays/frontArray';
 import Context from '../context/Context';
 import styles from './FrontText.module.css';
@@ -6,17 +6,8 @@ import styles from './FrontText.module.css';
 export default function FrontText() {
   const { frontIndex } = useContext(Context);
   const transition = useRef();
-  const [textState, setStateText] = useState('funcionalidades');
-  const [text, setText] = useState(`${front[frontIndex].funcionalidades}`);
-
-  useEffect(() => {
-    if (textState === 'description') {
-      setText(`${front[frontIndex].description}`);
-    }
-    if (textState === 'funcionalidades') {
-      setText(`${front[frontIndex].description}`);
-    }
-  }, [textState]);
+  const [textState, setStateText] = useState('description');
+  const [text, setText] = useState(front[frontIndex].description);
 
   // const turnInvisible = () => {
   //   transition.current.className = ` invisible ${styles.transitionContainer}`;
@@ -26,14 +17,26 @@ export default function FrontText() {
   //   transition.current.className = ` visible ${styles.transitionContainer}`;
   // };
 
-  const handleDescriptionView = () => {
-    setStateText('description');
+  const handleTextView = async ({ target }) => {
+    const { name } = target;
+    setStateText(name);
+
+    if (textState !== name) {
+      if (name === 'functionalities') {
+        setText(front[frontIndex].functionalities);
+      }
+      if (name === 'description') {
+        setText(front[frontIndex].description);
+      }
+    }
   };
 
   return (
     <div className={styles.container}>
       <div ref={transition} className={styles.transitionContainer}>
-        <p>{text}</p>
+        {text.map((phrase) => (
+          <p>{phrase}</p>
+        ))}
       </div>
 
       <div className={`${styles.techsContainer}`}>
@@ -43,10 +46,16 @@ export default function FrontText() {
       </div>
 
       <div className={styles.btnsContainer}>
-        <button className={styles.btn} onClick={handleDescriptionView} type="button">
+        <button className={styles.btn} onClick={handleTextView} name="description" type="button">
           Descrição
         </button>
-        <button className={styles.btn} type="button">
+
+        <button
+          className={styles.btn}
+          onClick={handleTextView}
+          name="functionalities"
+          type="button"
+        >
           Funcionalidades
         </button>
       </div>
