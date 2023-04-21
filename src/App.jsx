@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import AnimatedRoutes from './components/AnimatedRoutes';
+import AnimatedRoutes from './pages/AnimatedRoutes';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import './global.css';
