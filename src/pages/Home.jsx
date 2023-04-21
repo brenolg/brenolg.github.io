@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
 import { motion } from 'framer-motion';
 import Techs from '../components/Techs';
 import fotoBreno from '../images/fotoBreno.png';
@@ -8,15 +7,9 @@ import styles from './Home.module.css';
 import motionProps from '../utils/motionProps';
 
 export default function Home() {
-  const route = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [route]);
-
   return (
     <>
-      <div className="ball " id={styles.ballMove} />
+      <motion.div className="ball " id={styles.ballMove} {...motionProps.ballMove} />
 
       <main>
         <div className={`${styles.profile_container}`}>

@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
 import styles from './Projects.module.css';
 import motionProps from '../utils/motionProps';
 import FrontText from '../components/FrontText';
 
 export default function Projects() {
-  const { route } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [route]);
-
   return (
     <main>
       <section className={`${styles.sectionFront}`}>

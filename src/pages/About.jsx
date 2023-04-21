@@ -1,17 +1,10 @@
-import { useLocation } from 'react-router-dom';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './About.module.css';
 import myImg from '../images/brenoSobre.png';
 import motionProps from '../utils/motionProps';
 
 export default function About() {
-  const route = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [route]);
-
   return (
     <>
       <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />

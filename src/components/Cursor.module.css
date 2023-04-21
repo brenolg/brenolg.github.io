@@ -15,6 +15,7 @@
     0 0 100px orangered;
   animation: colors 6s infinite alternate-reverse;
   position: fixed;
+  transition: all 0.1s ease-in-out;
 }
 
 @keyframes colors {

@@ -9,8 +9,8 @@ import Cursor from './components/Cursor';
 function App() {
   return (
     <BrowserRouter>
-      <Cursor />
       <Header />
+      <Cursor />
       <Nav />
       <AnimatedRoutes />
     </BrowserRouter>

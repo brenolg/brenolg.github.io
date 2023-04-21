@@ -22,22 +22,22 @@ export default function FrontImg() {
       if (frontIndex > 0) {
         setFrontIndex(frontIndex - 1);
       } else {
-        setFrontIndex(1);
+        setFrontIndex(front.length - 1);
       }
       turnVisible();
-    }, 500);
+    }, 400);
   };
 
   const handleRightArrow = () => {
     turnInvisible();
     setTimeout(() => {
-      if (frontIndex < 1) {
+      if (frontIndex < front.length - 1) {
         setFrontIndex(frontIndex + 1);
       } else {
         setFrontIndex(0);
       }
       turnVisible();
-    }, 500);
+    }, 400);
   };
 
   return (
@@ -59,11 +59,15 @@ export default function FrontImg() {
 
         <div className={`${styles.buttonsContainer}`}>
           <button className={`${styles.btn} ${styles.btnText}`} type="button">
-            Preview
+            <a href={front[frontIndex].linkToPage} target="_blank" rel="noopener noreferrer">
+              Preview
+            </a>
           </button>
 
           <button className={`${styles.btn} ${styles.btnText}`} type="button">
-            Repositório
+            <a href={front[frontIndex].linkToRepo} target="_blank" rel="noopener noreferrer">
+              Repositório
+            </a>
           </button>
         </div>
       </div>

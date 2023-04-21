@@ -17,9 +17,11 @@ export default function Cursor() {
       }}
       transition={{
         type: 'spring',
-        damping: 5,
-        stiffness: 15,
-        restDelta: 0.0001,
+        bounce: 5,
+        mass: 5,
+        damping: 12,
+        stiffness: 20,
+        restDelta: 0.001,
       }}
     >
       <div className={styles.border} />
