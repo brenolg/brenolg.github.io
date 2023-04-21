@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.9aceab76.css",
-    "main.js": "/static/js/main.54b6d0dc.js",
+    "main.css": "/static/css/main.a6a13f07.css",
+    "main.js": "/static/js/main.c66a8a88.js",
     "static/js/787.e3835ec5.chunk.js": "/static/js/787.e3835ec5.chunk.js",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
     "static/media/brenoSobre.png": "/static/media/brenoSobre.91179cff9d16fbf38914.png",
     "static/media/fotoBreno.png": "/static/media/fotoBreno.d287deaec7a1d59f46e8.png",
+    "static/media/pixelArt.png": "/static/media/pixelArt.d0df2fb353eca531013e.png",
+    "static/media/app-receitas.png": "/static/media/app-receitas.a9ab94856a6aad082b5b.png",
+    "static/media/toDoListImg.png": "/static/media/toDoListImg.31958e3b458b3a9e1a1e.png",
+    "static/media/tuneMusics.png": "/static/media/tuneMusics.31958e3b458b3a9e1a1e.png",
+    "static/media/walletExpenses.png": "/static/media/walletExpenses.bdfe9eb270e449082daa.png",
     "index.html": "/index.html",
-    "main.9aceab76.css.map": "/static/css/main.9aceab76.css.map",
-    "main.54b6d0dc.js.map": "/static/js/main.54b6d0dc.js.map",
+    "main.a6a13f07.css.map": "/static/css/main.a6a13f07.css.map",
+    "main.c66a8a88.js.map": "/static/js/main.c66a8a88.js.map",
     "787.e3835ec5.chunk.js.map": "/static/js/787.e3835ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aceab76.css",
-    "static/js/main.54b6d0dc.js"
+    "static/css/main.a6a13f07.css",
+    "static/js/main.c66a8a88.js"
   ]
 }
