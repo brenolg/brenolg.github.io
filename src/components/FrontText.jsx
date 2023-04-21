@@ -31,7 +31,7 @@ export default function FrontText() {
         setText(front[textIndex].description);
       }
       await turnVisible();
-    }, 400);
+    }, 300);
   };
 
   useEffect(() => {

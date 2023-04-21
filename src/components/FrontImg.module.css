@@ -26,7 +26,6 @@
 }
 
 .title {
-	padding: 4rem 0;
 	font-size: 4rem;
 	font-weight: 900;
 	text-shadow: 0px 0px 3px rgb(6, 17, 52), 0px 0px 3px black, 0px 0px 3px black;
@@ -34,12 +33,13 @@
 
 .image {
 	border-radius: 2.5rem;
-	width: 100%;
+	max-width: 100%;
+	max-height: 75%;
 }
 
 .buttonsContainer {
 	align-items: center;
-	margin: 4rem 0;
+	margin: 1.5rem 0 3rem;
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
