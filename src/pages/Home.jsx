@@ -9,12 +9,12 @@ import motionProps from '../utils/motionProps';
 export default function Home() {
   return (
     <>
-      <motion.div className="ball " id={styles.ballMove} {...motionProps.ballMove} />
+      <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
 
       <main>
         <div className={`${styles.profile_container}`}>
-          <motion.div className="ball" id={styles.ball1} {...motionProps.ball} />
-          <motion.div className="ball" id={styles.ball2} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball1} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball2} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball3} {...motionProps.ball} />
 
           <motion.div className={`${styles.profile} glass`} {...motionProps.mainContent}>
@@ -46,10 +46,10 @@ export default function Home() {
         </div>
 
         <section className={styles.hard_skills}>
-          <motion.div className="ball" id={styles.ball4} {...motionProps.ball} />
-          <motion.div className="ball" id={styles.ball5} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball4} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball5} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball6} {...motionProps.ball} />
-          <motion.div className="ball" id={styles.ball7} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball7} {...motionProps.ball} />
 
           <motion.div className={`${styles.repos_preview} glass`} {...motionProps.mainContent}>
             <img src={StarWars} alt="Projects Gifts" />

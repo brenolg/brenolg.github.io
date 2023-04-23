@@ -51,7 +51,7 @@
 	font-size: 2.6rem;
 	padding: .8em;
 	position: relative;
-	transition: all 0.3s linear;
+	transition: box-shadow 0.3s linear;
 	box-shadow:
 		/* active */
 		inset -2px -2px 6px rgba(255, 255, 255, 0),
@@ -126,11 +126,39 @@
 }
 
 .btnText {
-	padding: 0.4em 0.6em 0.4em calc(0.6em + 6px);
+	padding: 0.4em 0.6em 0.4em calc(0.6em + 0.2em);
 	letter-spacing: 0.45ch;
 	font-weight: 900;
 	color: var(--font);
 	font-size: 2.2rem;
 	border-radius: 0.7em;
 	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+}
+
+.btnTextDisabled {
+	background: none;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 2.2rem;
+	width: 12.613rem;
+	height: 4.535rem;
+	position: relative;
+	box-shadow:
+		-3px -3px 8px rgba(0, 0, 0, 0.1),
+		-2px -2px 8px rgba(0, 0, 0, 0.1),
+		3px 3px 2px 1px rgba(90, 90, 90, 0.075),
+		2px 2px 4px rgba(105, 105, 105, 0.1),
+		inset 3px 3px 7px 1px rgb(255, 255, 255, 0.5);
+	color: var(--font);
+	font-size: 2.2rem;
+	border-radius: 0.7em;
+	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+}
+
+.iconDisabled {
+	left: 50%;
+	position: absolute;
+	top: 55%;
+	transform: translate(-55%, -55%);
+	cursor: not-allowed;
 }

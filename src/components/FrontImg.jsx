@@ -1,5 +1,6 @@
 import React, { useContext, useRef } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
+import { GiSightDisabled } from 'react-icons/gi';
 import front from '../utils/arrays/frontArray';
 import Context from '../context/Context';
 import styles from './FrontImg.module.css';
@@ -51,16 +52,29 @@ export default function FrontImg() {
       >
         <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
+
       <div className={styles.subContainer}>
         <div ref={transition} className={styles.transitionContainer}>
           <h2 className={styles.title}>{front[frontIndex].title}</h2>
+
           <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
         </div>
 
         <div className={`${styles.buttonsContainer}`}>
-          <button className={`${styles.btn} ${styles.btnText}`} type="button">
+          <button
+            className={
+              front[frontIndex].linkToPage
+                ? `${styles.btn} ${styles.btnText}`
+                : `${styles.btnTextDisabled}`
+            }
+            type="button"
+          >
             <a href={front[frontIndex].linkToPage} target="_blank" rel="noopener noreferrer">
-              Preview
+              {front[frontIndex].linkToPage ? (
+                'Preview'
+              ) : (
+                <GiSightDisabled className={`${styles.iconDisabled}`} />
+              )}
             </a>
           </button>
 

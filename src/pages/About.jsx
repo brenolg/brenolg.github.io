@@ -11,8 +11,8 @@ export default function About() {
 
       <main>
         <section className={`${styles.img_section}`}>
-          <motion.div className="ball" id={styles.ball1} {...motionProps.ball} />
-          <motion.div className="ball" id={styles.ball2} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball1} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball2} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball3} {...motionProps.ball} />
 
           <motion.div className={`${styles.img_container} glass`} {...motionProps.mainContent}>
@@ -36,7 +36,7 @@ export default function About() {
         </section>
 
         <section className={`${styles.relativSection}`}>
-          <motion.div className="ball" id={styles.ball4} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball4} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball5} {...motionProps.ball} />
 
           <div className={`${styles.professional_description} glass`}>

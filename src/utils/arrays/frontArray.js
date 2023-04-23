@@ -1,9 +1,9 @@
 import starWarsImg from '../../images/star-wars.gif';
-import walletImg from '../../images/walletExpenses.png';
-import tuneMusicsImg from '../../images/tuneMusics.png';
+import walletImg from '../../images/wallet.gif';
+import tuneMusicsImg from '../../images/tuneMusics.gif';
 import appRecipesImg from '../../images/app-receitas.png';
-import pixelArtImg from '../../images/pixelArt.png';
-import toDoListImg from '../../images/toDoListImg.png';
+import pixelArtImg from '../../images/pixelArt.gif';
+import toDoListImg from '../../images/todo-list.gif';
 
 const starWars = {
   title: 'Star Wars Planets',
@@ -23,8 +23,8 @@ const walletExpenses = {
   techs: ['React', 'Redux', 'Javascript', 'Hooks', 'RTL', 'Jest', 'HTML', 'CSS'],
   functionalities: ['-Fazer login de usuário na home', '-Adicionar, editar e excluir despesas e receitas', '-Converter as moedas usando uma API externa', '-60% de cobertura de testes da aplicação'],
   linkToRepo: 'https://github.com/brenolg/Wallet-Expenses',
-  linkToPage: '',
-  ps: ['PS:', 'Aplicação em desenvolvimento'],
+
+  ps: ['PS:', 'Aplicação em desenvolvimento ... Imagem ilustrativa do FIGMA'],
 };
 
 const tuneMusics = {
@@ -34,19 +34,19 @@ const tuneMusics = {
   techs: ['React', 'Hooks', 'API-iTunes', 'Javascript', 'Router', 'HTML', 'CSS', 'Lifecycle methods'],
   functionalities: ['-Pesquisar por artistas', '-Clicar em um card para ver mais detalhes do álbum', '-Adicionar ou remover músicas à playlist favorita', '-Ouvir trechos das músicas na playlist favorita'],
   linkToRepo: 'https://github.com/brenolg/Tune-Musics',
-  linkToPage: '',
-  ps: ['PS:', 'Aplicação em desenvolvimento'],
+
+  ps: ['PS:', 'Aplicação em desenvolvimento ... Imagem ilustrativa do FIGMA'],
 };
 
 const pixelArt = {
   title: 'Pixel Art',
   img: pixelArtImg,
   description: ['Este projeto consiste em criar uma página web que permite ao usuário desenhar uma arte pixelada escolhendo as cores de uma paleta. O usuário poderá alterar o tamanho da grade de pixels como desejar.'],
-  techs: ['Javascript', 'Dom manipulation', 'HTML', 'ESLint', 'Stylelint', 'CSS'],
-  functionalities: ['-Ao clicar em uma das cores da paleta, a cor selecionada é aplicada ao pincel para pintar os pixels do quadro.', '-Um botão que limpa o quadro preenchendo todos os pixels com branco', '-Permitir que o usuário possa alterar a largura e altura do quadro de pixels', '-A página gera cores aleatórias ao carregar a página'],
+  techs: ['Javascript', 'D.O.M', 'Dom manipulation', 'HTML', 'ESLint', 'Stylelint', 'CSS'],
+  functionalities: ['-Ao clicar em uma das cores da paleta, a cor selecionada é aplicada ao pincel para pintar os pixels do quadro', '-Um botão que limpa o quadro preenchendo todos os pixels com branco', '-Permitir que o usuário possa alterar a largura e altura do quadro de pixels', '-A página gera cores aleatórias ao carregar a página'],
   linkToRepo: 'https://github.com/brenolg/Pixel-Art',
   linkToPage: '',
-  ps: ['PS:', 'Aplicação em desenvolvimento'],
+  ps: ['PS:', 'Aplicação em desenvolvimento ... Imagem ilustrativa do FIGMA'],
 };
 
 const appReceitas = {
@@ -54,23 +54,23 @@ const appReceitas = {
   img: appRecipesImg,
   description: ['Este é um projeto de app de receitas que consiste em desenvolver um sistema que permite visualizar, buscar, filtrar, favoritar, compartilhar e acompanhar o processo de preparação de receitas e drinks. A base de dados serão 2 APIs distintas, uma para comidas e outra para bebidas.'],
   techs: ['React', 'LocalStorage', 'RTL', 'Context', 'Hooks', 'Javascript', 'HTML', 'CSS'],
-  functionalities: ['-Buscar receitas', '-Acessar os detalhes de cada receita,', '-Explorar receitas por categoria', '-Iniciar, pausar e finalizar o preparo de uma receita'],
+  functionalities: ['-Buscar receitas', '-Acessar os detalhes de cada receita', '-Explorar receitas por categoria', '-Iniciar, pausar e finalizar o preparo de uma receita'],
   linkToRepo: 'https://github.com/brenolg/App-Recipes',
   linkToPage: '',
-  ps: ['PS:', 'Aplicação em desenvolvimento'],
+  ps: ['PS:', 'Aplicação em desenvolvimento ... Imagem ilustrativa do FIGMA'],
 };
 
 const toDoList = {
   title: 'To Do List',
   img: toDoListImg,
   description: ['Aplicação web que permite ao usuário criar e gerenciar uma lista de tarefas (to-do-list). O usuário pode adicionar novas tarefas, marcar as tarefas concluídas, remover tarefas individuais ou todas as tarefas da lista..'],
-  techs: ['Javascript', 'LocalStorage', 'HTML', 'CSS', 'ESLint', 'Stylelint'],
+  techs: ['Javascript', 'D.O.M', 'Dom manipulation', 'LocalStorage', 'HTML', 'CSS', 'ESLint', 'Stylelint'],
   functionalities: ['-Adicionar uma nova tarefa à lista', '-Marcar uma tarefa como concluída', '-Remover uma tarefa específica da lista', '-Remover todas as tarefas da lista'],
   linkToRepo: 'https://github.com/brenolg/To-Do-List',
   linkToPage: '',
-  ps: ['PS:', 'Aplicação em desenvolvimento'],
+  ps: ['PS:', 'Aplicação em desenvolvimento ... Imagem ilustrativa do FIGMA'],
 };
-console.log(walletExpenses, tuneMusics, pixelArt, appReceitas, toDoList);
-const front = [starWars];
+
+const front = [starWars, walletExpenses, tuneMusics, pixelArt, appReceitas, toDoList];
 
 export default front;

@@ -15,7 +15,7 @@ const oneForAll = {
   title: 'MySQL One For All',
   img: sql,
   description: ['O projeto consiste em normalizar um banco de dados desnormalizado e desenvolver queries que retornem a quantidade de colunas e registros esperados. Para isso, foi necessário analisar duas tabelas não normalizadas, identificar modificações necessárias para adequá-las às Formas Normais.'],
-  techs: ['MySQL', 'Database', 'Queries', 'Docker', 'Data Science', 'Gerenciamento de banco de dados'],
+  techs: ['Gerenciamento de banco de dados', 'MySQL', 'Database', 'Queries', 'Docker', 'Data Science'],
   functionalities: ['-Identificar e realizar modificações necessárias para que as tabelas estejam adequadamente na 1ª, 2ª e 3ª Forma Normais.', '-Criação de um banco de dados a partir de uma planilha que contém tabelas e dados.', '-Criar e modelar tabelas.', '-Queries que passam pelos principais comandos SQL.'],
   linkToRepo: 'https://github.com/brenolg/Mysql-One-For-All',
 };
@@ -24,7 +24,7 @@ const allForOne = {
   title: 'MySQL All For One',
   img: sql,
   description: ['O objetivo deste projeto é praticar os conceitos de SQL, consolidar e aprimorar conhecimentos sobre a manipulação de bancos de dados, essenciais para o funcionamento de sistemas e empresas.'],
-  techs: ['MySQL', 'Database', 'Queries', 'Docker', 'Data Science', 'Gerenciamento de banco de dados'],
+  techs: ['Gerenciamento de banco de dados', 'MySQL', 'Database', 'Queries', 'Docker', 'Data Science'],
   functionalities: ['-Desafios de seleção, criação, atualização e deleção de dados.', '-Desafios sobre filtragem de dados.', '-Desafios de manipulação de tabelas.'],
   linkToRepo: 'https://github.com/brenolg/Mysql-All-For-One',
 };
