@@ -70,7 +70,7 @@ const toDoList = {
   linkToPage: '',
   ps: ['PS:', 'Aplicação em desenvolvimento'],
 };
-
-const front = [starWars, walletExpenses, tuneMusics, pixelArt, appReceitas, toDoList];
+console.log(walletExpenses, tuneMusics, pixelArt, appReceitas, toDoList);
+const front = [starWars];
 
 export default front;

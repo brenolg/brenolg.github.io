@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <main>
       <section className={`${styles.sectionFront}`}>
-        <motion.div className={`${styles.frontTitle} glass`} {...motionProps.mainContent}>
+        <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
           <h1>Projetos Front</h1>
         </motion.div>
 
@@ -25,7 +25,7 @@ export default function Projects() {
       </section>
 
       <section className={`${styles.sectionBack}`}>
-        <motion.div className={`${styles.frontTitle} glass`} {...motionProps.mainContent}>
+        <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
           <h1>Projetos Back</h1>
         </motion.div>
 
