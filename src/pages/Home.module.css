@@ -1,19 +1,19 @@
 #ballMove {
   animation-delay: 0.5s;
-  animation: moveBall 120s linear infinite;
+  animation: moveBall 240s linear infinite;
   box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.6);
-  height: 12rem;
+  height: 6rem;
   left: 0;
-  width: 12rem;
+  width: 6rem;
   offset-path: path(var(--homePath));
   position: absolute;
   top: -7vh;
   z-index: -2;
   background:
-    radial-gradient(ellipse at top, rgb(var(--grey), 0.6), transparent),
-    radial-gradient(ellipse at bottom, rgb(0, 64, 89, 0.8), transparent),
+    radial-gradient(ellipse at top, rgb(var(--grey)), transparent),
+    radial-gradient(ellipse at bottom, rgb(0, 64, 89), transparent),
     linear-gradient(to left, transparent, rgb(var(--blue))),
-    linear-gradient(to right, transparent, rgba(var(--blue), 0.8));
+    linear-gradient(to right, transparent, rgba(var(--blue)));
 }
 
 @keyframes moveBall {
@@ -23,15 +23,15 @@
   }
 
   25% {
-    scale: 3;
+    scale: 4;
   }
 
   50% {
-    scale: 2;
+    scale: 1;
   }
 
   75% {
-    scale: 1;
+    scale: 3;
   }
 
   90% {
@@ -47,17 +47,17 @@
 #ball1 {
   height: 120rem;
   left: -29%;
-  top: -140%;
+  top: -75%;
   width: 120rem;
   background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
 #ball2 {
-  height: 40.1rem;
+  height: 35rem;
   right: 14%;
   top: -14%;
-  width: 40.1rem;
+  width: 35rem;
   background: linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
@@ -66,17 +66,21 @@
 
 #ball3 {
   bottom: -8%;
-  height: 20rem;
-  right: 21%;
-  width: 20rem;
+  height: 15rem;
+  right: 23%;
+  width: 15rem;
   background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(315deg, rgb(var(--blue)), transparent);
 }
 
+.profile_section {
+  position: relative;
+}
+
 .profile_container {
   margin-bottom: 20rem;
-  position: relative;
   z-index: 5;
+  position: relative;
 }
 
 .profile {
@@ -139,6 +143,7 @@
 .text span {
   font-size: 1.6rem;
   padding: 0 0 3em;
+  letter-spacing: 0.4ch;
   text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
 }
 
@@ -271,10 +276,10 @@
 }
 
 #ball6 {
-  bottom: 40%;
-  height: 15rem;
-  left: -5%;
-  width: 15rem;
+  bottom: 44%;
+  height: 12rem;
+  left: -3%;
+  width: 12rem;
   background: linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(180deg, rgb(var(--grey)), transparent);
@@ -300,15 +305,3 @@
     linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(225deg, rgb(var(--grey)), transparent);
 }
-
-/* 
-  background: 
-    linear-gradient(0deg, transparent, transparent ),
-    linear-gradient(4d5deg, transparent, transparent ),
-    linear-gradient(90deg, transparent, transparent ),
-    linear-gradient(135deg, transparent, transparent ),
-    linear-gradient(180deg, transparent, transparent ),
-    linear-gradient(225deg, transparent, transparent ),
-    linear-gradient(270deg, transparent, transparent ),
-    linear-gradient(315deg, transparent, transparent );
-*/

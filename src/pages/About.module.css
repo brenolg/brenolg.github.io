@@ -6,13 +6,15 @@
   top: -2vh;
   left: 0;
   background:
-    radial-gradient(ellipse at top, rgb(var(--teal), 0.6), transparent),
-    radial-gradient(ellipse at bottom, rgb(var(--orange), 0.8), transparent),
-    linear-gradient(to left, transparent, rgb(var(--teal), 0.5)),
+    radial-gradient(ellipse at top, rgb(var(--teal)), transparent),
+    radial-gradient(ellipse at bottom, rgb(var(--orange)), transparent),
+    linear-gradient(to left, transparent, rgb(var(--teal))),
     linear-gradient(to right, transparent, rgb(0, 64, 89));
   animation: moveBall 120s linear infinite;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   offset-path: path(var(--aboutPath));
+  overflow: hidden;
+  ;
 }
 
 @keyframes moveBall {

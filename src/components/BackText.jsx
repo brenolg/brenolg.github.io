@@ -50,7 +50,7 @@ export default function BackText() {
     <div className={styles.container}>
       <div ref={transition} className={styles.transitionContainer}>
         {text.map((phrase) => (
-          <p>{phrase}</p>
+          <p key={phrase}>{phrase}</p>
         ))}
 
         {back[textIndex].ps && (
@@ -62,7 +62,9 @@ export default function BackText() {
 
         <div className={`${styles.techsContainer}`}>
           {back[textIndex].techs.map((tech) => (
-            <span className={`${styles.techsSpan}`}>{tech}</span>
+            <span className={`${styles.techsSpan}`} key={tech}>
+              {tech}
+            </span>
           ))}
         </div>
       </div>
