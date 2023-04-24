@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8cee8168.css",
-    "main.js": "/static/js/main.3352b794.js",
+    "main.css": "/static/css/main.09a7e33a.css",
+    "main.js": "/static/js/main.33ee8aeb.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
@@ -11,15 +11,15 @@
     "static/media/fotoBreno.png": "/static/media/fotoBreno.d287deaec7a1d59f46e8.png",
     "static/media/app-receitas.png": "/static/media/app-receitas.206d5d654abd54552223.png",
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
-    "static/media/mysql.png": "/static/media/mysql.8bef4ed161669b0346a9.png",
+    "static/media/mysql.png": "/static/media/mysql.b531250adc5d30be8c60.png",
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "index.html": "/index.html",
-    "main.8cee8168.css.map": "/static/css/main.8cee8168.css.map",
-    "main.3352b794.js.map": "/static/js/main.3352b794.js.map",
+    "main.09a7e33a.css.map": "/static/css/main.09a7e33a.css.map",
+    "main.33ee8aeb.js.map": "/static/js/main.33ee8aeb.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cee8168.css",
-    "static/js/main.3352b794.js"
+    "static/css/main.09a7e33a.css",
+    "static/js/main.33ee8aeb.js"
   ]
 }
