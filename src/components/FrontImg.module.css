@@ -1,6 +1,6 @@
 .mainContainer {
-	color: var(--font);
 	align-items: center;
+	color: var(--font);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -9,19 +9,19 @@
 .subContainer {
 	align-items: center;
 	display: flex;
-	width: 100%;
 	flex-direction: column;
 	justify-content: space-evenly;
+	width: 100%;
 }
 
 .transitionContainer {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	align-items: center;
+	height: 50rem;
 	justify-content: space-evenly;
 	transition: all 0.4s ease-in-out;
-	height: 50rem;
+	width: 100%;
 }
 
 .title {
@@ -32,16 +32,16 @@
 
 .image {
 	border-radius: 2.5rem;
-	max-width: 100%;
 	max-height: 70%;
+	max-width: 100%;
 }
 
 .buttonsContainer {
 	align-items: center;
-	margin: 1.5rem 0 3rem;
 	display: flex;
-	width: 100%;
 	justify-content: space-around;
+	margin: 1.5rem 0 3rem;
+	width: 100%;
 }
 
 .btn {
@@ -126,33 +126,23 @@
 }
 
 .btnText {
-	padding: 0.4em 0.6em 0.4em calc(0.6em + 0.2em);
-	letter-spacing: 0.45ch;
-	font-weight: 900;
+	border-radius: 0.7em;
 	color: var(--font);
 	font-size: 2.2rem;
-	border-radius: 0.7em;
+	font-weight: 900;
+	letter-spacing: 0.45ch;
+	padding: 0.4em 0.6em 0.4em calc(0.6em + 0.2em);
 	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
 }
 
 .btnTextDisabled {
-	background: none;
-	border-radius: 50%;
-	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 0.7em;
+	color: var(--font);
+	cursor: not-allowed;
 	font-size: 2.2rem;
-	width: 12.613rem;
 	height: 4.535rem;
 	position: relative;
-	box-shadow:
-		-3px -3px 8px rgba(0, 0, 0, 0.1),
-		-2px -2px 8px rgba(0, 0, 0, 0.1),
-		3px 3px 2px 1px rgba(90, 90, 90, 0.075),
-		2px 2px 4px rgba(105, 105, 105, 0.1),
-		inset 3px 3px 7px 1px rgb(255, 255, 255, 0.5);
-	color: var(--font);
-	font-size: 2.2rem;
-	border-radius: 0.7em;
-	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+	width: 12.613rem;
 }
 
 .iconDisabled {
@@ -160,5 +150,4 @@
 	position: absolute;
 	top: 55%;
 	transform: translate(-55%, -55%);
-	cursor: not-allowed;
 }

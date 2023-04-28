@@ -41,6 +41,13 @@ export default function FrontImg() {
     }, 400);
   };
 
+  const handleEnabled = () => {
+    if (!front[frontIndex].linkToPage) {
+      return false;
+    }
+    return true;
+  }; // Desabilita btn
+
   return (
     <div className={styles.mainContainer}>
       <button
@@ -65,8 +72,9 @@ export default function FrontImg() {
             className={
               front[frontIndex].linkToPage
                 ? `${styles.btn} ${styles.btnText}`
-                : `${styles.btnTextDisabled}`
+                : `${styles.btn} ${styles.btnTextDisabled}`
             }
+            disabled={handleEnabled}
             type="button"
           >
             <a href={front[frontIndex].linkToPage} target="_blank" rel="noopener noreferrer">

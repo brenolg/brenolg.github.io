@@ -22,15 +22,12 @@ export default function About() {
           <motion.div className={`${styles.main_description} glass`} {...motionProps.mainContent}>
             <h2 className={`${styles.titles}`}>Vida Profissional</h2>
             <p className={`${styles.p}`}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis commodi numquam
-              quod ea pariatur libero totam eius, id vero repellat neque ab, dignissimos nobis nam
-              quasi dolore, repudiandae delectus hic! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Facilis, nulla! Nihil, temporibus! Fuga at, voluptatum deserunt,
-              dolores voluptates tempore necessitatibus corrupti, temporibus rerum sapiente
-              laudantium odio itaque! Nobis, quidem neque. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Excepturi quis exercitationem ipsa nam explicabo quaerat, voluptatem
-              alias! Libero dolorum quia molestiae qui ducimus perferendis labore possimus, ad non,
-              voluptatem nesciunt?
+              Fui empreendedor por mais de 10 anos com produtos relacionados a cerâmica, plantas
+              ornamentais e kokedamas. Minha formação em biologia e experiência em transformar meus
+              hobbies em produtos me proporcionaram uma ampla compreensão do processo de criação de
+              produtos e do que é necessário para fazer um negócio prosperar. No entanto, o meu
+              interesse em programação surgiu a partir dos desafios diários de lógica que essa área
+              oferece.
             </p>
           </motion.div>
         </section>
@@ -40,17 +37,20 @@ export default function About() {
           <motion.div className="ball" id={styles.ball5} {...motionProps.ball} />
 
           <div className={`${styles.professional_description} glass`}>
-            <h2 className={`${styles.titles}`}>Curiosidades...</h2>
+            <h2 className={`${styles.titles}`}>Na programação...</h2>
             <p className={`${styles.p} `}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis commodi numquam
-              quod ea pariatur libero totam eius, id vero repellat neque ab, dignissimos nobis nam
-              quasi dolore, repudiandae delectus hic! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Facilis, nulla! Nihil, temporibus! Fuga at, voluptatum deserunt,
-              dolores voluptates tempore necessitatibus corrupti, temporibus rerum sapiente
-              laudantium odio itaque! Nobis, quidem neque. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Excepturi quis exercitationem ipsa nam explicabo quaerat, voluptatem
-              alias! Libero dolorum quia molestiae qui ducimus perferendis labore possimus, ad non,
-              voluptatem nesciunt?
+              Em especial, estou bastante interessado em UX/UI, que envolve a busca pela melhor
+              experiência do usuário. Eu acredito que essa área se assemelha muito à lógica do MVP
+              (Mínimo Produto Viável) do empreendedorismo, que tem como objetivo lançar um produto
+              funcional com o mínimo de recursos possíveis, com foco específico na aceitação e
+              experiência do público-alvo.
+            </p>
+            <br />
+            <br />
+            <p className={`${styles.p} `}>
+              Estou em fase final de um curso na Trybe, empresa que disponibiliza mais de 1500 horas
+              dentre Front End, Back End e Ciências de Dados. Desenvolvi mais de 20 projetos
+              individuais e em grupos, dentre eles (cita 3, jogo de tiro).
             </p>
           </div>
         </section>

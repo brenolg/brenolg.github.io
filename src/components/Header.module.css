@@ -1,5 +1,6 @@
 header {
 	align-items: center;
+	animation: forwards ease-in-out moveHeader 2s;
 	border-bottom-left-radius: 20.5rem;
 	border-bottom-right-radius: 20.5rem;
 	border: 2px solid rgb(255, 255, 255, 0.2);
@@ -8,13 +9,12 @@ header {
 	justify-content: space-evenly;
 	margin: auto;
 	margin-bottom: 20vh;
-	padding: 1em 3em;
 	max-width: fit-content;
-	z-index: 30;
-	top: 0;
+	padding: 1em 3em;
 	position: sticky;
+	top: 0;
 	transform: translateY(-300%);
-	animation: forwards ease-in-out moveHeader 2s;
+	z-index: 30;
 }
 
 @keyframes moveHeader {

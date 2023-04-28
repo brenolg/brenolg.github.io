@@ -4,10 +4,10 @@
   box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.6);
   height: 6rem;
   left: 0;
-  width: 6rem;
   offset-path: path(var(--projectsPath));
   position: absolute;
   top: -7vh;
+  width: 6rem;
   z-index: -2;
   background: linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey)), transparent),
@@ -62,50 +62,53 @@
 }
 
 #ball3 {
+  bottom: -6%;
   height: 25rem;
   right: 32%;
-  bottom: 17%;
   width: 25rem;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
 .sectionFront {
-  margin: auto;
+  margin: 20rem auto;
   position: relative;
+  padding-bottom: 18rem;
   width: 75vw;
-  height: 98vh;
 }
 
 .title {
-  margin: auto;
-  color: var(--font);
-  letter-spacing: 0.3ch;
-  width: 40%;
-  font-size: 2.8rem;
-  padding: 1.2em 1em 6em;
   border-radius: 5.5rem;
-  text-align: center;
+  color: var(--font);
+  font-size: 2.8rem;
   font-weight: 900;
+  left: 30%;
+  letter-spacing: 0.3ch;
+  margin: auto;
+  padding: 1.2em 1em 6em;
+  position: absolute;
+  text-align: center;
   text-shadow: 0px 0px 3px rgb(6, 17, 52), 0px 0px 3px black, 0px 0px 3px black;
+  top: 0;
+  width: 40%;
 }
 
 .imgFront {
-  width: 62%;
+  border-radius: 5.5rem;
+  left: 0px;
   position: absolute;
   top: 12rem;
-  left: 0px;
-  border-radius: 5.5rem;
+  width: 62%;
   z-index: 4;
 }
 
 .textFront {
-  position: absolute;
-  width: 42%;
-  right: 0px;
-  top: 18rem;
   border-radius: 50px;
+  margin-left: auto;
   padding-left: 3%;
+  position: relative;
+  top: 18rem;
+  width: 42%;
 }
 
 #ball4 {
@@ -128,36 +131,35 @@
 }
 
 #ball6 {
+  bottom: -15%;
   height: 36rem;
   right: 25%;
-  bottom: -15%;
   width: 36rem;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
 .sectionBack {
-  margin: auto;
+  margin: 0 auto 20rem;
+  padding-bottom: 18rem;
   position: relative;
-  height: 75vh;
   width: 75vw;
-  margin-bottom: 20vh;
 }
 
 .imgBack {
-  position: absolute;
-  width: 62%;
-  left: 0;
-  top: 12rem;
   border-radius: 5.5rem;
+  left: 0;
+  position: absolute;
+  top: 12rem;
+  width: 62%;
   z-index: 4;
 }
 
 .textBack {
-  width: 42%;
-  position: absolute;
-  top: 18rem;
-  right: 0;
-  border-radius: 5.5rem;
+  border-radius: 50px;
+  margin-left: auto;
   padding-left: 3%;
+  position: relative;
+  top: 18rem;
+  width: 42%;
 }
