@@ -1,14 +1,14 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
-import front from '../utils/arrays/frontArray';
+import back from '../utils/arrays/backArray';
 import Context from '../context/Context';
-import styles from './FrontText.module.css';
+import styles from './BackText.module.css';
 
-export default function FrontText() {
-  const { frontIndex } = useContext(Context);
+export default function BackText() {
+  const { backIndex } = useContext(Context);
   const transition = useRef();
   const [textState, setStateText] = useState('description');
-  const [textIndex, setTextIndex] = useState(frontIndex);
-  const [text, setText] = useState(front[textIndex].description);
+  const [textIndex, setTextIndex] = useState(backIndex);
+  const [text, setText] = useState(back[textIndex].description);
 
   const turnInvisible = async () => {
     transition.current.className = ` invisible ${styles.transitionContainer}`;
@@ -23,12 +23,12 @@ export default function FrontText() {
 
     setTimeout(async () => {
       if (textState === 'functionalities') {
-        setTextIndex(frontIndex);
-        setText(front[textIndex].functionalities);
+        setTextIndex(backIndex);
+        setText(back[textIndex].functionalities);
       }
       if (textState === 'description') {
-        setTextIndex(frontIndex);
-        setText(front[textIndex].description);
+        setTextIndex(backIndex);
+        setText(back[textIndex].description);
       }
       await turnVisible();
     }, 300);
@@ -36,7 +36,7 @@ export default function FrontText() {
 
   useEffect(() => {
     asyncInvisible();
-  }, [frontIndex, textState, textIndex]);
+  }, [backIndex, textState, textIndex]);
 
   const handleTextView = async ({ target }) => {
     const { name } = target;
@@ -53,15 +53,15 @@ export default function FrontText() {
           <p key={phrase}>{phrase}</p>
         ))}
 
-        {front[textIndex].ps && (
+        {back[textIndex].ps && (
           <p>
-            <span className={styles.psSpan}>{front[textIndex].ps[0]}</span>
-            <span>{front[textIndex].ps[1]}</span>
+            <span className={styles.psSpan}>{back[textIndex].ps[0]}</span>
+            <span>{back[textIndex].ps[1]}</span>
           </p>
         )}
 
         <div className={`${styles.techsContainer}`}>
-          {front[textIndex].techs.map((tech) => (
+          {back[textIndex].techs.map((tech) => (
             <span className={`${styles.techsSpan}`} key={tech}>
               {tech}
             </span>

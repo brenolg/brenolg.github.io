@@ -1,19 +1,19 @@
 #ballMove {
   animation-delay: 0.5s;
-  animation: moveBall 120s linear infinite;
+  animation: moveBall 240s linear infinite;
   box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.6);
-  height:12rem;
+  height: 6rem;
   left: 0;
-  width: 12rem;
   offset-path: path(var(--homePath));
   position: absolute;
   top: -7vh;
+  width: 6rem;
   z-index: -2;
-  background: 
-  radial-gradient(ellipse at top,rgb(var(--grey), 0.6), transparent),
-  radial-gradient(ellipse at bottom,rgb(0, 64, 89, 0.8), transparent),
-  linear-gradient(to left, transparent, rgb(var(--blue))),
-  linear-gradient(to right, transparent, rgba(var(--blue),0.8) );
+  background:
+    radial-gradient(ellipse at top, rgb(var(--grey)), transparent),
+    radial-gradient(ellipse at bottom, rgb(0, 64, 89), transparent),
+    linear-gradient(to left, transparent, rgb(var(--blue))),
+    linear-gradient(to right, transparent, rgba(var(--blue)));
 }
 
 @keyframes moveBall {
@@ -21,18 +21,23 @@
     offset-distance: 0%;
     scale: 1;
   }
+
   25% {
-    scale: 3;
+    scale: 4;
   }
+
   50% {
-    scale: 2;
-  }
-  75% {
     scale: 1;
   }
+
+  75% {
+    scale: 3;
+  }
+
   90% {
     scale: 2;
   }
+
   100% {
     offset-distance: 100%;
     scale: 1;
@@ -40,19 +45,19 @@
 }
 
 #ball1 {
-  height:120rem;
+  height: 120rem;
   left: -29%;
-  top: -140%;
+  top: -75%;
   width: 120rem;
   background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
 #ball2 {
-  height: 40.1rem;
+  height: 35rem;
   right: 14%;
   top: -14%;
-  width: 40.1rem;
+  width: 35rem;
   background: linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
@@ -61,16 +66,21 @@
 
 #ball3 {
   bottom: -8%;
-  height: 20rem;
-  right: 21%;
-  width: 20rem;
+  height: 15rem;
+  right: 23%;
+  width: 15rem;
   background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
-  linear-gradient(315deg, rgb(var(--blue)), transparent);
+    linear-gradient(315deg, rgb(var(--blue)), transparent);
 }
 
-.profile_container{
+.profile_section {
+  position: relative;
+}
+
+.profile_container {
   margin-bottom: 20rem;
   position: relative;
+  z-index: 5;
 }
 
 .profile {
@@ -90,7 +100,7 @@
   display: flex;
   height: 22rem;
   justify-content: center;
-  margin: -11rem auto ;
+  margin: -11rem auto;
   width: 22rem;
 }
 
@@ -105,6 +115,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -117,7 +128,7 @@
   flex-direction: column;
   font-weight: 900;
   justify-content: space-around;
-  margin: 9.5rem 0 0 ;
+  margin: 9.5rem 0 0;
   padding: 4rem;
   text-align: justify;
 }
@@ -130,6 +141,7 @@
 
 .text span {
   font-size: 1.6rem;
+  letter-spacing: 0.4ch;
   padding: 0 0 3em;
   text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
 }
@@ -149,65 +161,65 @@
 }
 
 .btn {
-	letter-spacing: 0.5ch;
   background-color: inherit;
-  border-radius:1.5rem;
+  border-radius: 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: var(--font);
   font-size: 1.6rem;
   font-weight: 900;
+  letter-spacing: 0.5ch;
   padding: 1em 1em 1em calc(1em + 3px);
   text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
   text-transform: uppercase;
   transition: all 0.3s linear;
-		box-shadow:
-		/* active */
-		inset -2px -2px 6px rgba(255, 255, 255, 0),
-		inset -2px -2px 4px rgba(255, 255, 255, 0),
-		inset 2px 2px 2px rgba(255, 255, 255, 0),
-		inset 2px 2px 4px rgba(0, 0, 0, 0),
-		inset 2px 2px 4px rgba(0, 0, 0, 0),
-		/* hover */
-		-0px -0px 10px 5px rgba(0, 0, 0, 0),
-		inset 3px 3px 4px rgb(255, 255, 255, 0),
-	  /* default */
-		-3px -3px 8px rgba(0, 0, 0, 0.1),
-		-2px -2px 8px rgba(0, 0, 0, 0.1),
-		3px 3px 2px 1px rgba(90, 90, 90, 0.075),
-		2px 2px 4px rgba(105, 105, 105, 0.1),
-		inset 3px 3px 4px rgb(255, 255, 255, 0.5);
+  box-shadow:
+    /* active */
+    inset -2px -2px 6px rgba(255, 255, 255, 0),
+    inset -2px -2px 4px rgba(255, 255, 255, 0),
+    inset 2px 2px 2px rgba(255, 255, 255, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    /* hover */
+    -0px -0px 10px 5px rgba(0, 0, 0, 0),
+    inset 3px 3px 4px rgb(255, 255, 255, 0),
+    /* default */
+    -3px -3px 8px rgba(0, 0, 0, 0.1),
+    -2px -2px 8px rgba(0, 0, 0, 0.1),
+    3px 3px 2px 1px rgba(90, 90, 90, 0.075),
+    2px 2px 4px rgba(105, 105, 105, 0.1),
+    inset 3px 3px 4px rgb(255, 255, 255, 0.5);
 }
 
 .btn:hover {
-	transition: all 0.8s;
-		box-shadow:
-		/* active */
-		inset -2px -2px 6px rgba(255, 255, 255, 0),
-		inset -2px -2px 4px rgba(255, 255, 255, 0),
-		inset 2px 2px 2px rgba(255, 255, 255, 0),
-		inset 2px 2px 4px rgba(0, 0, 0, 0),
-		inset 2px 2px 4px rgba(0, 0, 0, 0),
-	  /* hover */
-		-0px -0px 12px 5px rgba(0, 0, 0, 0.5),
-		inset 3px 3px 4px rgb(255, 255, 255, 0.5),
-		/* default */
-		-3px -3px 8px rgba(0, 0, 0, 0),
-		-2px -2px 8px rgba(0, 0, 0, 0),
-		3px 3px 2px 1px rgba(90, 90, 90, 0),
-		2px 2px 4px rgba(105, 105, 105, 0),
-		inset 3px 3px 4px rgb(255, 255, 255, 0);
+  transition: all 0.8s;
+  box-shadow:
+    /* active */
+    inset -2px -2px 6px rgba(255, 255, 255, 0),
+    inset -2px -2px 4px rgba(255, 255, 255, 0),
+    inset 2px 2px 2px rgba(255, 255, 255, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    /* hover */
+    -0px -0px 12px 5px rgba(0, 0, 0, 0.5),
+    inset 3px 3px 4px rgb(255, 255, 255, 0.5),
+    /* default */
+    -3px -3px 8px rgba(0, 0, 0, 0),
+    -2px -2px 8px rgba(0, 0, 0, 0),
+    3px 3px 2px 1px rgba(90, 90, 90, 0),
+    2px 2px 4px rgba(105, 105, 105, 0),
+    inset 3px 3px 4px rgb(255, 255, 255, 0);
 }
 
 .btn:active {
-	transform: translate(-2%,-2%) scale(.98);
-	transition: box-shadow 0.3s, transform 0.1s;
-	box-shadow:
-		inset -2px -2px 6px rgba(255, 255, 255, .7),
-		inset -2px -2px 4px rgba(255, 255, 255, .5),
-		inset 2px 2px 2px rgba(255, 255, 255, .075),
-		inset 2px 2px 4px rgba(0, 0, 0, .15),
-		inset 2px 2px 4px rgba(0, 0, 0, .15),
-		-0px -0px 10px 5px rgba(0, 0, 0, 0.4);
+  transform: translate(-2%, -2%) scale(.98);
+  transition: box-shadow 0.3s, transform 0.1s;
+  box-shadow:
+    inset -2px -2px 6px rgba(255, 255, 255, .7),
+    inset -2px -2px 4px rgba(255, 255, 255, .5),
+    inset 2px 2px 2px rgba(255, 255, 255, .075),
+    inset 2px 2px 4px rgba(0, 0, 0, .15),
+    inset 2px 2px 4px rgba(0, 0, 0, .15),
+    -0px -0px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .hard_skills {
@@ -244,29 +256,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 60vw;
+  max-width: 43vw;
   z-index: 2;
 }
 
 .repos_preview img {
   border-radius: 7.5rem;
   max-width: 100%;
-  padding: 3em;
+  padding: 4rem 4rem;
 }
 
 .repos_preview button {
   border-radius: 2rem;
   font-size: 2.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   padding: 0.5em 1em 0.5em calc(1em + 3px);
   text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
 }
 
 #ball6 {
-  bottom: 40%;
-  height: 15rem;
-  left: -5%;
-  width: 15rem;
+  bottom: 44%;
+  height: 12rem;
+  left: -3%;
+  width: 12rem;
   background: linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(180deg, rgb(var(--grey)), transparent);
@@ -276,10 +288,11 @@
   border-radius: 5.5rem;
   margin-bottom: 18rem;
   margin-left: 15vw;
-  margin-top: -3.5%;
+  margin-top: -4.5%;
   max-width: 50vw;
-  padding: 1em;
-  z-index: 2;
+  padding: 5em;
+  position: relative;
+  z-index: 5;
 }
 
 #ball7 {
@@ -291,14 +304,3 @@
     linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(225deg, rgb(var(--grey)), transparent);
 }
-/* 
-  background: 
-    linear-gradient(0deg, transparent, transparent ),
-    linear-gradient(4d5deg, transparent, transparent ),
-    linear-gradient(90deg, transparent, transparent ),
-    linear-gradient(135deg, transparent, transparent ),
-    linear-gradient(180deg, transparent, transparent ),
-    linear-gradient(225deg, transparent, transparent ),
-    linear-gradient(270deg, transparent, transparent ),
-    linear-gradient(315deg, transparent, transparent );
-*/

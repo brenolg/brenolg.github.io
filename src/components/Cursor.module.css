@@ -1,20 +1,21 @@
 .cursor {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  animation: colors 6s infinite alternate-reverse;
   background: orangered;
-  z-index: -1;
-  height: 5px;
-  width: 5px;
   border-radius: 50%;
+  display: flex;
+  height: 5px;
+  justify-content: center;
   pointer-events: none;
+  position: fixed;
+  transition: all 0.1s ease-in-out;
+  width: 5px;
+  z-index: 1;
   box-shadow:
     0 0 20px 20px rgb(176, 53, 0, 0.5),
     0 0 40px orangered,
     0 0 80px orangered,
     0 0 100px orangered;
-  animation: colors 6s infinite alternate-reverse;
-  position: fixed;
 }
 
 @keyframes colors {
@@ -28,15 +29,15 @@
 }
 
 .border {
-  height: 30px;
-  width: 30px;
-  background-color: aquamarine;
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
   animation: 5s infinite circlesAnimation;
+  background-color: aquamarine;
+  border-radius: 50%;
+  height: 30px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: 30px;
 }
 
 @keyframes circlesAnimation {

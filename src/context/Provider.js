@@ -4,13 +4,16 @@ import Context from './Context';
 
 export default function Provider({ children }) {
   const [frontIndex, setFrontIndex] = useState(0);
+  const [backIndex, setBackIndex] = useState(0);
 
   const value = useMemo(
     () => ({
       frontIndex,
       setFrontIndex,
+      backIndex,
+      setBackIndex,
     }),
-    [frontIndex],
+    [frontIndex, backIndex],
   );
 
   return <Context.Provider value={value}>{children}</Context.Provider>;

@@ -5,13 +5,13 @@ dl {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
-  margin-bottom: 5rem;
+  font-size: 6.5rem;
+  gap: 0.8em 0.5em;
 }
 
 dt {
-  font-size: 6.5rem;
-  margin-top: 0.5em;
-  padding: 0.03em 0.3em;
+  font-size: inherit;
+  padding: 0 0.3em;
   transition: all 3s;
 }
 

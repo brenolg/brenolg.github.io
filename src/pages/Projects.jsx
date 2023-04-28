@@ -1,39 +1,50 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
 import FrontImg from '../components/FrontImg';
 import styles from './Projects.module.css';
 import motionProps from '../utils/motionProps';
 import FrontText from '../components/FrontText';
+import BackImg from '../components/BackImg';
+import BackText from '../components/BackText';
 
 export default function Projects() {
-  const { route } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [route]);
-
   return (
-    <main>
-      <section className={`${styles.sectionFront}`}>
-        <motion.div className={`${styles.imgFront} glass`} {...motionProps.mainContent}>
-          <FrontImg />
-        </motion.div>
+    <>
+      <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
 
-        <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
-          <FrontText />
-        </motion.div>
-      </section>
+      <main>
+        <section className={`${styles.sectionFront}`}>
+          <motion.div className="ball ballRotate" id={styles.ball1} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball2} {...motionProps.ball} />
+          <motion.div className="ball" id={styles.ball3} {...motionProps.ball} />
 
-      <section className={`${styles.sectionBack}`}>
-        <motion.div className={`${styles.imgBack} glass`} {...motionProps.mainContent}>
-          IMG
-        </motion.div>
+          <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
+            <h1>Projetos Front</h1>
+          </motion.div>
+          <motion.div className={`${styles.imgFront} glass`} {...motionProps.mainContent}>
+            <FrontImg />
+          </motion.div>
+          <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
+            <FrontText />
+          </motion.div>
+        </section>
 
-        <motion.div className={`${styles.textBack} glass`} {...motionProps.mainContent}>
-          Text
-        </motion.div>
-      </section>
-    </main>
+        <section className={`${styles.sectionBack}`}>
+          <motion.div className="ball" id={styles.ball4} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball5} {...motionProps.ball} />
+          <motion.div className="ball" id={styles.ball6} {...motionProps.ball} />
+
+          <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
+            <h1>Projetos Back</h1>
+          </motion.div>
+          <motion.div className={`${styles.imgBack} glass`} {...motionProps.mainContent}>
+            <BackImg />
+          </motion.div>
+          <motion.div className={`${styles.textBack} glass`} {...motionProps.mainContent}>
+            <BackText />
+          </motion.div>
+        </section>
+      </main>
+    </>
   );
 }

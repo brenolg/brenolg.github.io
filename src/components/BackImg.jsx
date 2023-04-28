@@ -1,12 +1,11 @@
 import React, { useContext, useRef } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
-import { GiSightDisabled } from 'react-icons/gi';
-import front from '../utils/arrays/frontArray';
+import back from '../utils/arrays/backArray';
 import Context from '../context/Context';
-import styles from './FrontImg.module.css';
+import styles from './BackImg.module.css';
 
-export default function FrontImg() {
-  const { frontIndex, setFrontIndex } = useContext(Context);
+export default function BackImg() {
+  const { backIndex, setBackIndex } = useContext(Context);
   const transition = useRef();
 
   const turnInvisible = () => {
@@ -20,10 +19,10 @@ export default function FrontImg() {
   const handleLeftArrow = () => {
     turnInvisible();
     setTimeout(() => {
-      if (frontIndex > 0) {
-        setFrontIndex(frontIndex - 1);
+      if (backIndex > 0) {
+        setBackIndex(backIndex - 1);
       } else {
-        setFrontIndex(front.length - 1);
+        setBackIndex(back.length - 1);
       }
       turnVisible();
     }, 400);
@@ -32,21 +31,14 @@ export default function FrontImg() {
   const handleRightArrow = () => {
     turnInvisible();
     setTimeout(() => {
-      if (frontIndex < front.length - 1) {
-        setFrontIndex(frontIndex + 1);
+      if (backIndex < back.length - 1) {
+        setBackIndex(backIndex + 1);
       } else {
-        setFrontIndex(0);
+        setBackIndex(0);
       }
       turnVisible();
     }, 400);
   };
-
-  const handleEnabled = () => {
-    if (!front[frontIndex].linkToPage) {
-      return false;
-    }
-    return true;
-  }; // Desabilita btn
 
   return (
     <div className={styles.mainContainer}>
@@ -59,35 +51,15 @@ export default function FrontImg() {
       >
         <BiLeftArrow className={`${styles.iconBtn} ${styles.iconLeft}`} />
       </button>
-
       <div className={styles.subContainer}>
         <div ref={transition} className={styles.transitionContainer}>
-          <h2 className={styles.title}>{front[frontIndex].title}</h2>
-
-          <img className={styles.image} src={front[frontIndex].img} alt='"projectImg"' />
+          <h2 className={styles.title}>{back[backIndex].title}</h2>
+          <img className={styles.image} src={back[backIndex].img} alt='"projectImg"' />
         </div>
 
         <div className={`${styles.buttonsContainer}`}>
-          <button
-            className={
-              front[frontIndex].linkToPage
-                ? `${styles.btn} ${styles.btnText}`
-                : `${styles.btn} ${styles.btnTextDisabled}`
-            }
-            disabled={handleEnabled}
-            type="button"
-          >
-            <a href={front[frontIndex].linkToPage} target="_blank" rel="noopener noreferrer">
-              {front[frontIndex].linkToPage ? (
-                'Preview'
-              ) : (
-                <GiSightDisabled className={`${styles.iconDisabled}`} />
-              )}
-            </a>
-          </button>
-
           <button className={`${styles.btn} ${styles.btnText}`} type="button">
-            <a href={front[frontIndex].linkToRepo} target="_blank" rel="noopener noreferrer">
+            <a href={back[backIndex].linkToRepo} target="_blank" rel="noopener noreferrer">
               Repositório
             </a>
           </button>

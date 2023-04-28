@@ -2,9 +2,9 @@ import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import '../global.css';
 import { AnimatePresence } from 'framer-motion';
-import About from '../pages/About';
-import Home from '../pages/Home';
-import Projects from '../pages/Projects';
+import About from './About';
+import Home from './Home';
+import Projects from './Projects';
 
 function AnimatedRoutes() {
   const location = useLocation();
