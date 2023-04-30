@@ -1,5 +1,5 @@
 .container {
-	padding: 0rem 5rem 2rem;
+	padding: 1rem 5rem 2rem;
 }
 
 .transitionContainer {
@@ -12,17 +12,13 @@
 
 .transitionContainer p {
 	color: var(--font);
-	font-size: 2rem;
-	font-weight: 900;
-	letter-spacing: 0.4ch;
-	text-align: justify;
-	text-shadow: 0px 0px 2px black;
+	font-size: 1.8rem;
 }
 
 .psSpan {
 	color: rgb(180, 77, 36, 0.9);
-	font-size: 2rem;
 	margin-right: 0.5em;
+	text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6);
 }
 
 .techsContainer {
@@ -44,15 +40,10 @@
 	border: 0.5px solid rgb(255, 255, 255, 0.2);
 	color: var(--font);
 	display: flex;
-	font-size: 1.5rem;
-	font-weight: 900;
+	font-size: 1.3rem;
 	justify-content: center;
-	letter-spacing: 0.3ch;
-	line-height: 3.5ch;
 	margin: 0.3em;
 	padding: 0.4em 0.6em 0.4em calc(0.6em + 3px);
-	text-align: center;
-	text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
 	box-shadow:
 		-2px -2px 4px rgba(0, 0, 0, 0.1),
 		-1px -1px 4px rgba(0, 0, 0, 0.1),
@@ -74,10 +65,7 @@
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	color: var(--font);
 	font-size: 1.8rem;
-	font-weight: 900;
-	letter-spacing: 0.4ch;
 	padding: 0.5em 0.6em 0.5em calc(0.6em + 5px);
-	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
 	transition: all 0.3s linear;
 	box-shadow:
 		/* active */

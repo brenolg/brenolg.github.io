@@ -1,8 +1,7 @@
 #nav {
-  -webkit-backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(300px);
   align-items: center;
   animation: forwards ease-in-out moveNav 5s;
-  backdrop-filter: blur(100px);
   backdrop-filter: blur(300px);
   background: rgba(04, 28, 38, 0.7);
   border-radius: 50em;

@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
 import back from '../utils/arrays/backArray';
 import Context from '../context/Context';
-import styles from './BackText.module.css';
+import styles from './carouselText.module.css';
 
 export default function BackText() {
   const { backIndex } = useContext(Context);

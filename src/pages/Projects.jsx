@@ -21,10 +21,10 @@ export default function Projects() {
           <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
             <h1>Projetos Front</h1>
           </motion.div>
-          <motion.div className={`${styles.imgFront} glass`} {...motionProps.mainContent}>
+          <motion.div className={`${styles.imgContainer} glass`} {...motionProps.mainContent}>
             <FrontImg />
           </motion.div>
-          <motion.div className={`${styles.textFront} glass`} {...motionProps.mainContent}>
+          <motion.div className={`${styles.textContainer} glass`} {...motionProps.mainContent}>
             <FrontText />
           </motion.div>
         </section>
@@ -37,10 +37,10 @@ export default function Projects() {
           <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
             <h1>Projetos Back</h1>
           </motion.div>
-          <motion.div className={`${styles.imgBack} glass`} {...motionProps.mainContent}>
+          <motion.div className={`${styles.imgContainer} glass`} {...motionProps.mainContent}>
             <BackImg />
           </motion.div>
-          <motion.div className={`${styles.textBack} glass`} {...motionProps.mainContent}>
+          <motion.div className={`${styles.textContainer} glass`} {...motionProps.mainContent}>
             <BackText />
           </motion.div>
         </section>
