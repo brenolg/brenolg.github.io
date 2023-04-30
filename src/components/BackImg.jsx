@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 import back from '../utils/arrays/backArray';
 import Context from '../context/Context';
-import styles from './BackImg.module.css';
+import styles from './carouselImg.module.css';
 
 export default function BackImg() {
   const { backIndex, setBackIndex } = useContext(Context);

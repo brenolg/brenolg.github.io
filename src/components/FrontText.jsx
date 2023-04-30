@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
 import front from '../utils/arrays/frontArray';
 import Context from '../context/Context';
-import styles from './FrontText.module.css';
+import styles from './carouselText.module.css';
 
 export default function FrontText() {
   const { frontIndex } = useContext(Context);

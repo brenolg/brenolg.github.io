@@ -24,7 +24,7 @@ const walletExpenses = {
   functionalities: ['-Fazer login de usuário na home', '-Adicionar, editar e excluir despesas e receitas', '-Converter as moedas usando uma API externa', '-60% de cobertura de testes da aplicação'],
   linkToRepo: 'https://github.com/brenolg/Wallet-Expenses',
 
-  ps: ['PS:', 'Em desenvolvimento ... Imagem ilustrativa'],
+  ps: ['PS:', 'Em desenvolvimento... Imagem ilustrativa'],
 };
 
 const tuneMusics = {
@@ -35,7 +35,7 @@ const tuneMusics = {
   functionalities: ['-Pesquisar por artistas', '-Clicar em um card para ver mais detalhes do álbum', '-Adicionar ou remover músicas à playlist favorita', '-Ouvir trechos das músicas na playlist favorita'],
   linkToRepo: 'https://github.com/brenolg/Tune-Musics',
 
-  ps: ['PS:', 'Em desenvolvimento ... Imagem ilustrativa'],
+  ps: ['PS:', 'Em desenvolvimento... Imagem ilustrativa'],
 };
 
 const pixelArt = {
@@ -46,7 +46,7 @@ const pixelArt = {
   functionalities: ['-Ao clicar em uma das cores da paleta, a cor selecionada é aplicada ao pincel para pintar os pixels do quadro', '-Um botão que limpa o quadro preenchendo todos os pixels com branco'],
   linkToRepo: 'https://github.com/brenolg/Pixel-Art',
 
-  ps: ['PS:', 'Em desenvolvimento ... Imagem ilustrativa'],
+  ps: ['PS:', 'Em desenvolvimento... Imagem ilustrativa'],
 };
 
 const appReceitas = {
@@ -57,7 +57,7 @@ const appReceitas = {
   functionalities: ['-Buscar receitas', '-Acessar os detalhes de cada receita', '-Explorar receitas por categoria', '-Iniciar, pausar e finalizar o preparo de uma receita'],
   linkToRepo: 'https://github.com/brenolg/App-Recipes',
   linkToPage: '',
-  ps: ['PS:', 'Em desenvolvimento ... Imagem ilustrativa'],
+  ps: ['PS:', 'Em desenvolvimento... Imagem ilustrativa'],
 };
 
 const toDoList = {
@@ -68,7 +68,7 @@ const toDoList = {
   functionalities: ['-Adicionar uma nova tarefa à lista', '-Marcar uma tarefa como concluída', '-Remover uma tarefa específica da lista', '-Remover todas as tarefas da lista'],
   linkToRepo: 'https://github.com/brenolg/To-Do-List',
 
-  ps: ['PS:', 'Em desenvolvimento ... Imagem ilustrativa'],
+  ps: ['PS:', 'Em desenvolvimento... Imagem ilustrativa'],
 };
 
 const front = [starWars, walletExpenses, tuneMusics, pixelArt, appReceitas, toDoList];

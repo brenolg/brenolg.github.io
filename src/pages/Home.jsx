@@ -51,7 +51,7 @@ export default function Home() {
         <section className={styles.hard_skills}>
           <motion.div className="ball ballRotate" id={styles.ball4} {...motionProps.ball} />
           <motion.div className="ball ballRotate" id={styles.ball5} {...motionProps.ball} />
-          <motion.div className="ball" id={styles.ball6} {...motionProps.ball} />
+          <motion.div className="ball ballRotate" id={styles.ball6} {...motionProps.ball} />
           <motion.div className="ball ballRotate" id={styles.ball7} {...motionProps.ball} />
 
           <motion.div className={`${styles.repos_preview} glass`} {...motionProps.mainContent}>

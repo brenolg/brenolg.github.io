@@ -1,80 +1,7 @@
-#ballMove {
-  animation-delay: 0.5s;
-  animation: moveBall 240s linear infinite;
-  box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.6);
-  height: 6rem;
-  left: 0;
-  offset-path: path(var(--homePath));
-  position: absolute;
-  top: -7vh;
-  width: 6rem;
-  z-index: -2;
-  background:
-    radial-gradient(ellipse at top, rgb(var(--grey)), transparent),
-    radial-gradient(ellipse at bottom, rgb(0, 64, 89), transparent),
-    linear-gradient(to left, transparent, rgb(var(--blue))),
-    linear-gradient(to right, transparent, rgba(var(--blue)));
-}
-
-@keyframes moveBall {
-  0% {
-    offset-distance: 0%;
-    scale: 1;
-  }
-
-  25% {
-    scale: 4;
-  }
-
-  50% {
-    scale: 1;
-  }
-
-  75% {
-    scale: 3;
-  }
-
-  90% {
-    scale: 2;
-  }
-
-  100% {
-    offset-distance: 100%;
-    scale: 1;
-  }
-}
-
-#ball1 {
-  height: 120rem;
-  left: -29%;
-  top: -75%;
-  width: 120rem;
-  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
-    linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
-}
-
-#ball2 {
-  height: 35rem;
-  right: 14%;
-  top: -14%;
-  width: 35rem;
-  background: linear-gradient(0deg, rgb(var(--blue)), transparent),
-    linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
-    linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
-    linear-gradient(225deg, rgb(var(--grey)), transparent);
-}
-
-#ball3 {
-  bottom: -8%;
-  height: 15rem;
-  right: 23%;
-  width: 15rem;
-  background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
-    linear-gradient(315deg, rgb(var(--blue)), transparent);
-}
-
 .profile_section {
+  margin: auto;
   position: relative;
+  width: fit-content;
 }
 
 .profile_container {
@@ -126,37 +53,27 @@
   color: var(--font);
   display: flex;
   flex-direction: column;
-  font-weight: 900;
   justify-content: space-around;
   margin: 9.5rem 0 0;
   padding: 4rem;
-  text-align: justify;
 }
 
 .text h2 {
-  font-size: 3.1rem;
-  padding: 0 0 0.5em;
-  text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+  margin: 0 0 0.5em;
 }
 
 .text span {
-  font-size: 1.6rem;
-  letter-spacing: 0.4ch;
-  padding: 0 0 3em;
-  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+  margin: 0 0 2.5em;
 }
 
 .text p {
-  font-size: 2rem;
-  padding-bottom: 2em;
-  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+  margin-bottom: 4rem;
 }
 
 .profileBtns {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -165,12 +82,8 @@
   border-radius: 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: var(--font);
-  font-size: 1.6rem;
-  font-weight: 900;
-  letter-spacing: 0.5ch;
-  padding: 1em 1em 1em calc(1em + 3px);
-  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
-  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5em 0.6em 0.5em calc(0.6em + 5px);
   transition: all 0.3s linear;
   box-shadow:
     /* active */
@@ -230,26 +143,6 @@
   position: relative;
 }
 
-#ball4 {
-  height: 35rem;
-  left: -15%;
-  top: -10%;
-  width: 35rem;
-  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
-    linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
-    linear-gradient(315deg, rgb(var(--teal)), transparent);
-}
-
-#ball5 {
-  height: 80rem;
-  right: -50%;
-  top: 20%;
-  width: 80rem;
-  background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
-    linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
-    linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
-}
-
 .repos_preview {
   align-items: center;
   border-radius: 5.5rem;
@@ -268,20 +161,10 @@
 
 .repos_preview button {
   border-radius: 2rem;
-  font-size: 2.5rem;
-  margin-bottom: 10rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.7ch;
+  margin-bottom: 9rem;
   padding: 0.5em 1em 0.5em calc(1em + 3px);
-  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
-}
-
-#ball6 {
-  bottom: 44%;
-  height: 12rem;
-  left: -3%;
-  width: 12rem;
-  background: linear-gradient(45deg, rgb(var(--blue)), transparent),
-    linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
-    linear-gradient(180deg, rgb(var(--grey)), transparent);
 }
 
 .stacks_container {
@@ -295,10 +178,120 @@
   z-index: 5;
 }
 
+#ballMove {
+  animation-delay: 0.5s;
+  animation: moveBall 240s linear infinite;
+  box-shadow: 0px 0px 5rem 1rem rgb(0, 0, 0, 0.8);
+  height: 6rem;
+  left: 0;
+  offset-path: path(var(--homePath));
+  position: absolute;
+  top: -7vh;
+  width: 6rem;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse at top, rgb(var(--grey)), transparent),
+    radial-gradient(ellipse at bottom, rgb(0, 64, 89), transparent),
+    linear-gradient(to left, transparent, rgb(var(--blue))),
+    linear-gradient(to right, transparent, rgba(var(--blue)));
+}
+
+@keyframes moveBall {
+  0% {
+    offset-distance: 0%;
+    scale: 1;
+  }
+
+  25% {
+    scale: 4;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  75% {
+    scale: 3;
+  }
+
+  90% {
+    scale: 2;
+  }
+
+  100% {
+    offset-distance: 100%;
+    scale: 1;
+  }
+}
+
+#ball1 {
+  height: 120rem;
+  left: 0%;
+  top: 0%;
+  translate: -38% -60%;
+  width: 120rem;
+  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
+}
+
+#ball2 {
+  height: 35rem;
+  right: 0%;
+  top: 0%;
+  translate: 45% -25%;
+  width: 35rem;
+  background: linear-gradient(0deg, rgb(var(--blue)), transparent),
+    linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
+    linear-gradient(225deg, rgb(var(--grey)), transparent);
+}
+
+#ball3 {
+  bottom: 0%;
+  height: 15rem;
+  right: 0%;
+  translate: 30% 30%;
+  width: 15rem;
+  background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(315deg, rgb(var(--blue)), transparent);
+}
+
+#ball4 {
+  height: 35rem;
+  left: 0%;
+  top: 0%;
+  translate: -45% -35%;
+  width: 35rem;
+  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(315deg, rgb(var(--teal)), transparent);
+}
+
+#ball5 {
+  height: 80rem;
+  right: -50%;
+  top: 20%;
+  width: 80rem;
+  background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
+    linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
+}
+
+#ball6 {
+  bottom: 44%;
+  height: 12rem;
+  left: -3%;
+  width: 12rem;
+  background: linear-gradient(45deg, rgb(var(--blue)), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
+    linear-gradient(180deg, rgb(var(--grey)), transparent);
+}
+
 #ball7 {
-  bottom: -5%;
+  bottom: 0%;
   height: 40rem;
-  left: 10%;
+  left: 0%;
+  translate: 28% 18%;
   width: 40rem;
   background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(45deg, rgb(var(--blue)), transparent),

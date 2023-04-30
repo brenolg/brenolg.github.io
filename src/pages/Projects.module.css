@@ -1,7 +1,49 @@
+.sectionFront {
+  margin: 20rem auto;
+  padding-bottom: 18rem;
+  position: relative;
+  width: 75vw;
+}
+
+.title {
+  border-radius: 5.5rem;
+  color: var(--font);
+  left: 30%;
+  margin: auto;
+  padding: 3.5em 1em 22em;
+  position: absolute;
+  top: 0;
+  width: 40%;
+}
+
+.imgContainer {
+  border-radius: 5.5rem;
+  left: 0;
+  position: absolute;
+  top: 12rem;
+  width: 62%;
+  z-index: 4;
+}
+
+.textContainer {
+  border-radius: 5.5rem;
+  margin-left: auto;
+  padding-left: 3%;
+  position: relative;
+  top: 18rem;
+  width: 42%;
+}
+
+.sectionBack {
+  margin: 20rem auto;
+  padding-bottom: 18rem;
+  position: relative;
+  width: 75vw;
+}
+
 #ballMove {
-  animation-delay: 0.5s;
-  animation: moveBall 180s linear infinite;
-  box-shadow: 0px 0px 50px 10px rgb(0, 0, 0, 0.6);
+  animation: moveBall 180s linear 0.5s infinite;
+  box-shadow: 0px 0px 5rem 1rem rgb(0, 0, 0, 0.8);
   height: 6rem;
   left: 0;
   offset-path: path(var(--projectsPath));
@@ -44,77 +86,40 @@
 }
 
 #ball1 {
-  height: 45rem;
-  left: -10%;
-  top: -3%;
-  width: 45rem;
-  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
-    linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
-}
-
-#ball2 {
   height: 32rem;
-  right: 18%;
-  top: -6%;
+  right: 30%;
+  top: 0%;
+  translate: 50% -18%;
   width: 32rem;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
 }
 
+#ball2 {
+  height: 45rem;
+  left: 0%;
+  top: 0%;
+  translate: -30% -6%;
+  width: 45rem;
+  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
+}
+
 #ball3 {
-  bottom: -6%;
+  bottom: 0%;
   height: 25rem;
-  right: 32%;
+  right: 30%;
+  translate: -12% 18%;
   width: 25rem;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
-.sectionFront {
-  margin: 20rem auto;
-  position: relative;
-  padding-bottom: 18rem;
-  width: 75vw;
-}
-
-.title {
-  border-radius: 5.5rem;
-  color: var(--font);
-  font-size: 2.8rem;
-  font-weight: 900;
-  left: 30%;
-  letter-spacing: 0.3ch;
-  margin: auto;
-  padding: 1.2em 1em 6em;
-  position: absolute;
-  text-align: center;
-  text-shadow: 0px 0px 3px rgb(6, 17, 52), 0px 0px 3px black, 0px 0px 3px black;
-  top: 0;
-  width: 40%;
-}
-
-.imgFront {
-  border-radius: 5.5rem;
-  left: 0px;
-  position: absolute;
-  top: 12rem;
-  width: 62%;
-  z-index: 4;
-}
-
-.textFront {
-  border-radius: 50px;
-  margin-left: auto;
-  padding-left: 3%;
-  position: relative;
-  top: 18rem;
-  width: 42%;
-}
-
 #ball4 {
   height: 62rem;
-  left: -8%;
-  top: -5%;
+  left: 30%;
+  top: 0%;
+  translate: -85% -6%;
   width: 62rem;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
@@ -122,8 +127,9 @@
 
 #ball5 {
   height: 25rem;
-  right: 15%;
-  top: 12%;
+  right: 30%;
+  top: 0%;
+  translate: 75% 30%;
   width: 25rem;
   background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
@@ -131,35 +137,11 @@
 }
 
 #ball6 {
-  bottom: -15%;
+  bottom: 0%;
   height: 36rem;
-  right: 25%;
+  right: 40%;
+  translate: 50% 30%;
   width: 36rem;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
-}
-
-.sectionBack {
-  margin: 0 auto 20rem;
-  padding-bottom: 18rem;
-  position: relative;
-  width: 75vw;
-}
-
-.imgBack {
-  border-radius: 5.5rem;
-  left: 0;
-  position: absolute;
-  top: 12rem;
-  width: 62%;
-  z-index: 4;
-}
-
-.textBack {
-  border-radius: 50px;
-  margin-left: auto;
-  padding-left: 3%;
-  position: relative;
-  top: 18rem;
-  width: 42%;
 }

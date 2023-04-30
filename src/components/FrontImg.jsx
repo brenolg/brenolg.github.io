@@ -3,7 +3,7 @@ import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 import { GiSightDisabled } from 'react-icons/gi';
 import front from '../utils/arrays/frontArray';
 import Context from '../context/Context';
-import styles from './FrontImg.module.css';
+import styles from './carouselImg.module.css';
 
 export default function FrontImg() {
   const { frontIndex, setFrontIndex } = useContext(Context);
