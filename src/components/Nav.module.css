@@ -107,3 +107,19 @@
 .btn:hover .iconBtn {
   color: rgb(2, 21, 32);
 }
+
+@media screen and (max-width: 1050px) {
+  #nav {
+    animation: none;
+    bottom: 0;
+    right: auto;
+    margin: auto;
+    left: 15vw;
+    width: 70vw;
+    flex-direction: row;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    font-size: 2rem;
+    z-index: 99;
+  }
+}

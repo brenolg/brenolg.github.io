@@ -13,8 +13,8 @@
 .profile {
   border-radius: 5.5rem;
   margin: 0rem auto;
-  max-width: 50vw;
   padding: 0 1.5rem;
+  width: 50vw;
 }
 
 .img_border {
@@ -27,7 +27,8 @@
   display: flex;
   height: 22rem;
   justify-content: center;
-  margin: -11rem auto;
+  margin: auto;
+  translate: 0% -42%;
   width: 22rem;
 }
 
@@ -54,7 +55,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 9.5rem 0 0;
+  margin-top: -11rem;
   padding: 4rem;
 }
 
@@ -82,8 +83,10 @@
   border-radius: 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: var(--font);
-  font-size: 2rem;
-  padding: 0.5em 0.6em 0.5em calc(0.6em + 5px);
+  font-size: clamp(1.5rem, 1vw + 1rem, 2rem);
+  line-height: 3.5ch;
+  max-width: 60%;
+  padding: 0.5em 0.6em 0.5em calc(0.6em + 3px);
   transition: all 0.3s linear;
   box-shadow:
     /* active */
@@ -149,7 +152,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 43vw;
+  width: 43vw;
   z-index: 2;
 }
 
@@ -161,20 +164,22 @@
 
 .repos_preview button {
   border-radius: 2rem;
-  font-size: 2.4rem;
+  font-size: clamp(1.5rem, 1.2vw + 1rem, 2.4rem);
   letter-spacing: 0.7ch;
+  line-height: 3.5ch;
   margin-bottom: 9rem;
+  max-width: 45%;
   padding: 0.5em 1em 0.5em calc(1em + 3px);
 }
 
 .stacks_container {
   border-radius: 5.5rem;
   margin-bottom: 18rem;
-  margin-left: 15vw;
+  margin-left: auto;
   margin-top: -4.5%;
-  max-width: 50vw;
   padding: 5em;
   position: relative;
+  width: 50vw;
   z-index: 5;
 }
 
@@ -182,12 +187,12 @@
   animation-delay: 0.5s;
   animation: moveBall 240s linear infinite;
   box-shadow: 0px 0px 5rem 1rem rgb(0, 0, 0, 0.8);
-  height: 6rem;
+  height: 2.4vw;
   left: 0;
   offset-path: path(var(--homePath));
   position: absolute;
   top: -7vh;
-  width: 6rem;
+  width: 2.4vw;
   z-index: -2;
   background:
     radial-gradient(ellipse at top, rgb(var(--grey)), transparent),
@@ -225,21 +230,21 @@
 }
 
 #ball1 {
-  height: 120rem;
+  height: 72vw;
   left: 0%;
   top: 0%;
   translate: -38% -60%;
-  width: 120rem;
+  width: 72vw;
   background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
 #ball2 {
-  height: 35rem;
+  height: 20vw;
   right: 0%;
   top: 0%;
   translate: 45% -25%;
-  width: 35rem;
+  width: 20vw;
   background: linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
@@ -248,30 +253,30 @@
 
 #ball3 {
   bottom: 0%;
-  height: 15rem;
+  height: 8vw;
   right: 0%;
   translate: 30% 30%;
-  width: 15rem;
+  width: 8vw;
   background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(315deg, rgb(var(--blue)), transparent);
 }
 
 #ball4 {
-  height: 35rem;
+  height: 22vw;
   left: 0%;
   top: 0%;
   translate: -45% -35%;
-  width: 35rem;
+  width: 22vw;
   background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(315deg, rgb(var(--teal)), transparent);
 }
 
 #ball5 {
-  height: 80rem;
+  height: 48vw;
   right: -50%;
   top: 20%;
-  width: 80rem;
+  width: 48vw;
   background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
     linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
@@ -279,9 +284,9 @@
 
 #ball6 {
   bottom: 44%;
-  height: 12rem;
+  height: 6vw;
   left: -3%;
-  width: 12rem;
+  width: 6vw;
   background: linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(180deg, rgb(var(--grey)), transparent);
@@ -289,11 +294,79 @@
 
 #ball7 {
   bottom: 0%;
-  height: 40rem;
+  height: 24vw;
   left: 0%;
   translate: 28% 18%;
-  width: 40rem;
+  width: 24vw;
   background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(225deg, rgb(var(--grey)), transparent);
+}
+
+@media screen and (max-width: 1400px) {
+  .profile {
+    width: 70vw;
+  }
+
+  .repos_preview {
+    width: 60vw;
+  }
+
+  .stacks_container {
+    width: 60vw;
+  }
+
+  #ball7 {
+    bottom: 0%;
+    height: 24vw;
+    left: 0%;
+    translate: 12% 18%;
+  }
+
+  .profileBtns {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    width: 80vw;
+  }
+
+  .profileBtns {
+    justify-content: space-around;
+  }
+
+  .text {
+    padding: 4rem 0.8em;
+    ;
+  }
+
+  .hard_skills {
+    max-width: 80vw;
+  }
+
+  .repos_preview button {
+    margin-bottom: 4rem;
+  }
+
+  .stacks_container {
+    width: 75vw;
+    padding: 2rem 2rem;
+    margin-bottom: 12rem;
+  }
+
+  .profile_container {
+    margin-bottom: 12rem;
+  }
+
+  #ball4 {
+    translate: -35% -35%;
+  }
+
+  #ball5 {
+    height: 60vw;
+    width: 60vw;
+    translate: -25% -35%;
+  }
 }
