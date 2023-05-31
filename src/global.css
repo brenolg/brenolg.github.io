@@ -28,21 +28,21 @@ body {
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: clamp(2.7rem, 1vw + 1.3rem, 3.3rem);
   letter-spacing: 0.5ch;
   text-align: center;
   text-shadow: 0 0 1rem black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(2.4rem, 1vw + 1rem, 3rem);
   letter-spacing: 0.4ch;
   text-align: center;
   text-shadow: 0 0 1rem black, 0 0 3px black, 0 0 3px black;
 }
 
 p {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1vw + 1rem, 2rem);
   letter-spacing: 0.5ch;
   line-height: 4.5ch;
   text-align: justify;

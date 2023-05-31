@@ -52,7 +52,7 @@ const pixelArt = {
 const appReceitas = {
   title: 'App Receitas',
   img: appRecipesImg,
-  description: ['Este é um projeto de app de receitas que consiste em desenvolver um sistema que permite visualizar, buscar, filtrar, favoritar, compartilhar e acompanhar o processo de preparação de receitas e drinks. A base de dados serão 2 APIs distintas, uma para comidas e outra para bebidas.'],
+  description: ['Este é um projeto de app de receitas que consiste em desenvolver um sistema que permite visualizar, buscar, filtrar, favoritar, compartilhar e acompanhar o processo de preparação de receitas e drinks. A base de dados são de 2 APIs distintas.'],
   techs: ['React', 'LocalStorage', 'RTL', 'Context', 'Hooks', 'Javascript', 'HTML', 'CSS'],
   functionalities: ['-Buscar receitas', '-Acessar os detalhes de cada receita', '-Explorar receitas por categoria', '-Iniciar, pausar e finalizar o preparo de uma receita'],
   linkToRepo: 'https://github.com/brenolg/App-Recipes',
