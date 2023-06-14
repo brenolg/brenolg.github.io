@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.02086555.css",
-    "main.js": "/static/js/main.532f83e3.js",
+    "main.css": "/static/css/main.0ad3743a.css",
+    "main.js": "/static/js/main.f825536e.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
+    "static/media/puc.gif": "/static/media/puc.27d91e8a89999fce93bc.gif",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
     "static/media/brenoSobre.png": "/static/media/brenoSobre.91179cff9d16fbf38914.png",
     "static/media/wallet.gif": "/static/media/wallet.9e2b1455aaa434387eb3.gif",
+    "static/media/trivia.gif": "/static/media/trivia.2ebe8551f4bde100a3be.gif",
     "static/media/tuneMusics.gif": "/static/media/tuneMusics.bf7e038898db86dfa7f0.gif",
     "static/media/fotoBreno.png": "/static/media/fotoBreno.d287deaec7a1d59f46e8.png",
     "static/media/app-receitas.png": "/static/media/app-receitas.206d5d654abd54552223.png",
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
+    "static/media/api.png": "/static/media/api.6a6219d988bd4825a56e.png",
     "static/media/mysql.png": "/static/media/mysql.b531250adc5d30be8c60.png",
+    "static/media/tfc.png": "/static/media/tfc.d256a20c9ef10b13fd29.png",
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
+    "static/media/mongoDB.png": "/static/media/mongoDB.1a85fce6a90e81ec3404.png",
     "index.html": "/index.html",
-    "main.02086555.css.map": "/static/css/main.02086555.css.map",
-    "main.532f83e3.js.map": "/static/js/main.532f83e3.js.map",
+    "main.0ad3743a.css.map": "/static/css/main.0ad3743a.css.map",
+    "main.f825536e.js.map": "/static/js/main.f825536e.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02086555.css",
-    "static/js/main.532f83e3.js"
+    "static/css/main.0ad3743a.css",
+    "static/js/main.f825536e.js"
   ]
 }
