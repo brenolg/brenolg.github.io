@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ad3743a.css",
-    "main.js": "/static/js/main.f825536e.js",
+    "main.css": "/static/css/main.4d569db2.css",
+    "main.js": "/static/js/main.7e7fa474.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/puc.gif": "/static/media/puc.27d91e8a89999fce93bc.gif",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
@@ -19,12 +19,12 @@
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "static/media/mongoDB.png": "/static/media/mongoDB.1a85fce6a90e81ec3404.png",
     "index.html": "/index.html",
-    "main.0ad3743a.css.map": "/static/css/main.0ad3743a.css.map",
-    "main.f825536e.js.map": "/static/js/main.f825536e.js.map",
+    "main.4d569db2.css.map": "/static/css/main.4d569db2.css.map",
+    "main.7e7fa474.js.map": "/static/js/main.7e7fa474.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ad3743a.css",
-    "static/js/main.f825536e.js"
+    "static/css/main.4d569db2.css",
+    "static/js/main.7e7fa474.js"
   ]
 }
