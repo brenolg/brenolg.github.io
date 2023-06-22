@@ -1,12 +1,15 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Techs from '../components/Techs';
 import fotoBreno from '../images/fotoBreno.png';
 import StarWars from '../images/star-wars.gif';
-import styles from './Home.module.css';
 import motionProps from '../utils/motionProps';
+import styles from './Home.module.css';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
       <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
@@ -35,13 +38,16 @@ export default function Home() {
                   momento backend.
                 </p>
                 <div className={styles.profileBtns}>
-                  <button className={styles.btn} type="button">
-                    Entrar em Contato
-                  </button>
-
-                  <button className={styles.btn} type="button">
-                    Download CV
-                  </button>
+                  <a className={styles.link} href="mailto: brenolgar@gmail.com">
+                    <button className={styles.btn} type="button">
+                      Entrar em Contato
+                    </button>
+                  </a>
+                  <a className={styles.link} href="mailto: brenolgar@gmail.com">
+                    <button className={styles.btn} type="button">
+                      Download CV
+                    </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -56,7 +62,13 @@ export default function Home() {
 
           <motion.div className={`${styles.repos_preview} glass`} {...motionProps.mainContent}>
             <img src={StarWars} alt="Projects Gifts" />
-            <button className={styles.btn} type="button">
+            <button
+              className={styles.btn}
+              type="button"
+              onClick={() => {
+                navigate('/projects');
+              }}
+            >
               Projects Page
             </button>
           </motion.div>
