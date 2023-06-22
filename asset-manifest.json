@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4d890d4b.css",
-    "main.js": "/static/js/main.d0f748fb.js",
+    "main.js": "/static/js/main.83f08a77.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/appDel.gif": "/static/media/appDel.c49bf16c962be26d5cd5.gif",
     "static/media/puc.gif": "/static/media/puc.27d91e8a89999fce93bc.gif",
@@ -15,22 +15,24 @@
     "static/media/app-receitas.png": "/static/media/app-receitas.206d5d654abd54552223.png",
     "static/media/cart.gif": "/static/media/cart.24c7221118c8e5a1c807.gif",
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
-    "static/media/api.png": "/static/media/api.6a6219d988bd4825a56e.png",
-    "static/media/carShop.png": "/static/media/carShop.aa50555f8fc5dc377d2b.png",
+    "static/media/devsDragons.png": "/static/media/devsDragons.f99260982249de2bf667.png",
+    "static/media/black.png": "/static/media/black.37a9a1a4466a0c3f747b.png",
+    "static/media/storeManager.png": "/static/media/storeManager.438aaf33c4fbe7524b10.png",
+    "static/media/mysql.png": "/static/media/mysql.f321c4520a1c05fefc9c.png",
+    "static/media/carShop.png": "/static/media/carShop.f3e6f6f78fa39231ab45.png",
     "static/media/tryunfo.png": "/static/media/tryunfo.cc649b952bd400e1e6bf.png",
-    "static/media/mysql.png": "/static/media/mysql.b531250adc5d30be8c60.png",
-    "static/media/black.png": "/static/media/black.c095d20c6becf3ecb072.png",
-    "static/media/talker.png": "/static/media/talker.f7c3d5c883e158c7be58.png",
+    "static/media/apiBlogs.png": "/static/media/apiBlogs.42d15071065406590040.png",
+    "static/media/talker.png": "/static/media/talker.b52f1b8114a8fc1d9efd.png",
+    "static/media/mongoDB.png": "/static/media/mongoDB.5402868da41f3f6b20e4.png",
     "static/media/tfc.png": "/static/media/tfc.8e1988a7242c276998af.png",
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
-    "static/media/mongoDB.png": "/static/media/mongoDB.1a85fce6a90e81ec3404.png",
     "index.html": "/index.html",
     "main.4d890d4b.css.map": "/static/css/main.4d890d4b.css.map",
-    "main.d0f748fb.js.map": "/static/js/main.d0f748fb.js.map",
+    "main.83f08a77.js.map": "/static/js/main.83f08a77.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d890d4b.css",
-    "static/js/main.d0f748fb.js"
+    "static/js/main.83f08a77.js"
   ]
 }
