@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.4d890d4b.css",
-    "main.js": "/static/js/main.9958243b.js",
+    "main.js": "/static/js/main.4a0aaaf1.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
+    "static/media/appDel.gif": "/static/media/appDel.c49bf16c962be26d5cd5.gif",
     "static/media/puc.gif": "/static/media/puc.27d91e8a89999fce93bc.gif",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
@@ -17,16 +18,19 @@
     "static/media/api.png": "/static/media/api.6a6219d988bd4825a56e.png",
     "static/media/tryunfo.png": "/static/media/tryunfo.cc649b952bd400e1e6bf.png",
     "static/media/mysql.png": "/static/media/mysql.b531250adc5d30be8c60.png",
+    "static/media/carShop.png": "/static/media/carShop.12203952995f767892b2.png",
+    "static/media/black.png": "/static/media/black.c095d20c6becf3ecb072.png",
+    "static/media/talker.png": "/static/media/talker.f7c3d5c883e158c7be58.png",
     "static/media/tfc.png": "/static/media/tfc.8e1988a7242c276998af.png",
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "static/media/mongoDB.png": "/static/media/mongoDB.1a85fce6a90e81ec3404.png",
     "index.html": "/index.html",
     "main.4d890d4b.css.map": "/static/css/main.4d890d4b.css.map",
-    "main.9958243b.js.map": "/static/js/main.9958243b.js.map",
+    "main.4a0aaaf1.js.map": "/static/js/main.4a0aaaf1.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d890d4b.css",
-    "static/js/main.9958243b.js"
+    "static/js/main.4a0aaaf1.js"
   ]
 }
