@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d569db2.css",
-    "main.js": "/static/js/main.7e7fa474.js",
+    "main.css": "/static/css/main.5304c672.css",
+    "main.js": "/static/js/main.82132dda.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/puc.gif": "/static/media/puc.27d91e8a89999fce93bc.gif",
     "static/media/star-wars.gif": "/static/media/star-wars.43409730a0688ce614e1.gif",
@@ -15,16 +15,16 @@
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
     "static/media/api.png": "/static/media/api.6a6219d988bd4825a56e.png",
     "static/media/mysql.png": "/static/media/mysql.b531250adc5d30be8c60.png",
-    "static/media/tfc.png": "/static/media/tfc.d256a20c9ef10b13fd29.png",
+    "static/media/tfc.png": "/static/media/tfc.8e1988a7242c276998af.png",
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "static/media/mongoDB.png": "/static/media/mongoDB.1a85fce6a90e81ec3404.png",
     "index.html": "/index.html",
-    "main.4d569db2.css.map": "/static/css/main.4d569db2.css.map",
-    "main.7e7fa474.js.map": "/static/js/main.7e7fa474.js.map",
+    "main.5304c672.css.map": "/static/css/main.5304c672.css.map",
+    "main.82132dda.js.map": "/static/js/main.82132dda.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d569db2.css",
-    "static/js/main.7e7fa474.js"
+    "static/css/main.5304c672.css",
+    "static/js/main.82132dda.js"
   ]
 }
