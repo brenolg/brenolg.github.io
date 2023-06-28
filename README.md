@@ -2,7 +2,5 @@
 
 <img width="100%" src="demo.gif" />
 
-## Para visualizar, acesse o link do <a	href=https://brenolg.github.io/
-	target="_blank"
-	rel="noopener noreferrer"> Portfólio 
+## Para visualizar, acesse o link do <a	href=https://brenolg.github.io/> Portfólio 
 <a/>
