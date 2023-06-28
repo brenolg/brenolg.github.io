@@ -1,6 +1,6 @@
 # Meu Portfólio Web
 
-<img width="100%" src="demo.gif" />
-
 ## Para visualizar, acesse o link do <a	href=https://brenolg.github.io/> Portfólio 
 <a/>
+
+<img width="50%" src="demo.gif" />
