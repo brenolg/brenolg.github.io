@@ -1,8 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import styles from './About.module.css';
+import React from 'react';
 import myImg from '../images/brenoSobre.png';
 import motionProps from '../utils/motionProps';
+import styles from './About.module.css';
 
 export default function About() {
   return (
@@ -48,9 +48,9 @@ export default function About() {
             <br />
             <br />
             <p className={`${styles.p} `}>
-              Estou em fase final de um curso na Trybe, empresa que disponibiliza mais de 1500 horas
-              dentre Front End, Back End e Ciências de Dados. Desenvolvi mais de 20 projetos
-              individuais e em grupos, dentre eles (cita 3, jogo de tiro).
+              Conclui o curso da Trybe, empresa que disponibiliza mais de 1500 horas dentre Front
+              End, Back End e Ciências de Dados. Desenvolvi mais de 20 projetos individuais e em
+              grupos.
             </p>
           </div>
         </section>

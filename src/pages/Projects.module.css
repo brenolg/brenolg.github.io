@@ -1,6 +1,6 @@
-.sectionFront {
-  margin: 20rem auto;
-  padding-bottom: 18rem;
+.projectSection {
+  margin: 25rem auto;
+  padding-bottom: 5rem;
   position: relative;
   width: 75vw;
 }
@@ -8,39 +8,34 @@
 .title {
   border-radius: 5.5rem;
   color: var(--font);
+  padding: 3.5em 10em 22em;
+  margin: auto;
   left: 50%;
-  transform: translate(-50%, 0%);
-  padding: 3.5em 8em 22em;
-  position: absolute;
-  top: 0;
+  line-height: 8.5ch;
+  translate: -50%;
   text-align: center;
-  max-width: 70%;
+  max-width: 80%;
+  position: absolute;
+  top: -10rem;
+  max-width: 95%;
 }
 
 .imgContainer {
   border-radius: 5.5rem;
-  left: 0;
-  position: absolute;
-  top: 12rem;
   width: 62%;
+  height: 55rem;
   z-index: 4;
+  position: absolute;
 }
 
 .textContainer {
   border-radius: 5.5rem;
   margin-left: auto;
-  padding-top: 3rem;
-  padding-left: 3%;
+  padding: 5.5rem 2.3rem;
   position: relative;
-  top: 18rem;
+  top: 5rem;
+  right: 0;
   width: 42%;
-}
-
-.sectionBack {
-  margin: 20rem auto;
-  padding-bottom: 18rem;
-  position: relative;
-  width: 75vw;
 }
 
 #ballMove {
@@ -91,7 +86,7 @@
   height: 18vw;
   right: 30%;
   top: 0%;
-  translate: 50% -18%;
+  translate: 50% -12%;
   width: 18vw;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
@@ -101,7 +96,7 @@
   height: 25vw;
   left: 0%;
   top: 0%;
-  translate: -30% -6%;
+  translate: -30% -12%;
   width: 25vw;
   background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
@@ -118,11 +113,11 @@
 }
 
 #ball4 {
-  height: 36vw;
+  height: 38vw;
   left: 30%;
   top: 0%;
-  translate: -85% -6%;
-  width: 36vw;
+  translate: -85% -12%;
+  width: 38vw;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
 }
@@ -131,7 +126,7 @@
   height: 16vw;
   right: 30%;
   top: 0%;
-  translate: 75% 30%;
+  translate: 75% -6%;
   width: 16vw;
   background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
@@ -140,20 +135,45 @@
 
 #ball6 {
   bottom: 0%;
-  height: 22vw;
+  height: 12vw;
   right: 40%;
+  translate: 50% 30%;
+  width: 12vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
+}
+
+#ball7 {
+  bottom: 25%;
+  height: 22vw;
+  right: 50%;
   translate: 50% 30%;
   width: 22vw;
   background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
+#ball8 {
+  bottom: 28%;
+  height: 12vw;
+  right: 40%;
+  translate: -12% 18%;
+  width: 12vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
+}
+
 @media screen and (max-width: 1300px) {
-  .sectionFront {
-    margin: 16rem auto 20rem;
-    padding-bottom: 18rem;
-    position: relative;
-    width: 75vw;
+  .title {
+    z-index: -5;
+  }
+
+  .projectSection {
+    width: 80vw;
+  }
+
+  .projectSection:last-child {
+    margin-bottom: 8rem;
   }
 
   .imgContainer {
@@ -162,7 +182,6 @@
 
   .textContainer {
     width: 60%;
-    padding: 6%;
   }
 
   #ball3 {
@@ -174,36 +193,33 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .title {
+@media screen and (max-width: 1050px) {
+  .imgContainer {
+    width: 100%;
+    height: 42rem;
+    padding-bottom: 5rem;
     position: static;
-    margin: auto;
-    transform: translate(0%, 0%);
-    padding: 3.5em 8em 10rem;
   }
 
-  .imgContainer {
-    position: static;
-    transform: translate(0%, -8rem);
-    margin-right: auto;
-    width: 100%;
-    padding-bottom: 3rem;
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
   }
 
   .textContainer {
-    position: static;
-    transform: translate(0%, -12rem);
-    margin-left: auto;
+    margin-top: -5rem;
     width: 100%;
+    position: static;
   }
 
-  .sectionFront {
-    margin-bottom: -38rem;
+  .title {
+    padding: 2em 5em 24em;
+    width: 90%;
   }
 
-  .sectionBack {
-    margin-bottom: -38rem;
-    padding: 0;
+  .featured_title {
+    padding: 2em 0em 24em;
   }
 
   #ball1 {
@@ -221,11 +237,11 @@
   }
 
   #ball3 {
-    height: 40vw;
-    width: 40vw;
-    bottom: 12%;
-    right: -40%;
-    translate: 0% 0%;
+    height: 30vw;
+    width: 30vw;
+    bottom: 0%;
+    right: 0%;
+    translate: 20% 5%;
   }
 
   #ball4 {
@@ -247,8 +263,9 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .sectionFront {
-    margin-top: -8rem;
+@media screen and (max-width: 350px) {
+  .featured_title {
+    font-size: 1rem;
+    top: -14rem;
   }
 }

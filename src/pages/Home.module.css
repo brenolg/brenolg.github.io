@@ -78,14 +78,21 @@
   width: 100%;
 }
 
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
   background-color: inherit;
+  min-width: 28ch;
   border-radius: 1.5rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: var(--font);
   font-size: clamp(1.5rem, 1vw + 1rem, 2rem);
   line-height: 3.5ch;
-  max-width: 60%;
+  max-width: 100%;
   padding: 0.5em 0.6em 0.5em calc(0.6em + 3px);
   transition: all 0.3s linear;
   box-shadow:
@@ -116,7 +123,7 @@
     inset 2px 2px 4px rgba(0, 0, 0, 0),
     inset 2px 2px 4px rgba(0, 0, 0, 0),
     /* hover */
-    -0px -0px 12px 5px rgba(0, 0, 0, 0.5),
+    -0px -0px 5px 5px rgba(0, 0, 0, 0.3),
     inset 3px 3px 4px rgb(255, 255, 255, 0.5),
     /* default */
     -3px -3px 8px rgba(0, 0, 0, 0),
@@ -157,19 +164,18 @@
 }
 
 .repos_preview img {
-  border-radius: 7.5rem;
+  border-radius: 5.5rem;
   max-width: 100%;
   padding: 4rem 4rem;
 }
 
 .repos_preview button {
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   font-size: clamp(1.5rem, 1.2vw + 1rem, 2.4rem);
   letter-spacing: 0.7ch;
   line-height: 3.5ch;
-  margin-bottom: 9rem;
   max-width: 45%;
-  padding: 0.5em 1em 0.5em calc(1em + 3px);
+  margin-bottom: 9rem;
 }
 
 .stacks_container {
@@ -328,6 +334,14 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .profile {
     width: 80vw;
@@ -347,13 +361,13 @@
   }
 
   .repos_preview button {
-    margin-bottom: 4rem;
+    margin: 0rem 4rem 4rem;
   }
 
   .stacks_container {
     width: 75vw;
     padding: 2rem 2rem;
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
   }
 
   .profile_container {
@@ -368,5 +382,12 @@
     height: 60vw;
     width: 60vw;
     translate: -25% -35%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profileBtns {
+    flex-direction: column;
+    gap: 2rem;
   }
 }

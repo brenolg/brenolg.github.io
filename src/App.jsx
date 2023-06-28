@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import AnimatedRoutes from './pages/AnimatedRoutes';
+import Cursor from './components/Cursor';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import './global.css';
-import Cursor from './components/Cursor';
+import AnimatedRoutes from './pages/AnimatedRoutes';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Cursor />
-      <Nav />
       <AnimatedRoutes />
+      <Nav />
     </BrowserRouter>
   );
 }
