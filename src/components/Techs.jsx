@@ -1,27 +1,34 @@
+/* eslint-disable */
 import React from 'react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiJavascript, DiLinux, DiPhotoshop } from 'react-icons/di';
-import { FaBootstrap,
+import {
+  FaAngular,
+  FaBootstrap,
   FaCss3Alt,
+  FaDatabase,
   FaDocker,
   FaGithub,
-  FaReact,
   FaNodeJs,
-  FaDatabase } from 'react-icons/fa';
+  FaPython,
+  FaReact,
+} from 'react-icons/fa';
 import { FiFigma, FiSlack } from 'react-icons/fi';
 import { GrMysql } from 'react-icons/gr';
-import { SiEslint,
-  SiGimp,
-  SiJest,
-  SiRedux,
-  SiSteam,
-  SiTestinglibrary,
-  SiTypescript,
+import {
+  SiEslint,
   SiExpress,
   SiFastapi,
+  SiGimp,
+  SiJest,
+  SiMongodb,
+  SiRedux,
   SiSequelize,
+  SiSteam,
   SiTailwindcss,
-  SiMongodb } from 'react-icons/si';
+  SiTestinglibrary,
+  SiTypescript,
+} from 'react-icons/si';
 import Tilt from 'react-parallax-tilt';
 import tiltProps from '../utils/tiltProps';
 import styles from './Tecs.module.css';
@@ -41,6 +48,12 @@ export default function Techs() {
             <FaReact className={styles.techs} />
           </dt>
           <dd>React</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <FaAngular className={styles.techs} />
+          </dt>
+          <dd>Angular</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
@@ -65,6 +78,12 @@ export default function Techs() {
             <SiTypescript className={styles.techs} />
           </dt>
           <dd>TypeScript</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <FaPython className={styles.techs} />
+          </dt>
+          <dd>Python</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>

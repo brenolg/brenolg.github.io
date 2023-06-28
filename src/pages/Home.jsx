@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Techs from '../components/Techs';
 import fotoBreno from '../images/fotoBreno.png';
-import StarWars from '../images/star-wars.gif';
+import homeGif from '../images/homeGif.gif';
 import motionProps from '../utils/motionProps';
 import styles from './Home.module.css';
 
@@ -31,11 +31,10 @@ export default function Home() {
 
                 <p>
                   Desenvolvedor com experiência em React, Redux, JavaScript, React
-                  Hooks,Context-api, Jest, React testing library, Docker, Node.js, MySQL, TypeScript
-                  e consumo de APIs REST. Curioso e fascinado pelos desafios lógicos que a
-                  programação promove. Também possui experiência em projetos gerenciados por
-                  Metodologias Ágeis. Estudante do curso Web Full-Stack da Trybe e cursando no
-                  momento backend.
+                  Hooks,Context-api, Jest, React testing library, Docker, Node.js, MySQL,
+                  TypeScript, Express, Metodologias Ágeis e consumo e construção de APIs REST.
+                  Curioso e fascinado pelos desafios lógicos que a programação promove. Formado no
+                  curso Web Full-Stack da Trybe.
                 </p>
                 <div className={styles.profileBtns}>
                   <a className={styles.link} href="mailto: brenolgar@gmail.com">
@@ -61,7 +60,7 @@ export default function Home() {
           <motion.div className="ball ballRotate" id={styles.ball7} {...motionProps.ball} />
 
           <motion.div className={`${styles.repos_preview} glass`} {...motionProps.mainContent}>
-            <img src={StarWars} alt="Projects Gifts" />
+            <img src={homeGif} alt="Projects Gifts" />
             <button
               className={styles.btn}
               type="button"

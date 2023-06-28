@@ -96,5 +96,33 @@ header {
 @media screen and (max-width: 1050px) {
 	header {
 		margin: 0 auto 16rem;
+		width: 95vw;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	#nav {
+		animation: none;
+		bottom: 0;
+		left: 2.5vw;
+
+		flex-direction: row;
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+		font-size: 2rem;
+		z-index: 99;
+		padding: 0.5rem 1.5rem 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		margin: 0 auto 16rem;
+		border-bottom-left-radius: 12rem;
+		border-bottom-right-radius: 12rem;
+	}
+
+	.btn {
+		font-size: 1rem;
 	}
 }

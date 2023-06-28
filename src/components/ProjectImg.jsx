@@ -6,39 +6,35 @@ import styles from './ProjectImg.module.css';
 export default function ProjectImg({ array, setIndex, index }) {
   const transition = useRef();
 
-  const turnInvisible = () => {
+  const turnInvisible = async () => {
     transition.current.className = ` invisible ${styles.transitionContainer}`;
   };
 
-  const turnVisible = () => {
+  const turnVisible = async () => {
     transition.current.className = ` visible ${styles.transitionContainer}`;
   };
 
-  const handleLeftArrow = () => {
-    turnInvisible();
-    setTimeout(() => {
+  const handleLeftArrow = async () => {
+    await turnInvisible();
+    setTimeout(async () => {
       if (index > 0) {
         setIndex(index - 1);
       } else {
         setIndex(array.length - 1);
       }
-      turnVisible();
+      await turnVisible();
     }, 400);
   };
 
-  const handleRightArrow = () => {
-    console.log('ARRAY', array);
-    console.log('INDEX', index);
-    console.log('ARRAY.LENGTH', array.length);
-    console.log('SETINDEX', setIndex);
-    turnInvisible();
-    setTimeout(() => {
+  const handleRightArrow = async () => {
+    await turnInvisible();
+    setTimeout(async () => {
       if (index < array.length - 1) {
         setIndex(index + 1);
       } else {
         setIndex(0);
       }
-      turnVisible();
+      await turnVisible();
     }, 400);
   };
 
@@ -58,7 +54,7 @@ export default function ProjectImg({ array, setIndex, index }) {
 
           <div className={styles.subContainer}>
             <div ref={transition} className={styles.transitionContainer}>
-              <h2 className={styles.title}>{array[index].title}</h2>
+              {array[index].title && <h2 className={styles.title}>{array[index].title}</h2>}
 
               <img className={styles.image} src={array[index].img} alt='"projectImg"' />
 

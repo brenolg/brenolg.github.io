@@ -5,8 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
+    'plugin:react/recommended', 'airbnb',
   ],
   overrides: [
   ],
@@ -22,6 +21,9 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': [1, {
       extensions: ['.js', '.jsx'],
+    }],
+    'brace-style': ['error', '1tbs', {
+      allowSingleLine: true,
     }],
     'object-curly-newline': ['error', {
       ObjectExpression: 'always',

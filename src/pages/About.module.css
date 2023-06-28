@@ -160,6 +160,7 @@
   .img_container {
     margin-bottom: -10%;
     margin-right: 10%;
+    min-width: 50%;
   }
 
   .main_description {
@@ -199,5 +200,13 @@
     bottom: 0%;
     left: 0%;
     translate: -36% -36%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
   }
 }

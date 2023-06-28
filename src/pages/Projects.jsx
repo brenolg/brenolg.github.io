@@ -20,12 +20,15 @@ export default function Projects() {
       <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
 
       <main>
-        <section className={`${styles.sectionFront}`}>
+        <section className={`${styles.projectSection}`}>
           <motion.div className="ball ballRotate" id={styles.ball1} {...motionProps.ball} />
           <motion.div className="ball ballRotate" id={styles.ball2} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball3} {...motionProps.ball} />
 
-          <motion.div className={`${styles.title} glass`} {...motionProps.mainContent}>
+          <motion.div
+            className={`${styles.title} ${styles.featured_title}  glass`}
+            {...motionProps.mainContent}
+          >
             <h1>Projetos em Destaque</h1>
           </motion.div>
           <motion.div className={`${styles.imgContainer} glass`} {...motionProps.mainContent}>
@@ -35,7 +38,7 @@ export default function Projects() {
             <ProjectText array={featuredArray} index={featuredIndex} />
           </motion.div>
         </section>
-        <section className={`${styles.sectionBack}`}>
+        <section className={`${styles.projectSection}`}>
           <motion.div className="ball" id={styles.ball4} {...motionProps.ball} />
           <motion.div className="ball ballRotate" id={styles.ball5} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball8} {...motionProps.ball} />
@@ -50,7 +53,7 @@ export default function Projects() {
             <ProjectText array={frontArray} index={frontIndex} />
           </motion.div>
         </section>
-        <section className={`${styles.sectionFront}`}>
+        <section className={`${styles.projectSection}`}>
           <motion.div className="ball ballRotate" id={styles.ball1} {...motionProps.ball} />
           <motion.div className="ball ballRotate" id={styles.ball2} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball7} {...motionProps.ball} />

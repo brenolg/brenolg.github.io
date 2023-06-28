@@ -1,5 +1,5 @@
-.sectionFront {
-  margin: 20rem auto;
+.projectSection {
+  margin: 25rem auto;
   padding-bottom: 5rem;
   position: relative;
   width: 75vw;
@@ -8,20 +8,22 @@
 .title {
   border-radius: 5.5rem;
   color: var(--font);
-  padding: 3.5em 8em 22em;
+  padding: 3.5em 10em 22em;
   margin: auto;
   left: 50%;
+  line-height: 8.5ch;
   translate: -50%;
   text-align: center;
   max-width: 80%;
   position: absolute;
   top: -10rem;
+  max-width: 95%;
 }
 
 .imgContainer {
   border-radius: 5.5rem;
   width: 62%;
-  height: 70%;
+  height: 55rem;
   z-index: 4;
   position: absolute;
 }
@@ -29,18 +31,11 @@
 .textContainer {
   border-radius: 5.5rem;
   margin-left: auto;
-  padding: 2.3rem;
+  padding: 5.5rem 2.3rem;
   position: relative;
   top: 5rem;
   right: 0;
   width: 42%;
-}
-
-.sectionBack {
-  margin: 20rem auto;
-  position: relative;
-  width: 75vw;
-  padding-bottom: 5rem;
 }
 
 #ballMove {
@@ -173,6 +168,14 @@
     z-index: -5;
   }
 
+  .projectSection {
+    width: 80vw;
+  }
+
+  .projectSection:last-child {
+    margin-bottom: 8rem;
+  }
+
   .imgContainer {
     width: 45%;
   }
@@ -193,8 +196,15 @@
 @media screen and (max-width: 1050px) {
   .imgContainer {
     width: 100%;
+    height: 42rem;
     padding-bottom: 5rem;
     position: static;
+  }
+
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
   }
 
   .textContainer {
@@ -204,8 +214,12 @@
   }
 
   .title {
-    padding: 2em 0em 22em;
-    width: 100%;
+    padding: 2em 5em 24em;
+    width: 90%;
+  }
+
+  .featured_title {
+    padding: 2em 0em 24em;
   }
 
   #ball1 {
@@ -223,11 +237,11 @@
   }
 
   #ball3 {
-    height: 40vw;
-    width: 40vw;
-    bottom: 12%;
-    right: -40%;
-    translate: 0% 0%;
+    height: 30vw;
+    width: 30vw;
+    bottom: 0%;
+    right: 0%;
+    translate: 20% 5%;
   }
 
   #ball4 {
@@ -246,5 +260,12 @@
     bottom: 0%;
     left: 0%;
     translate: -25% -20%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .featured_title {
+    font-size: 1rem;
+    top: -14rem;
   }
 }
