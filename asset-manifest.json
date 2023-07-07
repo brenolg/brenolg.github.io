@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.4d9a4d3e.css",
-    "main.js": "/static/js/main.dbc1fa52.js",
+    "main.js": "/static/js/main.ab9994a4.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/homeGif.gif": "/static/media/homeGif.a2a08af93802e978befc.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
     "static/media/appDel.gif": "/static/media/appDel.7faf4660c357c979b07b.gif",
     "static/media/yoga.gif": "/static/media/yoga.76d90d114e91ecf0fc39.gif",
     "static/media/puc.gif": "/static/media/puc.8e97cb1cbdb73d05f29c.gif",
-    "static/media/brenoSobre.png": "/static/media/brenoSobre.91179cff9d16fbf38914.png",
     "static/media/star-wars.gif": "/static/media/star-wars.691fa0cf6d01f1a28c1c.gif",
+    "static/media/brenoSobre.png": "/static/media/brenoSobre.a2a47a28864f9ee0b1e7.png",
     "static/media/wallet.gif": "/static/media/wallet.9e2b1455aaa434387eb3.gif",
     "static/media/trivia.gif": "/static/media/trivia.2ebe8551f4bde100a3be.gif",
     "static/media/tuneMusics.gif": "/static/media/tuneMusics.bf7e038898db86dfa7f0.gif",
@@ -30,11 +30,11 @@
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "index.html": "/index.html",
     "main.4d9a4d3e.css.map": "/static/css/main.4d9a4d3e.css.map",
-    "main.dbc1fa52.js.map": "/static/js/main.dbc1fa52.js.map",
+    "main.ab9994a4.js.map": "/static/js/main.ab9994a4.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d9a4d3e.css",
-    "static/js/main.dbc1fa52.js"
+    "static/js/main.ab9994a4.js"
   ]
 }
