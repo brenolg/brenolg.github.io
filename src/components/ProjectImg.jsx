@@ -22,6 +22,8 @@ export default function ProjectImg({ array, setIndex, index }) {
       } else {
         setIndex(array.length - 1);
       }
+    }, 350);
+    setTimeout(async () => {
       await turnVisible();
     }, 400);
   };
@@ -34,6 +36,8 @@ export default function ProjectImg({ array, setIndex, index }) {
       } else {
         setIndex(0);
       }
+    }, 350);
+    setTimeout(async () => {
       await turnVisible();
     }, 400);
   };

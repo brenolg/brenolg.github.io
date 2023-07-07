@@ -32,10 +32,14 @@
 
 .titles {
   margin: 0 0 1.5em;
+  line-height: 3.5ch;
 }
 
 .p {
   letter-spacing: 0.4ch;
+
+
+  text-align: justify;
 }
 
 .relativSection {
@@ -161,6 +165,7 @@
     margin-bottom: -10%;
     margin-right: 10%;
     min-width: 50%;
+    border-radius: 3.5rem;
   }
 
   .main_description {

@@ -39,18 +39,37 @@ export default function About() {
           <div className={`${styles.professional_description} glass`}>
             <h2 className={`${styles.titles}`}>Na programação...</h2>
             <p className={`${styles.p} `}>
-              Em especial, estou bastante interessado em UX/UI, que envolve a busca pela melhor
-              experiência do usuário. Eu acredito que essa área se assemelha muito à lógica do MVP
-              (Mínimo Produto Viável) do empreendedorismo, que tem como objetivo lançar um produto
-              funcional com o mínimo de recursos possíveis, com foco específico na aceitação e
-              experiência do público-alvo.
+              Tenho um interesse particular em UX/UI, uma área dedicada à busca pela melhor
+              experiência do usuário. Acredito que essa disciplina compartilha muitas semelhanças
+              com a lógica do MVP (Mínimo Produto Viável) no empreendedorismo, que busca lançar um
+              produto funcional com o mínimo de recursos possível, focando especialmente na
+              aceitação e experiência do público-alvo.
             </p>
             <br />
             <br />
             <p className={`${styles.p} `}>
-              Conclui o curso da Trybe, empresa que disponibiliza mais de 1500 horas dentre Front
-              End, Back End e Ciências de Dados. Desenvolvi mais de 20 projetos individuais e em
-              grupos.
+              Concluí o curso da Trybe, uma renomada empresa que oferece mais de 1500 horas de
+              treinamento abrangendo Front End, Back End e Ciências de Dados. Durante o curso, tive
+              a oportunidade de desenvolver mais de 20 projetos, tanto individualmente quanto em
+              equipe. Meu foco principal foi a construção de interfaces de usuário otimizadas,
+              utilizando tecnologias como React Js, React Router, Redux, Context API e Hooks. Também
+              ganhei experiência em integração com APIs.
+            </p>
+            <br />
+            <br />
+            <p className={`${styles.p} `}>
+              Além disso, explorei o desenvolvimento de APIs REST, utilizando programação orientada
+              a objetos (POO) , arquitetura Model-Service-Controller (MSC), Node.js e Express. Tive
+              a oportunidade de trabalhar com bancos de dados SQL e NoSQL, como MySQL/Sequelize e
+              MongoDB/Mongoose.
+            </p>
+            <br />
+            <br />
+            <p className={`${styles.p} `}>
+              Tenho proficiência em Python e experiência na realização de testes usando bibliotecas
+              como Jest, React Testing Library, Mocha e Chai. Também sou familiarizado com o uso de
+              Linux, GitHub, Docker e CI/CD, seguindo boas práticas de programação para garantir
+              códigos limpos, legíveis, reutilizáveis e de fácil manutenção.
             </p>
           </div>
         </section>
