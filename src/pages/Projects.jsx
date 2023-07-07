@@ -29,7 +29,7 @@ export default function Projects() {
             className={`${styles.title} ${styles.featured_title}  glass`}
             {...motionProps.mainContent}
           >
-            <h1>Projetos em Destaque</h1>
+            <h1>Projetos Destaque</h1>
           </motion.div>
           <motion.div className={`${styles.imgContainer} glass`} {...motionProps.mainContent}>
             <ProjectImg array={featuredArray} setIndex={setFeaturedIndex} index={featuredIndex} />

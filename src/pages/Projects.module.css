@@ -8,13 +8,12 @@
 .title {
   border-radius: 5.5rem;
   color: var(--font);
-  padding: 3.5em 10em 22em;
+  padding: 3.5em 5em 22em;
   margin: auto;
   left: 50%;
   line-height: 8.5ch;
   translate: -50%;
   text-align: center;
-  max-width: 80%;
   position: absolute;
   top: -10rem;
   max-width: 95%;
@@ -166,6 +165,7 @@
 @media screen and (max-width: 1300px) {
   .title {
     z-index: -5;
+    padding: 2.5em 3em 22em;
   }
 
   .projectSection {
@@ -193,6 +193,14 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .imgContainer {
     width: 100%;
@@ -201,25 +209,15 @@
     position: static;
   }
 
-  .ballMove {
-    display: none;
-    animation: none;
-    animation-play-state: paused;
+  .title {
+    width: 90%;
+    top: -12rem;
   }
 
   .textContainer {
     margin-top: -5rem;
     width: 100%;
     position: static;
-  }
-
-  .title {
-    padding: 2em 5em 24em;
-    width: 90%;
-  }
-
-  .featured_title {
-    padding: 2em 0em 24em;
   }
 
   #ball1 {
@@ -264,8 +262,11 @@
 }
 
 @media screen and (max-width: 350px) {
-  .featured_title {
-    font-size: 1rem;
-    top: -14rem;
+  .projectSection:first-child {
+    margin-top: 22rem;
+  }
+
+  .projectSection {
+    margin: 16rem auto;
   }
 }

@@ -57,6 +57,7 @@
   justify-content: space-around;
   margin-top: -11rem;
   padding: 4rem;
+
 }
 
 .text h2 {
@@ -367,7 +368,7 @@
   .stacks_container {
     width: 75vw;
     padding: 2rem 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
   }
 
   .profile_container {

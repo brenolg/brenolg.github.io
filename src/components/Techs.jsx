@@ -25,9 +25,11 @@ import {
   SiRedux,
   SiSequelize,
   SiSteam,
+  SiStyledcomponents,
   SiTailwindcss,
   SiTestinglibrary,
   SiTypescript,
+  SiVite,
 } from 'react-icons/si';
 import Tilt from 'react-parallax-tilt';
 import tiltProps from '../utils/tiltProps';
@@ -54,6 +56,12 @@ export default function Techs() {
             <FaAngular className={styles.techs} />
           </dt>
           <dd>Angular</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <SiVite className={styles.techs} />
+          </dt>
+          <dd>Vite</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
@@ -138,6 +146,18 @@ export default function Techs() {
             <SiTailwindcss className={styles.techs} />
           </dt>
           <dd>Tailwind</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <SiStyledcomponents className={styles.techs} />
+          </dt>
+          <dd>Styled C</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <FaBootstrap className={styles.techs} />
+          </dt>
+          <dd>Bootstrap</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>

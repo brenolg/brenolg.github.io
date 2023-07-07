@@ -32,9 +32,9 @@ export default function Home() {
                 <p>
                   Desenvolvedor com experiência em React, Redux, JavaScript, React
                   Hooks,Context-api, Jest, React testing library, Docker, Node.js, MySQL,
-                  TypeScript, Express, Metodologias Ágeis e consumo e construção de APIs REST.
-                  Curioso e fascinado pelos desafios lógicos que a programação promove. Formado no
-                  curso Web Full-Stack da Trybe.
+                  TypeScript, Python, Express, Metodologias Ágeis e consumo e construção de APIs
+                  REST. Curioso e fascinado pelos desafios lógicos que a programação promove.
+                  Formado no curso Web Full-Stack da Trybe.
                 </p>
                 <div className={styles.profileBtns}>
                   <a className={styles.link} href="mailto: brenolgar@gmail.com">

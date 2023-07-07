@@ -3,6 +3,7 @@ import carShopImg from '../../images/carShop.png';
 import pucImg from '../../images/puc.gif';
 import starWarsImg from '../../images/star-wars.gif';
 import tfcImg from '../../images/tfc.png';
+import yogaImg from '../../images/yoga.gif';
 
 const starWars = {
   title: 'Star Wars Planets',
@@ -48,12 +49,23 @@ const carShop = {
 const appDel = {
   title: 'Ze Birita FullStack',
   img: appDelImg,
-  description: ['Projeto Car Shop: Uma API em TypeScript para gerenciar uma concessionária de veículos utilizando o MongoDB. Aplica os princípios da Programação Orientada a Objetos e fornece funcionalidades CRUD.'],
-  techs: ['TypeScript', 'Node.js', 'Express.js', 'Sequelize', 'JWT', 'Docker', 'Bcrypt.js', 'TDD', 'POO', 'SOLID', 'Mocha', 'Chai', 'Sinon'],
+  description: ['Sistema completo para distribuidora de bebidas com funcionalidades de login, pedidos, aprovação, entrega e gerenciamento de usuários. Comunicação entre clientes e vendedores, fluxos de pedidos e acompanhamento de status são destaques.'],
+  techs: ['Styled-components', 'REACT', 'Node.js', 'Express.js', 'Sequelize', 'Javascript', 'POO', 'MSC', 'JWT', 'Multer', 'Joi'],
   functionalities: ['-Implementação eficiente de Classes, Instâncias, Atributos, Métodos e Objetos', '-CRUD para gerenciamento de concessionária e veículos', '-Integração com MongoDB através do ODM Mongoose'],
   linkToRepo: 'https://github.com/brenolg/Ze-Birita-FullStack-React-Sequelize',
 };
 
-const featured = [appDel, puc, starWars, TFC, carShop];
+const yoga = {
+  title: 'Yoga Landing Page',
+  img: yogaImg,
+  description: ['A Yoga Landing Page é uma página de destino atraente e responsiva para promover aulas de Yoga, com design moderno e organizado. Desenvolvida em parceria com uma designer, seguindo o design do Figma.'],
+  techs: ['React Scroll Libraries', 'Styled-components', 'CSS modules', 'React', 'Vite', 'AWS', 'Responsividade', 'JavaScript'],
+  functionalities: ['-Apresentação de informações sobre a aula de Yoga', '-Exibição de depoimentos de alunos', '-Apresentação do instrutor e sua biografia', '-Horários disponíveis para as aulas'],
+  ps: ['PS:', 'Em desenvolvimento...'],
+  linkToRepo: 'https://github.com/brenolg/Yoga-LandingPage-React-Vite',
+  linkToPage: 'http://isabellacayuela.com.br/',
+};
+
+const featured = [appDel, puc, yoga, starWars, TFC, carShop];
 
 export default featured;
