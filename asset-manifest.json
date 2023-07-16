@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d9a4d3e.css",
-    "main.js": "/static/js/main.aa04e73c.js",
+    "main.css": "/static/css/main.6bce28f3.css",
+    "main.js": "/static/js/main.67eb2eb4.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/homeGif.gif": "/static/media/homeGif.a2a08af93802e978befc.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
@@ -17,6 +17,7 @@
     "static/media/app-receitas.png": "/static/media/app-receitas.206d5d654abd54552223.png",
     "static/media/cart.gif": "/static/media/cart.24c7221118c8e5a1c807.gif",
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
+    "static/media/breno-tech.jpeg": "/static/media/breno-tech.fa4cad020ad8180664c5.jpeg",
     "static/media/carShop.png": "/static/media/carShop.7983a632d2f2db07027a.png",
     "static/media/apiBlogs.png": "/static/media/apiBlogs.6b084eab4e18e8307e94.png",
     "static/media/devsDragons.png": "/static/media/devsDragons.f99260982249de2bf667.png",
@@ -29,12 +30,12 @@
     "static/media/tfc.png": "/static/media/tfc.42a5d9838aef8f046564.png",
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "index.html": "/index.html",
-    "main.4d9a4d3e.css.map": "/static/css/main.4d9a4d3e.css.map",
-    "main.aa04e73c.js.map": "/static/js/main.aa04e73c.js.map",
+    "main.6bce28f3.css.map": "/static/css/main.6bce28f3.css.map",
+    "main.67eb2eb4.js.map": "/static/js/main.67eb2eb4.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d9a4d3e.css",
-    "static/js/main.aa04e73c.js"
+    "static/css/main.6bce28f3.css",
+    "static/js/main.67eb2eb4.js"
   ]
 }
