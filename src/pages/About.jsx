@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import techImg from '../images/breno-tech.jpeg';
 import myImg from '../images/brenoSobre.png';
 import motionProps from '../utils/motionProps';
 import styles from './About.module.css';
@@ -35,6 +36,10 @@ export default function About() {
         <section className={`${styles.relativSection}`}>
           <motion.div className="ball ballRotate" id={styles.ball4} {...motionProps.ball} />
           <motion.div className="ball" id={styles.ball5} {...motionProps.ball} />
+
+          <motion.div className={`${styles.img_container_2} glass`} {...motionProps.mainContent}>
+            <img className={`${styles.my_img_2} glass`} src={techImg} alt="foto breno" />
+          </motion.div>
 
           <div className={`${styles.professional_description} glass`}>
             <h2 className={`${styles.titles}`}>Na programação...</h2>

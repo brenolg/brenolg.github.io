@@ -354,15 +354,25 @@
 
   .text {
     padding: 4rem 0.8em;
-    ;
   }
 
   .hard_skills {
     max-width: 80vw;
   }
 
+  .repos_preview {
+    padding: 4rem 4rem 4rem;
+  }
+
+  .repos_preview img {
+    width: 100%;
+    margin-bottom: 4rem;
+    padding: 0;
+    border-radius: 1.5rem;
+  }
+
   .repos_preview button {
-    margin: 0rem 4rem 4rem;
+    margin-bottom: 0;
   }
 
   .stacks_container {
@@ -391,4 +401,10 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  .repos_preview button {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
 }

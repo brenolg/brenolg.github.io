@@ -61,6 +61,20 @@
   padding: 6rem 8rem;
 }
 
+.img_container_2 {
+  border-radius: 5.5rem;
+  margin-bottom: -5%;
+  margin-right: auto;
+  max-width: 25vw;
+}
+
+.my_img_2 {
+  border-radius: inherit;
+  margin-right: auto;
+  max-width: 100%;
+  opacity: 0.7;
+}
+
 #ballMove {
   animation-delay: 1s;
   animation: moveBall 120s linear infinite;
@@ -136,8 +150,8 @@
 
 #ball4 {
   height: 22vw;
-  left: 7.5vw;
-  top: 0%;
+  left: 24.6vw;
+  top: 12%;
   translate: -26% -28%;
   width: 22vw;
   background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
@@ -164,6 +178,12 @@
   .img_container {
     margin-bottom: -10%;
     margin-right: 10%;
+    min-width: 50%;
+    border-radius: 3.5rem;
+  }
+
+  .img_container_2 {
+    margin-left: 10%;
     min-width: 50%;
     border-radius: 3.5rem;
   }
@@ -202,9 +222,8 @@
   }
 
   #ball4 {
-    bottom: 0%;
-    left: 0%;
-    translate: -36% -36%;
+    top: 18%;
+    left: 87%;
   }
 }
 
@@ -213,5 +232,19 @@
     display: none;
     animation: none;
     animation-play-state: paused;
+  }
+
+  #ball4 {
+    top: 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main_description {
+    padding: 4rem 3rem;
+  }
+
+  .professional_description {
+    padding: 4rem 3rem;
   }
 }

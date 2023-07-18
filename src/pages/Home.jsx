@@ -37,12 +37,22 @@ export default function Home() {
                   Formado no curso Web Full-Stack da Trybe.
                 </p>
                 <div className={styles.profileBtns}>
-                  <a className={styles.link} href="mailto: brenolgar@gmail.com">
+                  <a
+                    className={styles.link}
+                    href="mailto: brenolgar@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className={styles.btn} type="button">
                       Entrar em Contato
                     </button>
                   </a>
-                  <a className={styles.link} href="mailto: brenolgar@gmail.com">
+                  <a
+                    className={styles.link}
+                    href="https://drive.google.com/file/d/1qDFuvqws2-xjyKOAtuoKVBkviimEKGU9/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className={styles.btn} type="button">
                       Download CV
                     </button>
