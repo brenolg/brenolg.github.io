@@ -22,6 +22,7 @@ import {
   SiGimp,
   SiJest,
   SiMongodb,
+  SiPytest,
   SiRedux,
   SiSequelize,
   SiSteam,
@@ -179,15 +180,15 @@ export default function Techs() {
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
-            <SiEslint className={styles.techs} />
+            <SiPytest className={styles.techs} />
           </dt>
-          <dd>ESLint</dd>
+          <dd>PyTest</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
-            <FaBootstrap className={styles.techs} />
+            <SiEslint className={styles.techs} />
           </dt>
-          <dd>Bootstrap</dd>
+          <dd>ESLint</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>

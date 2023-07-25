@@ -51,7 +51,7 @@ const appDel = {
   img: appDelImg,
   description: ['Sistema completo para distribuidora de bebidas com funcionalidades de login, pedidos, aprovação, entrega e gerenciamento de usuários. Comunicação entre clientes e vendedores, fluxos de pedidos e acompanhamento de status são destaques.'],
   techs: ['Styled-components', 'REACT', 'Node.js', 'Express.js', 'Sequelize', 'Javascript', 'POO', 'MSC', 'JWT', 'Multer', 'Joi'],
-  functionalities: ['-Implementação eficiente de Classes, Instâncias, Atributos, Métodos e Objetos', '-CRUD para gerenciamento de concessionária e veículos', '-Integração com MongoDB através do ODM Mongoose'],
+  functionalities: ['-Implementação eficiente de Classes, Instâncias, Atributos, Métodos e Objetos', '-CRUD para gerenciamento de distribuidora de bebidas', '-Integração com MongoDB através do ODM Mongoose'],
   linkToRepo: 'https://github.com/brenolg/Ze-Birita-FullStack-React-Sequelize',
 };
 

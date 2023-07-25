@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import techImg from '../images/breno-tech.jpeg';
+import techImg from '../images/breno-tech.png';
 import myImg from '../images/brenoSobre.png';
 import motionProps from '../utils/motionProps';
 import styles from './About.module.css';
