@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.9e199ba1.css",
-    "main.js": "/static/js/main.75e5e344.js",
+    "main.js": "/static/js/main.35f2c067.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/homeGif.gif": "/static/media/homeGif.a2a08af93802e978befc.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
     "static/media/appDel.gif": "/static/media/appDel.7faf4660c357c979b07b.gif",
+    "static/media/breno-tech.png": "/static/media/breno-tech.81d221a285d85ee396df.png",
     "static/media/yoga.gif": "/static/media/yoga.76d90d114e91ecf0fc39.gif",
     "static/media/puc.gif": "/static/media/puc.8e97cb1cbdb73d05f29c.gif",
     "static/media/star-wars.gif": "/static/media/star-wars.691fa0cf6d01f1a28c1c.gif",
@@ -17,7 +18,6 @@
     "static/media/app-receitas.png": "/static/media/app-receitas.206d5d654abd54552223.png",
     "static/media/cart.gif": "/static/media/cart.24c7221118c8e5a1c807.gif",
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
-    "static/media/breno-tech.jpeg": "/static/media/breno-tech.fa4cad020ad8180664c5.jpeg",
     "static/media/carShop.png": "/static/media/carShop.7983a632d2f2db07027a.png",
     "static/media/apiBlogs.png": "/static/media/apiBlogs.6b084eab4e18e8307e94.png",
     "static/media/devsDragons.png": "/static/media/devsDragons.f99260982249de2bf667.png",
@@ -31,11 +31,11 @@
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "index.html": "/index.html",
     "main.9e199ba1.css.map": "/static/css/main.9e199ba1.css.map",
-    "main.75e5e344.js.map": "/static/js/main.75e5e344.js.map",
+    "main.35f2c067.js.map": "/static/js/main.35f2c067.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e199ba1.css",
-    "static/js/main.75e5e344.js"
+    "static/js/main.35f2c067.js"
   ]
 }
