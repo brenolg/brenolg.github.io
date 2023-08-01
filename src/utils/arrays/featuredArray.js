@@ -163,9 +163,8 @@ const yoga = {
     '-Horários disponíveis para as aulas',
     '-Layout responsivo',
   ],
-  ps: ['PS:', 'Em desenvolvimento...'],
   linkToRepo: 'https://github.com/brenolg/Yoga-LandingPage-React-Vite',
-  linkToPage: 'http://isabellacayuela.com.br/',
+  linkToPage: 'https://isabellacayuela.com.br/',
 };
 
 const featured = [appDel, puc, yoga, starWars, TFC, carShop];
