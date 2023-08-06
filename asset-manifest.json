@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.803fd4d9.css",
-    "main.js": "/static/js/main.e410107c.js",
+    "main.js": "/static/js/main.166de772.js",
     "static/js/787.61115d2c.chunk.js": "/static/js/787.61115d2c.chunk.js",
     "static/media/homeGif.gif": "/static/media/homeGif.a2a08af93802e978befc.gif",
     "static/media/todo-list.gif": "/static/media/todo-list.920ebae10c060f3acc31.gif",
+    "static/media/yoga.gif": "/static/media/yoga.484d2f778921fe7acf09.gif",
     "static/media/appDel.gif": "/static/media/appDel.7faf4660c357c979b07b.gif",
-    "static/media/breno-tech.png": "/static/media/breno-tech.81d221a285d85ee396df.png",
-    "static/media/yoga.gif": "/static/media/yoga.76d90d114e91ecf0fc39.gif",
     "static/media/puc.gif": "/static/media/puc.8e97cb1cbdb73d05f29c.gif",
     "static/media/star-wars.gif": "/static/media/star-wars.691fa0cf6d01f1a28c1c.gif",
-    "static/media/brenoSobre.png": "/static/media/brenoSobre.a2a47a28864f9ee0b1e7.png",
+    "static/media/breno-tech.png": "/static/media/breno-tech.3aa55329bc41df67d69a.png",
     "static/media/wallet.gif": "/static/media/wallet.9e2b1455aaa434387eb3.gif",
     "static/media/trivia.gif": "/static/media/trivia.2ebe8551f4bde100a3be.gif",
     "static/media/tuneMusics.gif": "/static/media/tuneMusics.bf7e038898db86dfa7f0.gif",
     "static/media/fotoBreno.png": "/static/media/fotoBreno.d287deaec7a1d59f46e8.png",
+    "static/media/brenoSobre.png": "/static/media/brenoSobre.f1581edbeb74bf323c50.png",
     "static/media/app-receitas.png": "/static/media/app-receitas.206d5d654abd54552223.png",
     "static/media/cart.gif": "/static/media/cart.24c7221118c8e5a1c807.gif",
     "static/media/pixelArt.gif": "/static/media/pixelArt.fc2d92eddf22a49d6b01.gif",
@@ -31,11 +31,11 @@
     "static/media/docker.png": "/static/media/docker.fb7fe4b146e545d74b36.png",
     "index.html": "/index.html",
     "main.803fd4d9.css.map": "/static/css/main.803fd4d9.css.map",
-    "main.e410107c.js.map": "/static/js/main.e410107c.js.map",
+    "main.166de772.js.map": "/static/js/main.166de772.js.map",
     "787.61115d2c.chunk.js.map": "/static/js/787.61115d2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.803fd4d9.css",
-    "static/js/main.e410107c.js"
+    "static/js/main.166de772.js"
   ]
 }
