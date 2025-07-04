@@ -7,7 +7,7 @@ header {
 	display: flex;
 	max-width: clamp(45rem, 42vw, 100rem);
 	justify-content: space-evenly;
-	margin: 0 auto 22rem;
+	margin: 0 auto 18rem;
 	position: sticky;
 	padding: 0 4rem;
 	top: 0;

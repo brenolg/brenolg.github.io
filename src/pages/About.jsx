@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { motion } from 'framer-motion';
 import React from 'react';
 import techImg from '../images/breno-tech.png';
@@ -11,6 +12,32 @@ export default function About() {
       <motion.div className="ball" id={styles.ballMove} {...motionProps.ballMove} />
 
       <main>
+        <section className={`${styles.relativSection}`}>
+          <motion.div className="ball ballRotate" id={styles.ball4} {...motionProps.ball} />
+          <motion.div className="ball" id={styles.ball5} {...motionProps.ball} />
+
+          <motion.div className={`${styles.img_container_2} glass`} {...motionProps.mainContent}>
+            <img className={`${styles.my_img_2} glass`} src={techImg} alt="foto breno" />
+          </motion.div>
+          <div className={`${styles.professional_description} glass`}>
+            <h2 className={`${styles.titles}`}>Na programação...</h2>
+            <p className={`${styles.p}`}>
+              Atuo como desenvolvedor Front End, com foco em React e TypeScript, nas empresas pelas quais passei, sempre buscando entregar interfaces modernas, performáticas e centradas na experiência do usuário.
+              Sou formado pela Trybe, onde passei por mais de 1500 horas de formação intensiva em desenvolvimento web, com foco em Front End, Back End e Ciência de Dados. Durante esse período, desenvolvi mais de 20 projetos práticos — individuais e em equipe — sempre priorizando a qualidade da interface e a performance. Trabalhei com tecnologias como React JS, React Router, Redux, Context API, Hooks e integração com APIs REST.
+            </p>
+            <br />
+            <br />
+            <p className={`${styles.p}`}>
+              No Back End, atuei na criação de APIs utilizando Node.js, Express, arquitetura MSC e princípios de POO. Também trabalhei com bancos de dados relacionais e não-relacionais, como MySQL (via Sequelize) e MongoDB (via Mongoose), consolidando minha experiência com diferentes formas de persistência de dados.
+            </p>
+            <br />
+            <br />
+            <p className={`${styles.p}`}>
+              Tenho familiaridade com o ecossistema DevOps, incluindo Docker, GitHub, CI/CD e ambientes Linux. Valorizo testes como parte fundamental do ciclo de desenvolvimento, com experiência em Jest, React Testing Library, Mocha e Chai. Busco sempre aplicar boas práticas de código limpo, visando legibilidade, manutenibilidade e escalabilidade.
+            </p>
+          </div>
+        </section>
+
         <section className={`${styles.img_section}`}>
           <motion.div className="ball ballRotate" id={styles.ball1} {...motionProps.ball} />
           <motion.div className="ball ballRotate" id={styles.ball2} {...motionProps.ball} />
@@ -31,52 +58,6 @@ export default function About() {
               oferece.
             </p>
           </motion.div>
-        </section>
-
-        <section className={`${styles.relativSection}`}>
-          <motion.div className="ball ballRotate" id={styles.ball4} {...motionProps.ball} />
-          <motion.div className="ball" id={styles.ball5} {...motionProps.ball} />
-
-          <motion.div className={`${styles.img_container_2} glass`} {...motionProps.mainContent}>
-            <img className={`${styles.my_img_2} glass`} src={techImg} alt="foto breno" />
-          </motion.div>
-
-          <div className={`${styles.professional_description} glass`}>
-            <h2 className={`${styles.titles}`}>Na programação...</h2>
-            <p className={`${styles.p} `}>
-              Tenho um interesse particular em UX/UI, uma área dedicada à busca pela melhor
-              experiência do usuário. Acredito que essa disciplina compartilha muitas semelhanças
-              com a lógica do MVP (Mínimo Produto Viável) no empreendedorismo, que busca lançar um
-              produto funcional com o mínimo de recursos possível, focando especialmente na
-              aceitação e experiência do público-alvo.
-            </p>
-            <br />
-            <br />
-            <p className={`${styles.p} `}>
-              Concluí o curso da Trybe, uma renomada empresa que oferece mais de 1500 horas de
-              treinamento abrangendo Front End, Back End e Ciências de Dados. Durante o curso, tive
-              a oportunidade de desenvolver mais de 20 projetos, tanto individualmente quanto em
-              equipe. Meu foco principal foi a construção de interfaces de usuário otimizadas,
-              utilizando tecnologias como React Js, React Router, Redux, Context API e Hooks. Também
-              ganhei experiência em integração com APIs.
-            </p>
-            <br />
-            <br />
-            <p className={`${styles.p} `}>
-              Além disso, explorei o desenvolvimento de APIs REST, utilizando programação orientada
-              a objetos (POO) , arquitetura Model-Service-Controller (MSC), Node.js e Express. Tive
-              a oportunidade de trabalhar com bancos de dados SQL e NoSQL, como MySQL/Sequelize e
-              MongoDB/Mongoose.
-            </p>
-            <br />
-            <br />
-            <p className={`${styles.p} `}>
-              Tenho proficiência em Python e experiência na realização de testes usando bibliotecas
-              como Jest, React Testing Library, Mocha e Chai. Também sou familiarizado com o uso de
-              Linux, GitHub, Docker e CI/CD, seguindo boas práticas de programação para garantir
-              códigos limpos, legíveis, reutilizáveis e de fácil manutenção.
-            </p>
-          </div>
         </section>
       </main>
     </>
