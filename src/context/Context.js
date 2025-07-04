@@ -1,4 +1,5 @@
-import { createContext } from 'react';
+/* eslint-disable quotes */
+import { createContext } from "react";
 
 const Context = createContext();
 

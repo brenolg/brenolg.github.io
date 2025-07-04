@@ -1,6 +1,8 @@
-import PropTypes from 'prop-types';
-import React, { useMemo, useState } from 'react';
-import Context from './Context';
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
+import PropTypes from "prop-types";
+import React, { useMemo, useState } from "react";
+import Context from "./Context";
 
 export default function Provider({ children }) {
   const [frontIndex, setFrontIndex] = useState(0);
@@ -16,7 +18,7 @@ export default function Provider({ children }) {
       featuredIndex,
       setFeaturedIndex,
     }),
-    [frontIndex, backIndex, featuredIndex],
+    [frontIndex, backIndex, featuredIndex]
   );
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
