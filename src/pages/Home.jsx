@@ -30,11 +30,18 @@ export default function Home() {
                 <span>Desenvolvedor Web Full-Stack </span>
 
                 <p>
-                  Desenvolvedor com experiência em React, Redux, JavaScript, React
-                  Hooks,Context-api, Jest, React testing library, Docker, Node.js, MySQL,
-                  TypeScript, Python, Express, Metodologias Ágeis e consumo e construção de APIs
-                  REST. Curioso e fascinado pelos desafios lógicos que a programação promove.
-                  Formado no curso Web Full-Stack da Trybe.
+                  Desenvolvedor com experiência em React, React Native, Redux, JavaScript,
+                  TypeScript,
+                  Node.js, Express e MySQL, com sólida atuação no consumo e construção de APIs REST.
+                  Tenho vivência com Docker, Python, Jest e React Testing Library, aplicando
+                  práticas de
+                  Metodologias Ágeis em projetos colaborativos.
+                </p>
+                <p>
+                  Minha atuação é focada no front-end, desenvolvendo interfaces modernas,
+                  performáticas e intuitivas em React e React Native. Sou curioso,
+                  apaixonado por desafios lógicos e motivado a transformar ideias em soluções
+                  eficientes e escaláveis.
                 </p>
                 <div className={styles.profileBtns}>
                   <a
