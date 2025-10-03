@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const techsProps = {
   perspective: 150,
   scale: 1.2,
