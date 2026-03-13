@@ -6,12 +6,11 @@ type Point = {
   y: number;
 };
 
-const useFollowPointer = (ref: RefObject<HTMLElement>): Point => {
+const useFollowPointer = (ref: RefObject<HTMLElement | null>): Point => {
   const [point, setPoint] = useState<Point>({
     x: -500,
     y: -500,
   });
-
   useEffect(() => {
     if (!ref.current) return;
 

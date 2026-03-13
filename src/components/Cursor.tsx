@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import styles from "./Cursor.module.css";
-import followPointer from "../utils/followPointer";
+import useFollowPointer from "../utils/useFollowPointer";
 
 export default function Cursor() {
-  const cursor = useRef();
-  const { x, y } = followPointer(cursor);
+  const cursor = useRef<HTMLDivElement>(null);
+  const { x, y } = useFollowPointer(cursor);
 
   return (
     <motion.div
