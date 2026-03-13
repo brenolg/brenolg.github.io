@@ -2,17 +2,27 @@ import PropTypes from "prop-types";
 import { useRef } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import styles from "./ProjectImg.module.css";
+import type { Project } from "../utils/arrays/types";
 
-export default function ProjectImg({ array, setIndex, index }) {
-  const transition = useRef();
+type ProjectImgProps = {
+  array: Project[];
+  index: number;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
+};
+export default function ProjectImg({
+  array,
+  setIndex,
+  index,
+}: ProjectImgProps) {
+  const transition = useRef<HTMLDivElement>(null);
   const project = array[index];
 
-  const setTransition = (state) => {
+  const setTransition = (state: "visible" | "invisible") => {
     if (!transition.current) return;
     transition.current.className = `${state} ${styles.transitionContainer}`;
   };
 
-  const changeIndex = (newIndex) => {
+  const changeIndex = (newIndex: number) => {
     setTransition("invisible");
 
     setTimeout(() => {

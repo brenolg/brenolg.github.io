@@ -1,18 +1,28 @@
 import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
 import styles from "./ProjectText.module.css";
+import type { Project } from "../utils/arrays/types";
 
-export default function ProjectText({ array, index }) {
-  const transition = useRef();
+type ProjectTextProps = {
+  array: Project[];
+  index: number;
+};
+
+export default function ProjectText({ array, index }: ProjectTextProps) {
+  const transition = useRef<HTMLDivElement>(null);
   const [textState, setStateText] = useState("description");
-  const [text, setText] = useState([]);
+  const [text, setText] = useState<string[]>([]);
 
   const turnInvisible = async () => {
-    transition.current.className = ` invisible ${styles.transitionContainer}`;
+    if (!transition.current) return;
+
+    transition.current.className = `invisible ${styles.transitionContainer}`;
   };
 
   const turnVisible = async () => {
-    transition.current.className = ` visible ${styles.transitionContainer}`;
+    if (!transition.current) return;
+
+    transition.current.className = `visible ${styles.transitionContainer}`;
   };
 
   const asyncInvisible = async () => {
@@ -33,8 +43,8 @@ export default function ProjectText({ array, index }) {
     asyncInvisible();
   }, [index, textState]);
 
-  const handleTextView = async ({ target }) => {
-    const { name } = target;
+  const handleTextView = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const { name } = e.currentTarget;
 
     if (textState !== name) {
       setStateText(name);
