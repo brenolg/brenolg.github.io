@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
+import type { RefObject } from "react";
 
-const followPointer = (ref) => {
-  const [point, setPoint] = useState({
+type Point = {
+  x: number;
+  y: number;
+};
+
+const useFollowPointer = (ref: RefObject<HTMLElement>): Point => {
+  const [point, setPoint] = useState<Point>({
     x: -500,
     y: -500,
   });
@@ -9,11 +15,12 @@ const followPointer = (ref) => {
   useEffect(() => {
     if (!ref.current) return;
 
-    const handlePointerMove = ({ clientX, clientY }) => {
-      const element = ref.current;
+    const handlePointerMove = ({ clientX, clientY }: PointerEvent) => {
+      const element = ref.current!;
 
       const x = clientX - element.offsetLeft - element.offsetWidth / 2;
       const y = clientY - element.offsetTop - element.offsetHeight / 2;
+
       setPoint({
         x,
         y,
@@ -21,9 +28,13 @@ const followPointer = (ref) => {
     };
 
     window.addEventListener("pointermove", handlePointerMove);
-  }, []);
+
+    return () => {
+      window.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, [ref]);
 
   return point;
 };
 
-export default followPointer;
+export default useFollowPointer;

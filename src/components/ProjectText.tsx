@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./ProjectText.module.css";
 
 export default function ProjectText({ array, index }) {

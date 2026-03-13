@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
-import styles from './Cursor.module.css';
-import followPointer from '../utils/followPointer';
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import styles from "./Cursor.module.css";
+import followPointer from "../utils/followPointer";
 
 export default function Cursor() {
   const cursor = useRef();
@@ -16,7 +16,7 @@ export default function Cursor() {
         y,
       }}
       transition={{
-        type: 'spring',
+        type: "spring",
         bounce: 5,
         mass: 5,
         damping: 12,
