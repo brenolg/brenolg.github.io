@@ -1,7 +1,7 @@
-import { useRef } from "react";
-import { motion } from "framer-motion";
-import styles from "./Cursor.module.css";
-import useFollowPointer from "../utils/useFollowPointer";
+import { useRef } from 'react';
+import { motion } from 'framer-motion';
+import styles from './Cursor.module.css';
+import useFollowPointer from '../utils/useFollowPointer';
 
 export default function Cursor() {
   const cursor = useRef<HTMLDivElement>(null);
@@ -16,7 +16,7 @@ export default function Cursor() {
         y,
       }}
       transition={{
-        type: "spring",
+        type: 'spring',
         bounce: 5,
         mass: 5,
         damping: 12,

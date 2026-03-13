@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import type { RefObject } from "react";
+import { useState, useEffect } from 'react';
+import type { RefObject } from 'react';
 
 type Point = {
   x: number;
@@ -11,8 +11,9 @@ const useFollowPointer = (ref: RefObject<HTMLElement | null>): Point => {
     x: -500,
     y: -500,
   });
+
   useEffect(() => {
-    if (!ref.current) return;
+    if (!ref.current) return undefined;
 
     const handlePointerMove = ({ clientX, clientY }: PointerEvent) => {
       const element = ref.current!;
@@ -26,10 +27,10 @@ const useFollowPointer = (ref: RefObject<HTMLElement | null>): Point => {
       });
     };
 
-    window.addEventListener("pointermove", handlePointerMove);
+    window.addEventListener('pointermove', handlePointerMove);
 
     return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener('pointermove', handlePointerMove);
     };
   }, [ref]);
 

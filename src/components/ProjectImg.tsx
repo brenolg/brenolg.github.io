@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import { useRef } from "react";
-import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
-import styles from "./ProjectImg.module.css";
-import type { Project } from "../utils/arrays/types";
+import PropTypes from 'prop-types';
+import { useRef } from 'react';
+import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
+import styles from './ProjectImg.module.css';
+import type { Project } from '../utils/arrays/types';
 
 type ProjectImgProps = {
   array: Project[];
@@ -17,20 +17,20 @@ export default function ProjectImg({
   const transition = useRef<HTMLDivElement>(null);
   const project = array[index];
 
-  const setTransition = (state: "visible" | "invisible") => {
+  const setTransition = (state: 'visible' | 'invisible') => {
     if (!transition.current) return;
     transition.current.className = `${state} ${styles.transitionContainer}`;
   };
 
   const changeIndex = (newIndex: number) => {
-    setTransition("invisible");
+    setTransition('invisible');
 
     setTimeout(() => {
       setIndex(newIndex);
     }, 350);
 
     setTimeout(() => {
-      setTransition("visible");
+      setTransition('visible');
     }, 400);
   };
 
@@ -44,7 +44,6 @@ export default function ProjectImg({
     changeIndex(newIndex);
   };
 
-  console.log(index, array);
   if (!project) return null;
 
   return (
@@ -64,7 +63,7 @@ export default function ProjectImg({
           <img
             className={styles.image}
             src={project.img}
-            alt={project.title || "project"}
+            alt={project.title || 'project'}
           />
 
           <div className={styles.buttonsContainer}>

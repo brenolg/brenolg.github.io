@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import { useEffect, useRef, useState } from "react";
-import styles from "./ProjectText.module.css";
-import type { Project } from "../utils/arrays/types";
+import PropTypes from 'prop-types';
+import { useEffect, useRef, useState } from 'react';
+import styles from './ProjectText.module.css';
+import type { Project } from '../utils/arrays/types';
 
 type ProjectTextProps = {
   array: Project[];
@@ -10,7 +10,7 @@ type ProjectTextProps = {
 
 export default function ProjectText({ array, index }: ProjectTextProps) {
   const transition = useRef<HTMLDivElement>(null);
-  const [textState, setStateText] = useState("description");
+  const [textState, setStateText] = useState('description');
   const [text, setText] = useState<string[]>([]);
 
   const turnInvisible = async () => {
@@ -25,23 +25,22 @@ export default function ProjectText({ array, index }: ProjectTextProps) {
     transition.current.className = `visible ${styles.transitionContainer}`;
   };
 
-  const asyncInvisible = async () => {
-    await turnInvisible();
-
-    setTimeout(async () => {
-      if (textState === "functionalities") {
-        setText(array[index].functionalities);
-      }
-      if (textState === "description") {
-        setText(array[index].description);
-      }
-      await turnVisible();
-    }, 300);
-  };
-
   useEffect(() => {
+    const asyncInvisible = async () => {
+      await turnInvisible();
+
+      setTimeout(async () => {
+        if (textState === 'functionalities') {
+          setText(array[index].functionalities);
+        }
+        if (textState === 'description') {
+          setText(array[index].description);
+        }
+        await turnVisible();
+      }, 300);
+    };
     asyncInvisible();
-  }, [index, textState]);
+  }, [index, textState, array]);
 
   const handleTextView = (e: React.MouseEvent<HTMLButtonElement>) => {
     const { name } = e.currentTarget;

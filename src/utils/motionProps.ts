@@ -69,14 +69,14 @@ const ballMove = {
 
 const header = {
   initial: {
-    y: "-30vh",
+    y: '-30vh',
     opacity: 0,
     transition: {
       duration: 0.5,
     },
   },
   animate: {
-    y: "0vh",
+    y: '0vh',
     opacity: 1,
     transition: {
       duration: 1,
