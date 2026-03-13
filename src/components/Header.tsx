@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import styles from './Header.module.css';
+import { useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ export default function Header() {
         className={styles.btn}
         type="button"
         onClick={() => {
-          navigate('/');
+          navigate("/");
         }}
       >
         home
@@ -26,7 +26,7 @@ export default function Header() {
         className={styles.btn}
         type="button"
         onClick={() => {
-          navigate('/about');
+          navigate("/about");
         }}
       >
         sobre
@@ -36,7 +36,7 @@ export default function Header() {
         className={styles.btn}
         type="button"
         onClick={() => {
-          navigate('/projects');
+          navigate("/projects");
         }}
       >
         projetos
