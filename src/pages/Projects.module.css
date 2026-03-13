@@ -1,0 +1,272 @@
+.projectSection {
+  margin: 25rem auto;
+  padding-bottom: 5rem;
+  position: relative;
+  width: 75vw;
+}
+
+.title {
+  border-radius: 5.5rem;
+  color: var(--font);
+  padding: 3.5em 5em 22em;
+  margin: auto;
+  left: 50%;
+  line-height: 8.5ch;
+  translate: -50%;
+  text-align: center;
+  position: absolute;
+  top: -10rem;
+  max-width: 95%;
+}
+
+.imgContainer {
+  border-radius: 5.5rem;
+  width: 62%;
+  height: 55rem;
+  z-index: 4;
+  position: absolute;
+}
+
+.textContainer {
+  border-radius: 5.5rem;
+  margin-left: auto;
+  padding: 5.5rem 2.3rem;
+  position: relative;
+  top: 5rem;
+  right: 0;
+  width: 42%;
+}
+
+#ballMove {
+  animation: moveBall 180s linear 0.5s infinite;
+  box-shadow: 0px 0px 5rem 1rem rgb(0, 0, 0, 0.8);
+  height: 3vw;
+  left: 0;
+  offset-path: path(var(--projectsPath));
+  position: absolute;
+  top: -7vh;
+  width: 3vw;
+  z-index: -2;
+  background: linear-gradient(0deg, rgb(var(--blue)), transparent),
+    linear-gradient(135deg, rgb(var(--grey)), transparent),
+    linear-gradient(180deg, rgb(var(--teal)), transparent),
+    linear-gradient(225deg, rgb(var(--teal)), transparent);
+}
+
+@keyframes moveBall {
+  0% {
+    offset-distance: 0%;
+    scale: 1;
+  }
+
+  25% {
+    scale: 3;
+  }
+
+  50% {
+    scale: 2;
+  }
+
+  75% {
+    scale: 1;
+  }
+
+  90% {
+    scale: 2;
+  }
+
+  100% {
+    offset-distance: 100%;
+    scale: 1;
+  }
+}
+
+#ball1 {
+  height: 18vw;
+  right: 30%;
+  top: 0%;
+  translate: 50% -12%;
+  width: 18vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
+}
+
+#ball2 {
+  height: 25vw;
+  left: 0%;
+  top: 0%;
+  translate: -30% -12%;
+  width: 25vw;
+  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
+}
+
+#ball3 {
+  bottom: 0%;
+  height: 12vw;
+  right: 30%;
+  translate: -12% 18%;
+  width: 12vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
+}
+
+#ball4 {
+  height: 38vw;
+  left: 30%;
+  top: 0%;
+  translate: -85% -12%;
+  width: 38vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
+}
+
+#ball5 {
+  height: 16vw;
+  right: 30%;
+  top: 0%;
+  translate: 75% -6%;
+  width: 16vw;
+  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(315deg, rgb(var(--teal)), transparent);
+}
+
+#ball6 {
+  bottom: 0%;
+  height: 12vw;
+  right: 40%;
+  translate: 50% 30%;
+  width: 12vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
+}
+
+#ball7 {
+  bottom: 25%;
+  height: 22vw;
+  right: 50%;
+  translate: 50% 30%;
+  width: 22vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
+}
+
+#ball8 {
+  bottom: 28%;
+  height: 12vw;
+  right: 40%;
+  translate: -12% 18%;
+  width: 12vw;
+  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
+}
+
+@media screen and (max-width: 1300px) {
+  .title {
+    z-index: -5;
+    padding: 2.5em 3em 22em;
+  }
+
+  .projectSection {
+    width: 80vw;
+  }
+
+  .projectSection:last-child {
+    margin-bottom: 8rem;
+  }
+
+  .imgContainer {
+    width: 45%;
+  }
+
+  .textContainer {
+    width: 60%;
+  }
+
+  #ball3 {
+    height: 40vw;
+    width: 40vw;
+    bottom: 12%;
+    right: -40%;
+    translate: 0% 0%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .imgContainer {
+    width: 100%;
+    height: 42rem;
+    padding-bottom: 5rem;
+    position: static;
+  }
+
+  .title {
+    width: 90%;
+    top: -12rem;
+  }
+
+  .textContainer {
+    margin-top: -5rem;
+    width: 100%;
+    position: static;
+  }
+
+  #ball1 {
+    height: 32vw;
+    width: 32vw;
+    right: 0%;
+    top: 0%;
+    translate: 30% -18%;
+  }
+
+  #ball2 {
+    height: 22vw;
+    width: 22vw;
+    translate: -30% 10%;
+  }
+
+  #ball3 {
+    height: 30vw;
+    width: 30vw;
+    bottom: 0%;
+    right: 0%;
+    translate: 20% 5%;
+  }
+
+  #ball4 {
+    top: 0%;
+    left: 0%;
+    translate: -20% -16%;
+  }
+
+  #ball5 {
+    top: 35%;
+    right: 0%;
+    translate: 45% 0%;
+  }
+
+  #ball6 {
+    bottom: 0%;
+    left: 0%;
+    translate: -25% -20%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .projectSection:first-child {
+    margin-top: 22rem;
+  }
+
+  .projectSection {
+    margin: 16rem auto;
+  }
+}

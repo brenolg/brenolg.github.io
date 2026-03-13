@@ -1,0 +1,410 @@
+.profile_section {
+  margin: auto;
+  position: relative;
+  width: fit-content;
+}
+
+.profile_container {
+  margin-bottom: 20rem;
+  position: relative;
+  z-index: 5;
+}
+
+.profile {
+  border-radius: 5.5rem;
+  margin: 0rem auto;
+  padding: 0 1.5rem;
+  width: 50vw;
+}
+
+.img_border {
+  align-items: center;
+  animation-play-state: running;
+  animation: rotate 7s linear 0s infinite;
+  background: linear-gradient(45deg, rgb(var(--blue)), rgb(var(--teal), 0.7));
+  border-radius: 50%;
+  box-shadow: 0px 0px 3rem rgb(0, 0, 0);
+  display: flex;
+  height: 22rem;
+  justify-content: center;
+  margin: auto;
+  translate: 0% -42%;
+  width: 22rem;
+}
+
+.my_img {
+  animation: rotate 7s linear 0s infinite reverse;
+  border-radius: inherit;
+  max-height: 80%;
+  max-width: 80%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text {
+  align-items: center;
+  color: var(--font);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -11rem;
+  padding: 4rem;
+
+}
+
+.text h2 {
+  margin: 0 0 0.5em;
+}
+
+.text span {
+  margin: 0 0 2.5em;
+}
+
+.text p {
+  margin-bottom: 4rem;
+}
+
+.profileBtns {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: inherit;
+  min-width: 28ch;
+  border-radius: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--font);
+  font-size: clamp(1.5rem, 1vw + 1rem, 2rem);
+  line-height: 3.5ch;
+  max-width: 100%;
+  padding: 0.5em 0.6em 0.5em calc(0.6em + 3px);
+  transition: all 0.3s linear;
+  box-shadow:
+    /* active */
+    inset -2px -2px 6px rgba(255, 255, 255, 0),
+    inset -2px -2px 4px rgba(255, 255, 255, 0),
+    inset 2px 2px 2px rgba(255, 255, 255, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    /* hover */
+    -0px -0px 10px 5px rgba(0, 0, 0, 0),
+    inset 3px 3px 4px rgb(255, 255, 255, 0),
+    /* default */
+    -3px -3px 8px rgba(0, 0, 0, 0.1),
+    -2px -2px 8px rgba(0, 0, 0, 0.1),
+    3px 3px 2px 1px rgba(90, 90, 90, 0.075),
+    2px 2px 4px rgba(105, 105, 105, 0.1),
+    inset 3px 3px 4px rgb(255, 255, 255, 0.5);
+}
+
+.btn:hover {
+  transition: all 0.8s;
+  box-shadow:
+    /* active */
+    inset -2px -2px 6px rgba(255, 255, 255, 0),
+    inset -2px -2px 4px rgba(255, 255, 255, 0),
+    inset 2px 2px 2px rgba(255, 255, 255, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    inset 2px 2px 4px rgba(0, 0, 0, 0),
+    /* hover */
+    -0px -0px 5px 5px rgba(0, 0, 0, 0.3),
+    inset 3px 3px 4px rgb(255, 255, 255, 0.5),
+    /* default */
+    -3px -3px 8px rgba(0, 0, 0, 0),
+    -2px -2px 8px rgba(0, 0, 0, 0),
+    3px 3px 2px 1px rgba(90, 90, 90, 0),
+    2px 2px 4px rgba(105, 105, 105, 0),
+    inset 3px 3px 4px rgb(255, 255, 255, 0);
+}
+
+.btn:active {
+  transform: translate(-2%, -2%) scale(.98);
+  transition: box-shadow 0.3s, transform 0.1s;
+  box-shadow:
+    inset -2px -2px 6px rgba(255, 255, 255, .7),
+    inset -2px -2px 4px rgba(255, 255, 255, .5),
+    inset 2px 2px 2px rgba(255, 255, 255, .075),
+    inset 2px 2px 4px rgba(0, 0, 0, .15),
+    inset 2px 2px 4px rgba(0, 0, 0, .15),
+    -0px -0px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hard_skills {
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70vw;
+  position: relative;
+}
+
+.repos_preview {
+  align-items: center;
+  border-radius: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 43vw;
+  z-index: 2;
+}
+
+.repos_preview img {
+  border-radius: 5.5rem;
+  max-width: 100%;
+  padding: 4rem 4rem;
+}
+
+.repos_preview button {
+  border-radius: 1.5rem;
+  font-size: clamp(1.5rem, 1.2vw + 1rem, 2.4rem);
+  letter-spacing: 0.7ch;
+  line-height: 3.5ch;
+  max-width: 45%;
+  margin-bottom: 9rem;
+}
+
+.stacks_container {
+  border-radius: 5.5rem;
+  margin-bottom: 18rem;
+  margin-left: auto;
+  margin-top: -4.5%;
+  padding: 5em;
+  position: relative;
+  width: 50vw;
+  z-index: 5;
+}
+
+#ballMove {
+  animation-delay: 0.5s;
+  animation: moveBall 240s linear infinite;
+  box-shadow: 0px 0px 5rem 1rem rgb(0, 0, 0, 0.8);
+  height: 2.4vw;
+  left: 0;
+  offset-path: path(var(--homePath));
+  position: absolute;
+  top: -7vh;
+  width: 2.4vw;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse at top, rgb(var(--grey)), transparent),
+    radial-gradient(ellipse at bottom, rgb(0, 64, 89), transparent),
+    linear-gradient(to left, transparent, rgb(var(--blue))),
+    linear-gradient(to right, transparent, rgba(var(--blue)));
+}
+
+@keyframes moveBall {
+  0% {
+    offset-distance: 0%;
+    scale: 1;
+  }
+
+  25% {
+    scale: 4;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  75% {
+    scale: 3;
+  }
+
+  90% {
+    scale: 2;
+  }
+
+  100% {
+    offset-distance: 100%;
+    scale: 1;
+  }
+}
+
+#ball1 {
+  height: 72vw;
+  left: 0%;
+  top: 0%;
+  translate: -38% -60%;
+  width: 72vw;
+  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
+    linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
+}
+
+#ball2 {
+  height: 20vw;
+  right: 0%;
+  top: 0%;
+  translate: 45% -25%;
+  width: 20vw;
+  background: linear-gradient(0deg, rgb(var(--blue)), transparent),
+    linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
+    linear-gradient(225deg, rgb(var(--grey)), transparent);
+}
+
+#ball3 {
+  bottom: 0%;
+  height: 8vw;
+  right: 0%;
+  translate: 30% 30%;
+  width: 8vw;
+  background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(315deg, rgb(var(--blue)), transparent);
+}
+
+#ball4 {
+  height: 22vw;
+  left: 0%;
+  top: 0%;
+  translate: -45% -35%;
+  width: 22vw;
+  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(315deg, rgb(var(--teal)), transparent);
+}
+
+#ball5 {
+  height: 48vw;
+  right: -50%;
+  top: 20%;
+  width: 48vw;
+  background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
+    linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
+    linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
+}
+
+#ball6 {
+  bottom: 44%;
+  height: 6vw;
+  left: -3%;
+  width: 6vw;
+  background: linear-gradient(45deg, rgb(var(--blue)), transparent),
+    linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
+    linear-gradient(180deg, rgb(var(--grey)), transparent);
+}
+
+#ball7 {
+  bottom: 0%;
+  height: 24vw;
+  left: 0%;
+  translate: 28% 18%;
+  width: 24vw;
+  background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
+    linear-gradient(45deg, rgb(var(--blue)), transparent),
+    linear-gradient(225deg, rgb(var(--grey)), transparent);
+}
+
+@media screen and (max-width: 1400px) {
+  .profile {
+    width: 70vw;
+  }
+
+  .repos_preview {
+    width: 60vw;
+  }
+
+  .stacks_container {
+    width: 60vw;
+  }
+
+  #ball7 {
+    bottom: 0%;
+    height: 24vw;
+    left: 0%;
+    translate: 12% 18%;
+  }
+
+  .profileBtns {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ballMove {
+    display: none;
+    animation: none;
+    animation-play-state: paused;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    width: 80vw;
+  }
+
+  .profileBtns {
+    justify-content: space-around;
+  }
+
+  .text {
+    padding: 4rem 0.8em;
+  }
+
+  .hard_skills {
+    max-width: 80vw;
+  }
+
+  .repos_preview {
+    padding: 4rem 4rem 4rem;
+  }
+
+  .repos_preview img {
+    width: 100%;
+    margin-bottom: 4rem;
+    padding: 0;
+    border-radius: 1.5rem;
+  }
+
+  .repos_preview button {
+    margin-bottom: 0;
+  }
+
+  .stacks_container {
+    width: 75vw;
+    padding: 2rem 2rem;
+    margin-bottom: 12rem;
+  }
+
+  .profile_container {
+    margin-bottom: 12rem;
+  }
+
+  #ball4 {
+    translate: -35% -35%;
+  }
+
+  #ball5 {
+    height: 60vw;
+    width: 60vw;
+    translate: -25% -35%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profileBtns {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .repos_preview button {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+}
