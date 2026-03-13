@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import Techs from "../components/Techs";
-import fotoBreno from "../images/fotoBreno.png";
-import homeGif from "../images/homeGif.gif";
-import motionProps from "../utils/motionProps";
-import styles from "./Home.module.css";
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import Techs from '../components/Techs';
+import fotoBreno from '../images/fotoBreno.png';
+import homeGif from '../images/homeGif.gif';
+import motionProps from '../utils/motionProps';
+import styles from './Home.module.css';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -120,7 +120,7 @@ export default function Home() {
               className={styles.btn}
               type="button"
               onClick={() => {
-                navigate("/projects");
+                navigate('/projects');
               }}
             >
               Projects Page
