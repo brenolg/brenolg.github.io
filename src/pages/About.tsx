@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import techImg from '../images/breno-tech.png';
-import myImg from '../images/brenoSobre.png';
-import motionProps from '../utils/motionProps';
-import styles from './About.module.css';
+import { motion } from "framer-motion";
+import techImg from "../images/breno-tech.png";
+import myImg from "../images/brenoSobre.png";
+import motionProps from "../utils/motionProps";
+import styles from "./About.module.css";
 
 export default function About() {
   return (
@@ -39,16 +39,16 @@ export default function About() {
           <div className={`${styles.professional_description} glass`}>
             <h2 className={`${styles.titles}`}>Na programação...</h2>
             <p className={`${styles.p}`}>
-              Atuo como desenvolvedor Front End, com foco em React e TypeScript,
-              nas empresas pelas quais passei, sempre buscando entregar
-              interfaces modernas, performáticas e centradas na experiência do
-              usuário. Sou formado pela Trybe, onde passei por mais de 1500
-              horas de formação intensiva em desenvolvimento web, com foco em
-              Front End, Back End e Ciência de Dados. Durante esse período,
-              desenvolvi mais de 20 projetos práticos — individuais e em equipe
-              — sempre priorizando a qualidade da interface e a performance.
-              Trabalhei com tecnologias como React JS, React Router, Redux,
-              Context API, Hooks e integração com APIs REST.
+              Atuei como desenvolvedor Front End e mobile, com foco em React,
+              React Native TypeScript, nas empresas pelas quais passei, sempre
+              buscando entregar interfaces modernas, performáticas e centradas
+              na experiência do usuário. Sou formado pela Trybe, onde passei por
+              mais de 1500 horas de formação intensiva em desenvolvimento web,
+              com foco em Front End, Back End e Ciência de Dados. Durante esse
+              período, desenvolvi mais de 20 projetos práticos — individuais e
+              em equipe — sempre priorizando a qualidade da interface e a
+              performance. Trabalhei com tecnologias como React JS, React
+              Router, Redux, Context API, Hooks e integração com APIs REST.
             </p>
             <br />
             <br />
