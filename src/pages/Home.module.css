@@ -57,7 +57,6 @@
   justify-content: space-around;
   margin-top: -11rem;
   padding: 4rem;
-
 }
 
 .text h2 {
@@ -103,11 +102,9 @@
     inset 2px 2px 2px rgba(255, 255, 255, 0),
     inset 2px 2px 4px rgba(0, 0, 0, 0),
     inset 2px 2px 4px rgba(0, 0, 0, 0),
-    /* hover */
-    -0px -0px 10px 5px rgba(0, 0, 0, 0),
+    /* hover */ -0px -0px 10px 5px rgba(0, 0, 0, 0),
     inset 3px 3px 4px rgb(255, 255, 255, 0),
-    /* default */
-    -3px -3px 8px rgba(0, 0, 0, 0.1),
+    /* default */ -3px -3px 8px rgba(0, 0, 0, 0.1),
     -2px -2px 8px rgba(0, 0, 0, 0.1),
     3px 3px 2px 1px rgba(90, 90, 90, 0.075),
     2px 2px 4px rgba(105, 105, 105, 0.1),
@@ -123,11 +120,9 @@
     inset 2px 2px 2px rgba(255, 255, 255, 0),
     inset 2px 2px 4px rgba(0, 0, 0, 0),
     inset 2px 2px 4px rgba(0, 0, 0, 0),
-    /* hover */
-    -0px -0px 5px 5px rgba(0, 0, 0, 0.3),
+    /* hover */ -0px -0px 5px 5px rgba(0, 0, 0, 0.3),
     inset 3px 3px 4px rgb(255, 255, 255, 0.5),
-    /* default */
-    -3px -3px 8px rgba(0, 0, 0, 0),
+    /* default */ -3px -3px 8px rgba(0, 0, 0, 0),
     -2px -2px 8px rgba(0, 0, 0, 0),
     3px 3px 2px 1px rgba(90, 90, 90, 0),
     2px 2px 4px rgba(105, 105, 105, 0),
@@ -135,14 +130,16 @@
 }
 
 .btn:active {
-  transform: translate(-2%, -2%) scale(.98);
-  transition: box-shadow 0.3s, transform 0.1s;
+  transform: translate(-2%, -2%) scale(0.98);
+  transition:
+    box-shadow 0.3s,
+    transform 0.1s;
   box-shadow:
-    inset -2px -2px 6px rgba(255, 255, 255, .7),
-    inset -2px -2px 4px rgba(255, 255, 255, .5),
-    inset 2px 2px 2px rgba(255, 255, 255, .075),
-    inset 2px 2px 4px rgba(0, 0, 0, .15),
-    inset 2px 2px 4px rgba(0, 0, 0, .15),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15),
     -0px -0px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -242,7 +239,8 @@
   top: 0%;
   translate: -38% -60%;
   width: 72vw;
-  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
@@ -252,7 +250,8 @@
   top: 0%;
   translate: 45% -25%;
   width: 20vw;
-  background: linear-gradient(0deg, rgb(var(--blue)), transparent),
+  background:
+    linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(180deg, rgb(var(--teal), 0.5), transparent),
     linear-gradient(225deg, rgb(var(--grey)), transparent);
@@ -264,7 +263,8 @@
   right: 0%;
   translate: 30% 30%;
   width: 8vw;
-  background: linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
+  background:
+    linear-gradient(135deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(315deg, rgb(var(--blue)), transparent);
 }
 
@@ -274,7 +274,8 @@
   top: 0%;
   translate: -45% -35%;
   width: 22vw;
-  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
+  background:
+    linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(315deg, rgb(var(--teal)), transparent);
 }
@@ -284,7 +285,8 @@
   right: -50%;
   top: 20%;
   width: 48vw;
-  background: linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
+  background:
+    linear-gradient(45deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(135deg, rgb(var(--orange), 0.8), transparent),
     linear-gradient(225deg, rgb(var(--teal), 0.8), transparent);
 }
@@ -294,7 +296,8 @@
   height: 6vw;
   left: -3%;
   width: 6vw;
-  background: linear-gradient(45deg, rgb(var(--blue)), transparent),
+  background:
+    linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(180deg, rgb(var(--grey)), transparent);
 }
@@ -305,7 +308,8 @@
   left: 0%;
   translate: 28% 18%;
   width: 24vw;
-  background: linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
+  background:
+    linear-gradient(0deg, rgb(var(--grey), 0.3), transparent),
     linear-gradient(45deg, rgb(var(--blue)), transparent),
     linear-gradient(225deg, rgb(var(--grey)), transparent);
 }
@@ -345,7 +349,7 @@
 
 @media screen and (max-width: 800px) {
   .profile {
-    width: 80vw;
+    width: 90vw;
   }
 
   .profileBtns {
@@ -406,5 +410,4 @@
     margin-bottom: 0;
     font-size: 12px;
   }
-
 }
