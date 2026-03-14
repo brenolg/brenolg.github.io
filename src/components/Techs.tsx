@@ -28,7 +28,11 @@ import {
   SiTailwindcss,
   SiTestinglibrary,
   SiTypescript,
+  SiNextdotjs,
   SiVite,
+  SiAxios,
+  SiJsonwebtokens,
+  SiReact,
 } from "react-icons/si";
 import Tilt from "react-parallax-tilt";
 import tiltProps from "../utils/tiltProps";
@@ -52,9 +56,21 @@ export default function Techs() {
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
+            <SiReact className={styles.techs} />
+          </dt>
+          <dd>React Native</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
             <FaAngular className={styles.techs} />
           </dt>
           <dd>Angular</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <SiNextdotjs className={styles.techs} />
+          </dt>
+          <dd>Next.js</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
@@ -157,6 +173,18 @@ export default function Techs() {
             <FaBootstrap className={styles.techs} />
           </dt>
           <dd>Bootstrap</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <SiJsonwebtokens className={styles.techs} />
+          </dt>
+          <dd>JWT</dd>
+        </Tilt>
+        <Tilt className={styles.tilt} {...tiltProps.techsProps}>
+          <dt>
+            <SiAxios className={styles.techs} />
+          </dt>
+          <dd>Axios</dd>
         </Tilt>
         <Tilt className={styles.tilt} {...tiltProps.techsProps}>
           <dt>
