@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import techImg from '../images/breno-tech.png';
-import myImg from '../images/brenoSobre.png';
-import motionProps from '../utils/motionProps';
-import styles from './About.module.css';
+import { motion } from "framer-motion";
+import techImg from "../images/breno-tech.png";
+import myImg from "../images/brenoSobre.png";
+import motionProps from "../utils/motionProps";
+import styles from "./About.module.css";
 
 export default function About() {
   return (
@@ -104,7 +104,7 @@ export default function About() {
             className={`${styles.main_description} glass`}
             {...motionProps.mainContent}
           >
-            <h2 className={`${styles.titles}`}>Vida Profissional</h2>
+            <h2 className={`${styles.titles}`}>Antes da programação</h2>
             <p className={`${styles.p}`}>
               Fui empreendedor por mais de 10 anos com produtos relacionados a
               cerâmica, plantas ornamentais e kokedamas. Minha formação em
