@@ -1,5 +1,7 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import styles from "./Nav.module.css";
+import {
+  FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp,
+} from 'react-icons/fa';
+import styles from './Nav.module.css';
 
 export default function Nav() {
   return (

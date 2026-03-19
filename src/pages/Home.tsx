@@ -49,7 +49,7 @@ export default function Home() {
               </div>
               <div className={styles.text}>
                 <h2>Breno Lavalle Garrido</h2>
-                <span>Desenvolvedor Web Full-Stack </span>
+                <span>Desenvolvedor Full-Stack </span>
 
                 <p>
                   Desenvolvedor Full Stack com foco em Front-End e Mobile.

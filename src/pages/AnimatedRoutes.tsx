@@ -1,9 +1,9 @@
-import { Route, Routes, useLocation } from "react-router-dom";
-import "../global.css";
-import { AnimatePresence } from "framer-motion";
-import About from "./About";
-import Home from "./Home";
-import Projects from "./Projects";
+import { Route, Routes, useLocation } from 'react-router-dom';
+import '../global.css';
+import { AnimatePresence } from 'framer-motion';
+import About from './About';
+import Home from './Home';
+import Projects from './Projects';
 
 function AnimatedRoutes() {
   const location = useLocation();
