@@ -76,6 +76,7 @@ export default function About() {
           </div>
         </section>
 
+        {/* Elementos decorativos animados (bolinhas)
         <section className={`${styles.img_section}`}>
           <motion.div
             className="ball ballRotate"
@@ -109,6 +110,7 @@ export default function About() {
             </p>
           </motion.div>
         </section>
+        */}
       </main>
     </>
   );
