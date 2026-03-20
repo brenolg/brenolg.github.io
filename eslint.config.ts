@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   env: {
     browser: true,
     es2021: true,
@@ -20,10 +20,7 @@ module.exports = {
   rules: {
     "react/jsx-props-no-spreading": "off",
 
-    // desativa regra base
-    quotes: "off",
-
-    // usa double quotes
-    "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
+    quotes: ["error", "single", { avoidEscape: true }],
+    "@typescript-eslint/quotes": ["error", "single", { avoidEscape: true }],
   },
 };
