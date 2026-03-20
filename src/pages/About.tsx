@@ -20,7 +20,7 @@ export default function About() {
             {...motionProps.ball}
           />
           <motion.div
-            className="ball"
+            className="ball a"
             id={styles.ball5}
             {...motionProps.ball}
           />
