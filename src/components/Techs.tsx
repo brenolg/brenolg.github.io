@@ -1,5 +1,5 @@
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiJavascript, DiLinux, DiPhotoshop } from "react-icons/di";
+import { AiFillHtml5 } from 'react-icons/ai';
+import { DiJavascript, DiLinux, DiPhotoshop } from 'react-icons/di';
 import {
   FaAngular,
   FaBootstrap,
@@ -10,9 +10,9 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
-} from "react-icons/fa";
-import { FiFigma, FiSlack } from "react-icons/fi";
-import { GrMysql } from "react-icons/gr";
+} from 'react-icons/fa';
+import { FiFigma, FiSlack } from 'react-icons/fi';
+import { GrMysql } from 'react-icons/gr';
 import {
   SiEslint,
   SiExpress,
@@ -20,7 +20,6 @@ import {
   SiGimp,
   SiJest,
   SiMongodb,
-  SiPytest,
   SiRedux,
   SiSequelize,
   SiSteam,
@@ -33,10 +32,10 @@ import {
   SiAxios,
   SiJsonwebtokens,
   SiReact,
-} from "react-icons/si";
-import Tilt from "react-parallax-tilt";
-import tiltProps from "../utils/tiltProps";
-import styles from "./Tecs.module.css";
+} from 'react-icons/si';
+import Tilt from 'react-parallax-tilt';
+import tiltProps from '../utils/tiltProps';
+import styles from './Tecs.module.css';
 
 export default function Techs() {
   return (

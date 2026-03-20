@@ -1,8 +1,7 @@
-import { motion } from "framer-motion";
-import techImg from "../images/breno-tech.png";
-import myImg from "../images/brenoSobre.png";
-import motionProps from "../utils/motionProps";
-import styles from "./About.module.css";
+import { motion } from 'framer-motion';
+import techImg from '../images/breno-tech.png';
+import motionProps from '../utils/motionProps';
+import styles from './About.module.css';
 
 export default function About() {
   return (
