@@ -44,6 +44,7 @@ export default function Home() {
                 <img
                   className={styles.my_img}
                   src={fotoBreno}
+                  loading="eager"
                   alt="Foto Breno Lavalle Garrido"
                 />
               </div>

@@ -5,22 +5,27 @@ export default {
     node: true,
   },
 
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
 
-  extends: ["plugin:react/recommended", "airbnb", "airbnb-typescript"],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:prettier/recommended',
+  ],
 
   parserOptions: {
-    project: "./tsconfig.app.json",
-    ecmaVersion: "latest",
-    sourceType: "module",
+    project: './tsconfig.app.json',
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
 
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ['react', '@typescript-eslint'],
 
   rules: {
-    "react/jsx-props-no-spreading": "off",
+    'react/jsx-props-no-spreading': 'off',
 
-    quotes: ["error", "single", { avoidEscape: true }],
-    "@typescript-eslint/quotes": ["error", "single", { avoidEscape: true }],
+    quotes: 'off',
+    '@typescript-eslint/quotes': 'off',
   },
 };
