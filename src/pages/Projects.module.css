@@ -47,7 +47,8 @@
   top: -7vh;
   width: 3vw;
   z-index: -2;
-  background: linear-gradient(0deg, rgb(var(--blue)), transparent),
+  background:
+    linear-gradient(0deg, rgb(var(--blue)), transparent),
     linear-gradient(135deg, rgb(var(--grey)), transparent),
     linear-gradient(180deg, rgb(var(--teal)), transparent),
     linear-gradient(225deg, rgb(var(--teal)), transparent);
@@ -87,7 +88,8 @@
   top: 0%;
   translate: 50% -12%;
   width: 18vw;
-  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
 }
 
@@ -97,7 +99,8 @@
   top: 0%;
   translate: -30% -12%;
   width: 25vw;
-  background: linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--teal), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--orange), 0.8), transparent);
 }
 
@@ -107,7 +110,8 @@
   right: 30%;
   translate: -12% 18%;
   width: 12vw;
-  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
@@ -117,7 +121,8 @@
   top: 0%;
   translate: -85% -12%;
   width: 38vw;
-  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--teal), 0.8), transparent);
 }
 
@@ -127,7 +132,8 @@
   top: 0%;
   translate: 75% -6%;
   width: 16vw;
-  background: linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
+  background:
+    linear-gradient(135deg, rgb(var(--orange), 0.7), transparent),
     linear-gradient(0deg, rgb(var(--grey), 0.5), transparent),
     linear-gradient(315deg, rgb(var(--teal)), transparent);
 }
@@ -138,7 +144,8 @@
   right: 40%;
   translate: 50% 30%;
   width: 12vw;
-  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
@@ -148,7 +155,8 @@
   right: 50%;
   translate: 50% 30%;
   width: 22vw;
-  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
@@ -158,7 +166,8 @@
   right: 40%;
   translate: -12% 18%;
   width: 12vw;
-  background: linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
+  background:
+    linear-gradient(180deg, rgb(var(--blue), 0.6), transparent),
     linear-gradient(315deg, rgb(var(--grey), 0.8), transparent);
 }
 
@@ -169,7 +178,7 @@
   }
 
   .projectSection {
-    width: 80vw;
+    width: 85vw;
   }
 
   .projectSection:last-child {

@@ -247,8 +247,11 @@
   .main_description {
     padding: 4rem 3rem;
   }
-
+  .relativSection {
+    max-width: 90vw;
+  }
   .professional_description {
+    width: 90vw;
     padding: 4rem 3rem;
   }
 }
