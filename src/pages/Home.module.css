@@ -405,9 +405,12 @@
     flex-direction: column;
     gap: 2rem;
   }
-
   .repos_preview button {
     margin-bottom: 0;
     font-size: 12px;
+  }
+  .img_border,
+  .my_img {
+    animation: none;
   }
 }
