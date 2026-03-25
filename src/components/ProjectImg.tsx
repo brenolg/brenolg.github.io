@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
-import styles from './ProjectImg.module.css';
 import type { Project } from '../utils/arrays/types';
+import styles from './ProjectImg.module.css';
 
 type ProjectImgProps = {
   array: Project[];
@@ -64,6 +64,7 @@ export default function ProjectImg({
             className={styles.image}
             src={project.img}
             alt={project.title || 'project'}
+            loading="eager"
           />
 
           <div className={styles.buttonsContainer}>

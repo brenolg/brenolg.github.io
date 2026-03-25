@@ -116,7 +116,7 @@ export default function Home() {
             className={`${styles.repos_preview} glass`}
             {...motionProps.mainContent}
           >
-            <img src={homeGif} alt="Projects Gifts" />
+            <img src={homeGif} alt="Projects Gifts" loading="eager" />
             <button
               className={styles.btn}
               type="button"

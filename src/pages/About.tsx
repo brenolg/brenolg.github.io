@@ -33,6 +33,7 @@ export default function About() {
               className={`${styles.my_img_2} glass`}
               src={techImg}
               alt="foto breno"
+              loading="eager"
             />
           </motion.div>
           <div className={`${styles.professional_description} glass`}>

@@ -15,7 +15,6 @@
 - React
 - Framer-motion
 - React-icons
-- React-parallax-tilt
 - React-router-dom
 - CSS Modules
 - TypesScript
